@@ -1,0 +1,9 @@
+# Packages
+pnpm-lock.yaml
+package.json
+
+# Build
+.next
+.vercel
+out
+

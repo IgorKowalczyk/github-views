@@ -1,0 +1,50 @@
+{
+  "name": "@igorkowalczyk/views",
+  "version": "1.0.0",
+  "description": "👀 Count the views of your github profile with your own custom badge",
+  "scripts": {
+    "start": "next start",
+    "dev": "NODE_ENV=development next dev",
+    "build": "next build",
+    "deploy": "npm run build && npm run start",
+    "format": "prettier --write . --ignore-unknown",
+    "format:check": "prettier --check .",
+    "analyze": "ANALYZE=true next build",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IgorKowalczyk/views.git"
+  },
+  "keywords": [
+    "views",
+    "github",
+    "profile",
+    "mongodb",
+    "views-counter",
+    "counter"
+  ],
+  "author": "Igor Kowalczyk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IgorKowalczyk/views/issues"
+  },
+  "homepage": "https://github.com/IgorKowalczyk/views#readme",
+  "dependencies": {
+    "@next/font": "^13.1.0",
+    "@vercel/analytics": "^0.1.6",
+    "next": "^13.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.2.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.30.0",
+    "eslint-config-next": "^13.1.0",
+    "eslint-config-prettier": "^8.5.0",
+    "postcss": "^8.4.20",
+    "prettier": "^2.8.1",
+    "prettier-plugin-tailwindcss": "^0.2.1"
+  }
+}
