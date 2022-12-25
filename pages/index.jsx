@@ -15,6 +15,7 @@ export default function Index() {
 
  function handleSubmit(e) {
   e.preventDefault();
+  if (!username) return setBadge("");
   setBadge(`/api/badge/${encodeURIComponent(username)}`);
  }
 
@@ -30,7 +31,7 @@ export default function Index() {
       <input type="text" className="rounded-sm border-4 border-black bg-white p-2 shadow-[4px_4px_0_0_rgba(0,0,0,1)] outline-none ring-0 ring-transparent duration-200 focus:border-black focus:shadow-[2px_2px_0_0_rgba(0,0,0,1)]" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} />
       <button className="ml-2 rounded-sm border-4 border-black bg-white p-2 shadow-[4px_4px_0_0_rgba(0,0,0,1)] outline-none duration-200 focus:shadow-[2px_2px_0_0_rgba(0,0,0,1)]">Create</button>
      </form>
-     {badge && (
+     {badge ? (
       <div className="mt-6 flex flex-col items-center justify-center gap-2">
        <h1 className="text-center text-4xl font-bold">Your badges</h1>
        <p className="mt-2 text-xl">Copy the markdown code below and paste it anywhere you want!</p>
@@ -109,6 +110,99 @@ export default function Index() {
         </Link>
         .
        </p>
+      </div>
+     ) : (
+      <div className="mt-8 flex flex-col items-center justify-center gap-2">
+       <h1 className="text-center text-4xl font-bold">Example badges</h1>
+       <p className=" mb-4 font-medium">
+        Looking for more customizations?{" "}
+        <Link href="https://github.com/igorkowalczyk/views" target="_blank" className="underline">
+         Check out the documentation
+        </Link>
+        .
+       </p>
+       <table className="border-4 border-black p-2">
+        <thead>
+         <tr>
+          <th>Style</th>
+          <th>Default badge</th>
+          <th>Color</th>
+          <th>Custom text & color</th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <td>
+           <pre>flat</pre>
+          </td>
+          <td>
+           <Image alt="Badge" src={"/api/badge/example?style=flat&display=true"} width={100} height={20} className="h-auto w-auto" />
+          </td>
+          <td>
+           <Image alt="Badge" src={"/api/badge/example?style=flat&color=blue&display=true"} width={100} height={20} className="h-auto w-auto" />
+          </td>
+          <td>
+           <Image alt="Badge" src={"/api/badge/example?style=flat&color=blueviolet&label=Custom+text&display=true"} width={100} height={20} className="h-auto w-auto" />
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <pre>flat-square</pre>
+          </td>
+          <td>
+           <Image alt="Badge" src={"/api/badge/example?style=flat-square&display=true"} width={100} height={20} className="h-auto w-auto" />
+          </td>
+          <td>
+           <Image alt="Badge" src={"/api/badge/example?style=flat-square&color=blue&display=true"} width={100} height={20} className="h-auto w-auto" />
+          </td>
+          <td>
+           <Image alt="Badge" src={"/api/badge/example?style=flat-square&color=blueviolet&label=Custom+text&display=true"} width={100} height={20} className="h-auto w-auto" />
+          </td>
+         </tr>
+
+         <tr>
+          <td>
+           <pre>plastic</pre>
+          </td>
+          <td>
+           <Image alt="Badge" src={"/api/badge/example?style=plastic&display=true"} width={100} height={20} className="h-auto w-auto" />
+          </td>
+          <td>
+           <Image alt="Badge" src={"/api/badge/example?style=plastic&color=blue&display=true"} width={100} height={20} className="h-auto w-auto" />
+          </td>
+          <td>
+           <Image alt="Badge" src={"/api/badge/example?style=plastic&color=blueviolet&label=Custom+text&display=true"} width={100} height={20} className="h-auto w-auto" />
+          </td>
+         </tr>
+
+         <tr>
+          <td>
+           <pre>for-the-badge</pre>
+          </td>
+          <td>
+           <Image alt="Badge" src={"/api/badge/example?style=for-the-badge&display=true"} width={100} height={20} className="h-auto w-auto" />
+          </td>
+          <td>
+           <Image alt="Badge" src={"/api/badge/example?style=for-the-badge&color=blue&display=true"} width={100} height={20} className="h-auto w-auto" />
+          </td>
+          <td>
+           <Image alt="Badge" src={"/api/badge/example?style=for-the-badge&color=blueviolet&label=Custom+text&display=true"} width={100} height={20} className="h-auto w-auto" />
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <pre>social</pre>
+          </td>
+          <td>
+           <Image alt="Badge" src={"/api/badge/example?style=social&display=true"} width={100} height={20} className="h-auto w-auto" />
+          </td>
+          <td>No color</td>
+          <td>
+           <Image alt="Badge" src={"/api/badge/example?style=social&label=Custom+text&display=true"} width={100} height={20} className="h-auto w-auto" />
+          </td>
+         </tr>
+        </tbody>
+       </table>
       </div>
      )}
     </div>
