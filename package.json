@@ -35,7 +35,6 @@
     "@next/font": "^13.1.0",
     "@vercel/analytics": "^0.1.6",
     "badge-maker": "^3.3.1",
-    "coloras": "^2.0.2",
     "mongoose": "^6.8.1",
     "next": "^13.1.0",
     "react": "^18.2.0",

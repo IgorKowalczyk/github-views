@@ -8,7 +8,6 @@ specifiers:
   '@vercel/analytics': ^0.1.6
   autoprefixer: ^10.4.13
   badge-maker: ^3.3.1
-  coloras: ^2.0.2
   compression-webpack-plugin: ^10.0.0
   eslint: ^8.30.0
   eslint-config-next: ^13.1.0
@@ -31,7 +30,6 @@ dependencies:
   '@next/font': 13.1.0
   '@vercel/analytics': 0.1.6_react@18.2.0
   badge-maker: 3.3.1
-  coloras: 2.0.2
   mongoose: 6.8.1
   next: 13.1.0_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
@@ -1732,13 +1730,6 @@ packages:
   /color-name/1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
 
-  /coloras/2.0.2:
-    resolution: {integrity: sha512-X2oRaJF+urTqsAtwxGyIs1wtble93u12l2fL3H9pcd2lhuh5GL2Npj5gQ/rs6NlrLlixvV2I0WwMc24gDc2g0g==}
-    hasBin: true
-    dependencies:
-      prompts: 2.4.2
-    dev: false
-
   /commander/2.20.3:
     resolution: {integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==}
     dev: true
@@ -2747,11 +2738,6 @@ packages:
     engines: {node: '>=12.0.0'}
     dev: false
 
-  /kleur/3.0.3:
-    resolution: {integrity: sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==}
-    engines: {node: '>=6'}
-    dev: false
-
   /language-subtag-registry/0.3.22:
     resolution: {integrity: sha512-tN0MCzyWnoz/4nHS6uxdlFWoUZT7ABptwKPQ52Ea7URk6vll88bWBVhodtnlfEuCcKWNGoc+uGbw1cwa9IKh/w==}
     dev: true
@@ -3239,14 +3225,6 @@ packages:
     hasBin: true
     dev: true
 
-  /prompts/2.4.2:
-    resolution: {integrity: sha512-NxNv/kLguCA7p3jE8oL2aEBsrJWgAakBpgmgK6lpPWV+WuOmY6r2/zbAVnP+T8bQlA0nzHXSJSJW0Hq7ylaD2Q==}
-    engines: {node: '>= 6'}
-    dependencies:
-      kleur: 3.0.3
-      sisteransi: 1.0.5
-    dev: false
-
   /prop-types/15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
     dependencies:
@@ -3462,10 +3440,6 @@ packages:
       mrmime: 1.0.1
       totalist: 1.1.0
     dev: true
-
-  /sisteransi/1.0.5:
-    resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
-    dev: false
 
   /slash/3.0.0:
     resolution: {integrity: sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==}
