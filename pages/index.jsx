@@ -55,7 +55,7 @@ export default function Index() {
           </Link>
          </td>
          <td>
-          <pre>{"![](" + url + badge + "?style=flat" + format}</pre>
+          <pre>{"![](" + url + badge + "?style=flat" + format + ")"}</pre>
          </td>
         </tr>
 
@@ -66,7 +66,7 @@ export default function Index() {
           </Link>
          </td>
          <td>
-          <pre>{"![](" + url + badge + "?style=flat-square" + format}</pre>
+          <pre>{"![](" + url + badge + "?style=flat-square" + format + ")"}</pre>
          </td>
         </tr>
 
@@ -77,7 +77,7 @@ export default function Index() {
           </Link>
          </td>
          <td>
-          <pre>{"![](" + url + badge + "?style=plastic" + format}</pre>
+          <pre>{"![](" + url + badge + "?style=plastic" + format + ")"}</pre>
          </td>
         </tr>
 
@@ -88,7 +88,7 @@ export default function Index() {
           </Link>
          </td>
          <td>
-          <pre>{"![](" + url + badge + "?style=social" + format}</pre>
+          <pre>{"![](" + url + badge + "?style=social" + format + ")"}</pre>
          </td>
         </tr>
         <tr>
@@ -98,7 +98,7 @@ export default function Index() {
           </Link>
          </td>
          <td>
-          <pre>{"![](" + url + badge + "?style=for-the-badge" + format}</pre>
+          <pre>{"![](" + url + badge + "?style=for-the-badge" + format + ")"}</pre>
          </td>
         </tr>
        </table>
