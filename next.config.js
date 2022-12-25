@@ -13,6 +13,9 @@ const nextConfig = {
  poweredByHeader: false,
  trailingSlash: false,
  compress: true,
+ images: {
+  dangerouslyAllowSVG: true,
+ },
  experimental: {
   fontLoaders: [{ loader: "@next/font/google", options: { subsets: ["latin"] } }],
  },

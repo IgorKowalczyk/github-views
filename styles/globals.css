@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+tr,
+td,
+th {
+ @apply max-w-md overflow-x-auto overflow-y-hidden border-4 border-black p-2;
+}
+
+pre {
+ word-wrap: normal;
+ @apply select-all overflow-x-auto overflow-y-hidden break-normal rounded-sm bg-gray-200 p-2;
+}

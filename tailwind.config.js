@@ -13,7 +13,5 @@ module.exports = {
    },
   },
  },
- plugins: [
-  require("@igorkowalczyk/is-browser"),
- ],
+ plugins: [require("@igorkowalczyk/is-browser"), require("@tailwindcss/forms")],
 };

@@ -7,10 +7,10 @@ const inter = Inter();
 export default function App({ Component, pageProps, router }) {
  return (
   <>
-    <main className={inter.className}>
-     <Component {...pageProps} key={router.route} />
-     <Analytics />
-    </main>
+   <main className={inter.className}>
+    <Component {...pageProps} key={router.route} />
+    <Analytics />
+   </main>
   </>
  );
 }
