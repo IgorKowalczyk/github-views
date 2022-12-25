@@ -49,6 +49,17 @@ export default function Index() {
         </label>
        </div>
        <table className="border-4 border-black p-2">
+       <tr>
+         <td>
+          <Link href={badge + "?style=flat-square" + format} target="_blank">
+           <Image alt="Badge" src={badge + "?style=flat-square&display=true" + format} width={100} height={20} className="h-auto w-auto" />
+          </Link>
+         </td>
+         <td>
+          <pre>{"![](" + url + badge + "?style=flat-square" + format + ")"}</pre>
+         </td>
+        </tr>
+        
         <tr>
          <td>
           <Link href={badge + "?style=flat" + format} target="_blank">
@@ -57,17 +68,6 @@ export default function Index() {
          </td>
          <td>
           <pre>{"![](" + url + badge + "?style=flat" + format + ")"}</pre>
-         </td>
-        </tr>
-
-        <tr>
-         <td>
-          <Link href={badge + "?style=flat-square" + format} target="_blank">
-           <Image alt="Badge" src={badge + "?style=flat-square&display=true" + format} width={100} height={20} className="h-auto w-auto" />
-          </Link>
-         </td>
-         <td>
-          <pre>{"![](" + url + badge + "?style=flat-square" + format + ")"}</pre>
          </td>
         </tr>
 
@@ -92,6 +92,7 @@ export default function Index() {
           <pre>{"![](" + url + badge + "?style=social" + format + ")"}</pre>
          </td>
         </tr>
+
         <tr>
          <td>
           <Link href={badge + "?style=for-the-badge" + format} target="_blank">
@@ -131,6 +132,21 @@ export default function Index() {
          </tr>
         </thead>
         <tbody>
+        <tr>
+          <td>
+           <pre>flat-square</pre>
+          </td>
+          <td>
+           <Image alt="Badge" src={"/api/badge/example?style=flat-square&display=true"} width={100} height={20} className="h-auto w-auto" />
+          </td>
+          <td>
+           <Image alt="Badge" src={"/api/badge/example?style=flat-square&color=blue&display=true"} width={100} height={20} className="h-auto w-auto" />
+          </td>
+          <td>
+           <Image alt="Badge" src={"/api/badge/example?style=flat-square&color=blueviolet&label=Custom+text&display=true"} width={100} height={20} className="h-auto w-auto" />
+          </td>
+         </tr>
+
          <tr>
           <td>
            <pre>flat</pre>
@@ -143,20 +159,6 @@ export default function Index() {
           </td>
           <td>
            <Image alt="Badge" src={"/api/badge/example?style=flat&color=blueviolet&label=Custom+text&display=true"} width={100} height={20} className="h-auto w-auto" />
-          </td>
-         </tr>
-         <tr>
-          <td>
-           <pre>flat-square</pre>
-          </td>
-          <td>
-           <Image alt="Badge" src={"/api/badge/example?style=flat-square&display=true"} width={100} height={20} className="h-auto w-auto" />
-          </td>
-          <td>
-           <Image alt="Badge" src={"/api/badge/example?style=flat-square&color=blue&display=true"} width={100} height={20} className="h-auto w-auto" />
-          </td>
-          <td>
-           <Image alt="Badge" src={"/api/badge/example?style=flat-square&color=blueviolet&label=Custom+text&display=true"} width={100} height={20} className="h-auto w-auto" />
           </td>
          </tr>
 
@@ -189,6 +191,7 @@ export default function Index() {
            <Image alt="Badge" src={"/api/badge/example?style=for-the-badge&color=blueviolet&label=Custom+text&display=true"} width={100} height={20} className="h-auto w-auto" />
           </td>
          </tr>
+
          <tr>
           <td>
            <pre>social</pre>

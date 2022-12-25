@@ -2,6 +2,7 @@ import connection from "./Connect.js";
 
 export async function IncreaseViews(username) {
  const collection = await connection.then((db) => db.models.views);
+ if(username === "example") return 0;
  const view = await collection.findOneAndUpdate(
   {
    username,
