@@ -1,0 +1,14 @@
+{
+ "name": "Profile Views",
+ "short_name": "Profile Views",
+ "icons": [
+  {
+   "src": "/favicons/android-chrome-144x144.png",
+   "sizes": "144x144",
+   "type": "image/png"
+  }
+ ],
+ "theme_color": "#000000",
+ "background_color": "#000000",
+ "display": "standalone"
+}

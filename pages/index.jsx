@@ -49,7 +49,7 @@ export default function Index() {
         </label>
        </div>
        <table className="border-4 border-black p-2">
-       <tr>
+        <tr>
          <td>
           <Link href={badge + "?style=flat-square" + format} target="_blank">
            <Image alt="Badge" src={badge + "?style=flat-square&display=true" + format} width={100} height={20} className="h-auto w-auto" />
@@ -59,7 +59,7 @@ export default function Index() {
           <pre>{"![](" + url + badge + "?style=flat-square" + format + ")"}</pre>
          </td>
         </tr>
-        
+
         <tr>
          <td>
           <Link href={badge + "?style=flat" + format} target="_blank">
@@ -84,23 +84,23 @@ export default function Index() {
 
         <tr>
          <td>
-          <Link href={badge + "?style=social" + format} target="_blank">
-           <Image alt="Badge" src={badge + "?style=social&display=true" + format} width={100} height={20} className="h-auto w-auto" />
-          </Link>
-         </td>
-         <td>
-          <pre>{"![](" + url + badge + "?style=social" + format + ")"}</pre>
-         </td>
-        </tr>
-
-        <tr>
-         <td>
           <Link href={badge + "?style=for-the-badge" + format} target="_blank">
            <Image alt="Badge" src={badge + "?style=for-the-badge&display=true" + format} width={100} height={20} className="h-auto w-auto" />
           </Link>
          </td>
          <td>
           <pre>{"![](" + url + badge + "?style=for-the-badge" + format + ")"}</pre>
+         </td>
+        </tr>
+
+        <tr>
+         <td>
+          <Link href={badge + "?style=social" + format} target="_blank">
+           <Image alt="Badge" src={badge + "?style=social&display=true" + format} width={100} height={20} className="h-auto w-auto" />
+          </Link>
+         </td>
+         <td>
+          <pre>{"![](" + url + badge + "?style=social" + format + ")"}</pre>
          </td>
         </tr>
        </table>
@@ -132,7 +132,7 @@ export default function Index() {
          </tr>
         </thead>
         <tbody>
-        <tr>
+         <tr>
           <td>
            <pre>flat-square</pre>
           </td>
