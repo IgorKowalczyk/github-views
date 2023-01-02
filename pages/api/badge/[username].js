@@ -4,6 +4,13 @@ import { FormatNumber } from "../../../utils/FormatNumber";
 
 export default async function handler(req, res) {
  const { username, label, labelColor, color, style, format, display } = req.query;
+ res.setHeader("Content-Type", "image/svg+xml");
+ res.setHeader("Cache-Control", "no-cache");
+ res.setHeader("X-Content-Type-Options", "nosniff");
+ res.setHeader("Content-Security-Policy", "default-src 'self'");
+ res.setHeader("Strict-Transport-Security", "max-age=31536000; includeSubDomains");
+ res.setHeader("X-Frame-Options", "SAMEORIGIN");
+ res.setHeader("X-XSS-Protection", "1; mode=block");
  try {
   const number = display ? await GetViews(username) : await IncreaseViews(username);
   const svg = makeBadge({
@@ -13,8 +20,6 @@ export default async function handler(req, res) {
    labelColor: labelColor || "#555",
    style: style || "flat",
   });
-  res.setHeader("Content-Type", "image/svg+xml");
-  res.setHeader("Cache-Control", "no-cache");
   return res.status(200).send(svg);
  } catch (e) {
   const svg = makeBadge({
@@ -22,8 +27,6 @@ export default async function handler(req, res) {
    message: e.message,
    color: "red",
   });
-  res.setHeader("Content-Type", "image/svg+xml");
-  res.setHeader("Cache-Control", "no-cache");
-  return res.status(400).send(svg);
+  return res.status(200).send(svg);
  }
 }
