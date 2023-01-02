@@ -11,7 +11,7 @@ specifiers:
   compression-webpack-plugin: 10.0.0
   eslint: 8.31.0
   eslint-config-next: 13.1.1
-  eslint-config-prettier: 8.5.0
+  eslint-config-prettier: 8.6.0
   lodash-webpack-plugin: 0.11.6
   mongoose: 6.8.2
   next: 13.1.1
@@ -43,7 +43,7 @@ devDependencies:
   compression-webpack-plugin: 10.0.0_webpack@5.75.0
   eslint: 8.31.0
   eslint-config-next: 13.1.1_iukboom6ndih5an6iafl45j2fe
-  eslint-config-prettier: 8.5.0_eslint@8.31.0
+  eslint-config-prettier: 8.6.0_eslint@8.31.0
   lodash-webpack-plugin: 0.11.6_webpack@5.75.0
   postcss: 8.4.20
   prettier: 2.8.1
@@ -1983,8 +1983,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-config-prettier/8.5.0_eslint@8.31.0:
-    resolution: {integrity: sha512-obmWKLUNCnhtQRKc+tmnYuQl0pFU1ibYJQ5BGhTVB08bHe9wC8qUeG7c08dj9XX+AuPj1YSGSQIHl1pnDHZR0Q==}
+  /eslint-config-prettier/8.6.0_eslint@8.31.0:
+    resolution: {integrity: sha512-bAF0eLpLVqP5oEVUFKpMA+NnRFICwn9X8B5jrR9FcqnYBuPbqWEjTEspPWMj5ye6czoSLDweCzSo3Ko7gGrZaA==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
