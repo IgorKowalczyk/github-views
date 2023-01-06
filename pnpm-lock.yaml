@@ -13,7 +13,7 @@ specifiers:
   eslint-config-next: 13.1.1
   eslint-config-prettier: 8.6.0
   lodash-webpack-plugin: 0.11.6
-  mongoose: 6.8.2
+  mongoose: 6.8.3
   next: 13.1.1
   postcss: 8.4.20
   prettier: 2.8.1
@@ -30,7 +30,7 @@ dependencies:
   '@next/font': 13.1.1
   '@vercel/analytics': 0.1.6_react@18.2.0
   badge-maker: 3.3.1
-  mongoose: 6.8.2
+  mongoose: 6.8.3
   next: 13.1.1_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -2733,8 +2733,8 @@ packages:
       object.assign: 4.1.4
     dev: true
 
-  /kareem/2.5.0:
-    resolution: {integrity: sha512-rVBUGGwvqg130iwYu8k7lutHuDBFj1yGRdnlE44wEhxAmFBad1zcL66PdWC1raw3tIObY6XWhtv3VL04xQb/cg==}
+  /kareem/2.5.1:
+    resolution: {integrity: sha512-7jFxRVm+jD+rkq3kY0iZDJfsO2/t4BBPeEb2qKn2lR/9KhuksYk5hxzfRYWMPV8P/x2d0kHD306YyWLzjjH+uA==}
     engines: {node: '>=12.0.0'}
     dev: false
 
@@ -2869,12 +2869,12 @@ packages:
       - aws-crt
     dev: false
 
-  /mongoose/6.8.2:
-    resolution: {integrity: sha512-cIato5N2w/QuJkkh0w4nyf7ty7DqmmP/W8/6PFSM0DrzbxIMlr6VN15LBIceTSJIxbznNl2Mlbh9Rm4sokMw+A==}
+  /mongoose/6.8.3:
+    resolution: {integrity: sha512-qrVWefJK+wFNBH0ALV+oiyJ+FN42O/BqvHFmlFJJ2LKuNmQEOE0JV8FCxnZqtanwbHs4i+k/SkjhtC+C01haaw==}
     engines: {node: '>=12.0.0'}
     dependencies:
       bson: 4.7.0
-      kareem: 2.5.0
+      kareem: 2.5.1
       mongodb: 4.12.1
       mpath: 0.9.0
       mquery: 4.0.3
