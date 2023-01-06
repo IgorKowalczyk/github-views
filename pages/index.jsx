@@ -28,7 +28,7 @@ export default function Index() {
 
     <div className="mt-4 flex flex-col items-center justify-center">
      <form onSubmit={handleSubmit}>
-      <input type="text" className="rounded-sm border-4 border-black bg-white p-2 shadow-[4px_4px_0_0_rgba(0,0,0,1)] outline-none ring-0 ring-transparent duration-200 focus:border-black focus:shadow-[2px_2px_0_0_rgba(0,0,0,1)]" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} />
+      <input type="text" className="rounded-sm border-4 border-black bg-white p-2 shadow-[4px_4px_0_0_rgba(0,0,0,1)] outline-none !ring-0 ring-transparent duration-200 focus:border-black focus:shadow-[2px_2px_0_0_rgba(0,0,0,1)]" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} />
       <button className="ml-2 rounded-sm border-4 border-black bg-white p-2 shadow-[4px_4px_0_0_rgba(0,0,0,1)] outline-none duration-200 focus:shadow-[2px_2px_0_0_rgba(0,0,0,1)]">Create</button>
      </form>
      {badge ? (
