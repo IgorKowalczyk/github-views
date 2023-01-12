@@ -33,7 +33,7 @@
   "dependencies": {
     "@igorkowalczyk/is-browser": "2.1.2",
     "@next/font": "13.1.1",
-    "@vercel/analytics": "0.1.6",
+    "@vercel/analytics": "0.1.7",
     "badge-maker": "3.3.1",
     "mongoose": "6.8.3",
     "next": "13.1.1",

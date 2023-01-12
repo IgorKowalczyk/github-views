@@ -5,7 +5,7 @@ specifiers:
   '@next/bundle-analyzer': 13.1.1
   '@next/font': 13.1.1
   '@tailwindcss/forms': 0.5.3
-  '@vercel/analytics': 0.1.6
+  '@vercel/analytics': 0.1.7
   autoprefixer: 10.4.13
   badge-maker: 3.3.1
   compression-webpack-plugin: 10.0.0
@@ -28,7 +28,7 @@ specifiers:
 dependencies:
   '@igorkowalczyk/is-browser': 2.1.2_tailwindcss@3.2.4
   '@next/font': 13.1.1
-  '@vercel/analytics': 0.1.6_react@18.2.0
+  '@vercel/analytics': 0.1.7_react@18.2.0
   badge-maker: 3.3.1
   mongoose: 6.8.3
   next: 13.1.1_biqbaboplfbrettd7655fr4n2y
@@ -1264,8 +1264,8 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
-  /@vercel/analytics/0.1.6_react@18.2.0:
-    resolution: {integrity: sha512-zNd5pj3iDvq8IMBQHa1YRcIteiw6ZiPB8AsONHd8ieFXlNpLqhXfIYnf4WvTfZ7S1NSJ++mIM14aJnNac/VMXQ==}
+  /@vercel/analytics/0.1.7_react@18.2.0:
+    resolution: {integrity: sha512-vaHVFggK1lPBbm73NRONI/D6oBM/Ot1zIXI9IpjxgUsvQMZrO4JpPEIDvGihgnAWbzH7LfpjOOJccxRoaDRtDA==}
     peerDependencies:
       react: ^16.8||^17||^18
     dependencies:
