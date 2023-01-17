@@ -13,7 +13,7 @@ specifiers:
   eslint-config-next: 13.1.2
   eslint-config-prettier: 8.6.0
   lodash-webpack-plugin: 0.11.6
-  mongoose: 6.8.3
+  mongoose: 6.8.4
   next: 13.1.2
   postcss: 8.4.21
   prettier: 2.8.3
@@ -30,7 +30,7 @@ dependencies:
   '@next/font': 13.1.2
   '@vercel/analytics': 0.1.8_react@18.2.0
   badge-maker: 3.3.1
-  mongoose: 6.8.3
+  mongoose: 6.8.4
   next: 13.1.2_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -2869,8 +2869,8 @@ packages:
       - aws-crt
     dev: false
 
-  /mongoose/6.8.3:
-    resolution: {integrity: sha512-qrVWefJK+wFNBH0ALV+oiyJ+FN42O/BqvHFmlFJJ2LKuNmQEOE0JV8FCxnZqtanwbHs4i+k/SkjhtC+C01haaw==}
+  /mongoose/6.8.4:
+    resolution: {integrity: sha512-19Jk2hbSAPcM4u6ErW0UPwaSO2YfP/cXfBS9YEiNgNzZfXd+jkyemqJ+t2aflaicXeU4VdTP33pZYxqjk2hUYw==}
     engines: {node: '>=12.0.0'}
     dependencies:
       bson: 4.7.0
