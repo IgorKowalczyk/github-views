@@ -11,9 +11,9 @@ export default function Document({ props }) {
     <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
     <link rel="manifest" href="/favicons/site.webmanifest" />
     <link rel="shortcut icon" href="/favicons/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#00aba9" />
+    <meta name="msapplication-TileColor" content="#091430" />
     <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#091430" />
     <meta name="description" content="Create your own badges for your GitHub profile." />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Profile Views" />
