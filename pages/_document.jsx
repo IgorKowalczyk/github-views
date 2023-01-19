@@ -14,6 +14,19 @@ export default function Document({ props }) {
     <meta name="msapplication-TileColor" content="#00aba9" />
     <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
     <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Create your own badges for your GitHub profile." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Profile Views" />
+    <meta property="og:title" content="Profile Views - Create your own badges" />
+    <meta property="og:description" content="Create your own badges for your GitHub profile." />
+    <meta property="og:url" content="https://views.igorkowalczyk.dev" />
+    <meta property="og:image" content="https://views.igorkowalczyk.dev/og-image.png" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://views.igorkowalczyk.dev" />
+    <meta property="twitter:title" content="Profile Views - Create your own badges" />
+    <meta property="twitter:description" content="Create your own badges for your GitHub profile." />
+    <meta property="twitter:image" content="https://views.igorkowalczyk.dev/og-image.png" />
+    <meta property="twitter:creator" content="@igorkowalczyk" />
    </Head>
    <body>
     <Main {...props} />
