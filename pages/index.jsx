@@ -41,7 +41,7 @@ export default function Index() {
          <input
           type="checkbox"
           className="border-2 border-gray-300 text-black focus:border-gray-300 focus:ring-black"
-          onChange={(e) => {
+          onChange={() => {
            handleChange();
           }}
          />{" "}

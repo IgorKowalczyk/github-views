@@ -1,8 +1,10 @@
 {
- "extends": ["next", "prettier"],
+ "extends": ["eslint:recommended", "next", "prettier"],
+ "parserOptions": {
+  "ecmaVersion": "latest",
+  "sourceType": "module"
+ },
  "rules": {
-  "react/prop-types": "off",
-  "camelcase": "warn",
-  "react/no-unescaped-entities": "off"
+  "camelcase": "warn"
  }
 }
