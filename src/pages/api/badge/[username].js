@@ -1,6 +1,6 @@
 import { makeBadge } from "badge-maker";
 import { IncreaseViews, GetViews } from "../../../../database/Views";
-import { FormatNumber } from "../../../../utils/FormatNumber";
+import { FormatNumber } from "../../../utils/FormatNumber";
 
 export const get = async function get({ params, request }) {
  try {
