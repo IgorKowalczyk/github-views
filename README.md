@@ -84,13 +84,12 @@ You can overwrite default `Views` text with your own label.
 4. Create new file named `.env` Remember - the file is super secret, better to not share it.
 5. In `.env` file set this values:
    - `MONGODB_URI` - MongoDB database connection string
-   - `NEXT_PUBLIC_URL` - Public URL to the website, used in homepage examples
 6. Run `npm run build` to build the project or `npm run dev` to run the project in development mode.
    > If you want to build and host the project you can use `npm run deploy`
 
 ## 🖥️ Hosting with Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Figorkowalczyk%2Fviews&env=MONGODB_URI,NEXT_PUBLIC_URL&envDescription=Environment%20Variables%20Docs&envLink=https%3A%2F%2Fgithub.com%2FIgorKowalczyk%2Fviews%23-self-hosting&project-name=views&repo-name=igorkowalczyk-views&demo-title=Example%20deploy&demo-description=Example%20production%20deploy%20from%20Github%20Repository&demo-url=https%3A%2F%2Figorkowalczyk.dev&demo-image=https%3A%2F%2Fi.imgur.com%2F3KaQPHt.png)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Figorkowalczyk%2Fviews&env=MONGODB_URI&envDescription=Environment%20Variables%20Docs&envLink=https%3A%2F%2Fgithub.com%2FIgorKowalczyk%2Fviews%23-self-hosting&project-name=views&repo-name=igorkowalczyk-views&demo-title=Example%20deploy&demo-description=Example%20production%20deploy%20from%20Github%20Repository&demo-url=https%3A%2F%2Fviews.igorkowalczyk.dev&demo-image=https%3A%2F%2Fi.imgur.com%2FfmB8Tvl.png)
 
 ## ⁉️ Issues
 
