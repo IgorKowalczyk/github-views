@@ -1,0 +1,14 @@
+tr,
+td,
+th {
+ @apply max-w-md overflow-x-auto overflow-y-hidden border-[2px] border-white/10 p-2;
+}
+
+pre {
+ word-wrap: normal;
+ @apply select-all overflow-x-auto overflow-y-hidden break-normal rounded-sm bg-white/10 px-2 py-1;
+}
+
+::selection {
+ @apply bg-white/10;
+}

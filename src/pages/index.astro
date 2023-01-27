@@ -1,0 +1,223 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Description from "../components/Description.astro";
+import Input from "../components/Input.astro";
+import Image from "../components/Image.astro";
+let url = "/api/badge/example";
+---
+
+<Layout title="Profile views - create your own badges">
+ <main>
+  <Header text="Profile views" id="main" />
+  <Description text="Create your own badge that will count views anywhere you want!" id="description" />
+  <div class="flex flex-row gap-2 mt-2 mb-6 relative">
+   <Input id="input" placeholder="Your username" type="text" />
+   <button id="submit" class="group rounded-md border border-transparent px-4 py-2 font-inter text-sm font-medium duration-200 motion-reduce:transition-none bg-white/[10%] text-white hover:bg-white/[15%]"><span class="mt-[2px] inline-flex">Create <svg class="mt-[2px] ml-2 h-4 w-4 duration-200 group-hover:translate-x-1 motion-reduce:transition-none motion-reduce:group-hover:translate-x-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg></span></button>
+   <canvas id="confetti" class="absolute top-[-120px] right-[-100px] pointer-events-none"></canvas>
+  </div>
+  <Header text="Examples" id="change" />
+  <table class="border-[2px] border-white/10 p-2" id="examples">
+   <thead>
+    <tr>
+     <th>Style</th>
+     <th>Default badge</th>
+     <th>Color</th>
+     <th>Custom text & color</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>
+      <pre>flat-square</pre>
+     </td>
+     <td>
+      <Image url={`${url}?style=flat-square&display=true`} />
+     </td>
+     <td>
+      <Image url={`${url}?style=flat-square&color=blue&display=true`} />
+     </td>
+     <td>
+      <Image url={`${url}?style=flat-square&color=blueviolet&label=Custom+text&display=true`} />
+     </td>
+    </tr>
+
+    <tr>
+     <td>
+      <pre>flat</pre>
+     </td>
+     <td>
+      <Image url={`${url}?style=flat&display=true`} />
+     </td>
+     <td>
+      <Image url={`${url}?style=flat&color=blue&display=true`} />
+     </td>
+     <td>
+      <Image url={`${url}?style=flat&color=blueviolet&label=Custom+text&display=true`} />
+     </td>
+    </tr>
+
+    <tr>
+     <td>
+      <pre>plastic</pre>
+     </td>
+     <td>
+      <Image url={`${url}?style=plastic&display=true`} />
+     </td>
+     <td>
+      <Image url={`${url}?style=plastic&color=blue&display=true`} />
+     </td>
+     <td>
+      <Image url={`${url}?style=plastic&color=blueviolet&label=Custom+text&display=true`} />
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <pre>for-the-badge</pre>
+     </td>
+     <td>
+      <Image url={`${url}?style=for-the-badge&display=true`} />
+     </td>
+     <td>
+      <Image url={`${url}?style=for-the-badge&color=blue&display=true`} />
+     </td>
+     <td>
+      <Image url={`${url}?style=for-the-badge&color=blueviolet&label=Custom+text&display=true`} />
+     </td>
+    </tr>
+
+    <tr>
+     <td>
+      <pre>social</pre>
+     </td>
+     <td>
+      <Image url={`${url}?style=social&display=true`} />
+     </td>
+     <td>No color</td>
+     <td>
+      <Image url={`${url}?style=social&label=Custom+text&display=true`} />
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+  <div id="markdown" class="hidden mb-4">
+   <Description text="Copy the markdown code below and paste it anywhere you want!" />
+  </div>
+  <table class="border-[2px] border-white/10 p-2 hidden" id="rendered">
+   <tbody>
+    <tr>
+     <td>
+      <Image url={`${url}?style=flat-square&display=true`} />
+     </td>
+     <td>
+      <pre class="pre">![Views](https://views.igorkowalczyk.dev/api/badge/example?style=flat-square)</pre>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <Image url={`${url}?style=flat&display=true`} />
+     </td>
+     <td>
+      <pre class="pre">![Views](https://views.igorkowalczyk.dev/api/badge/example?style=flat)</pre>
+     </td>
+    </tr>
+
+    <tr>
+     <td>
+      <Image url={`${url}?style=plastic&display=true`} />
+     </td>
+     <td>
+      <pre class="pre">![Views](https://views.igorkowalczyk.dev/api/badge/example?style=plastic)</pre>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <Image url={`${url}?style=for-the-badge&display=true`} />
+     </td>
+     <td>
+      <pre class="pre">![Views](https://views.igorkowalczyk.dev/api/badge/example?style=for-the-badge)</pre>
+     </td>
+    </tr>
+
+    <tr>
+     <td>
+      <Image url={`${url}?style=social&display=true`} />
+     </td>
+     <td>
+      <pre class="pre">![Views](https://views.igorkowalczyk.dev/api/badge/example?style=social)</pre>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+
+  <p class="my-4 font-medium text-center">
+   Looking for more customizations? <a href="https://github.com/igorkowalczyk/views" target="_blank" class="underline">Check out the documentation</a>.
+  </p>
+ </main>
+
+ <script>
+  import confetti from "canvas-confetti";
+  const button = document.getElementById("submit");
+  const input = document.getElementById("input");
+  const canvas = document.getElementById("confetti");
+
+  button.addEventListener("click", () => {
+   const particles = confetti.create(canvas, {
+    resize: true,
+    useWorker: true,
+   });
+
+   input.value.length !== 0 &&
+    particles({
+     particleCount: 50,
+     spread: 70,
+     startVelocity: 15,
+     origin: {
+      y: 1,
+     },
+     scalar: 0.5,
+    });
+  });
+ </script>
+
+ <script define:vars={{ url }}>
+  let string = url;
+  const submit = document.getElementById("submit");
+  const input = document.getElementById("input");
+  const examples = document.getElementById("examples");
+  const rendered = document.getElementById("rendered");
+  const header = document.getElementById("change");
+  const description = document.getElementById("markdown");
+  function changeSource() {
+   string = string.split("/").slice(0, -1).join("/") + "/" + (input.value || "example");
+   if (input.value.length === 0) {
+    examples.classList.remove("hidden");
+    rendered.classList.add("hidden");
+    description.classList.add("hidden");
+    header.innerText = "Examples";
+   } else {
+    examples.classList.add("hidden");
+    rendered.classList.remove("hidden");
+    description.classList.remove("hidden");
+    header.innerText = "Your badges";
+   }
+   document.querySelectorAll(".pre").forEach((pre) => {
+    const settings = pre.innerText.split("?");
+    const base = settings[0].split("/").slice(0, -1).join("/") + "/" + (input.value || "example");
+    pre.innerText = `${base}?${settings[1]}`;
+   });
+   document.querySelectorAll("img").forEach((img) => {
+    const settings = img.src.split("?")[1];
+    img.src = string + "?" + settings;
+   });
+  }
+
+  submit.addEventListener("click", () => {
+   changeSource();
+  });
+  input.addEventListener("keyup", (e) => {
+   if (e.key === "Enter") changeSource();
+  });
+ </script>
+</Layout>

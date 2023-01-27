@@ -3,9 +3,8 @@ pnpm-lock.yaml
 package.json
 
 # Build
-.next
-.vercel
-out
+dist/
+.vercel/
 
 # Readme
 README.md
