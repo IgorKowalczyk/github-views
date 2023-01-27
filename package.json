@@ -56,5 +56,5 @@
     "prettier": "2.8.3",
     "prettier-plugin-tailwindcss": "0.2.1"
   },
-  "packageManager": "pnpm@7.26.0"
+  "packageManager": "pnpm@7.26.1"
 }
