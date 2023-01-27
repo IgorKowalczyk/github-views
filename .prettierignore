@@ -4,6 +4,7 @@ package.json
 
 # Build
 dist/
+.vercel/
 
 # Readme
 README.md
