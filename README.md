@@ -4,9 +4,9 @@
 
 > 👀 Count the views of your github profile with your own custom badge
 
-[![GitHub License](https://img.shields.io/github/license/igorkowalczyk/views?color=%2334D058&logo=github&style=flat-square&label=License)](https://github.com/igorkowalczyk/views/blob/master/license.md)
-[![Version](https://img.shields.io/github/v/release/igorkowalczyk/views?color=%2334D058&logo=github&style=flat-square&label=Version)](https://github.com/igorkowalczyk/views/releases)
-[![Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/igorkowalczyk/views?color=%2334D058&logo=github&style=flat-square&label=Vulnerabilities)](https://github.com/igorkowalczyk/views)
+[![GitHub License](https://img.shields.io/github/license/igorkowalczyk/github-views?color=%2334D058&logo=github&style=flat-square&label=License)](https://github.com/igorkowalczyk/github-views/blob/master/license.md)
+[![Version](https://img.shields.io/github/v/release/igorkowalczyk/github-views?color=%2334D058&logo=github&style=flat-square&label=Version)](https://github.com/igorkowalczyk/github-views/releases)
+[![Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/igorkowalczyk/github-views?color=%2334D058&logo=github&style=flat-square&label=Vulnerabilities)](https://github.com/igorkowalczyk/github-views)
 [![Discord](https://img.shields.io/discord/666599184844980224?color=%2334D058&logo=discord&style=flat-square&logoColor=fff&label=Discord)](https://igorkowalczyk.dev/discord)
 <br><br><br>
 
@@ -79,7 +79,7 @@ You can overwrite default `Views` text with your own label.
 
 ### 🔩 Self Hosting
 
-1. Clone [this repository](https://github.com/igorkowalczyk/views) `git clone https://github.com/IgorKowalczyk/views.git`
+1. Clone [this repository](https://github.com/igorkowalczyk/github-views) `git clone https://github.com/IgorKowalczyk/github-views.git`
 2. Run `pnpm i` to install all dependencies,
 4. Create new file named `.env` Remember - the file is super secret, better to not share it.
 5. In `.env` file set this values:
@@ -89,11 +89,11 @@ You can overwrite default `Views` text with your own label.
 
 ## 🖥️ Hosting with Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Figorkowalczyk%2Fviews&env=MONGODB_URI&envDescription=Environment%20Variables%20Docs&envLink=https%3A%2F%2Fgithub.com%2FIgorKowalczyk%2Fviews%23-self-hosting&project-name=views&repo-name=igorkowalczyk-views&demo-title=Example%20deploy&demo-description=Example%20production%20deploy%20from%20Github%20Repository&demo-url=https%3A%2F%2Fviews.igorkowalczyk.dev&demo-image=https%3A%2F%2Fi.imgur.com%2FfmB8Tvl.png)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Figorkowalczyk%2Fgithub-views&env=MONGODB_URI&envDescription=Environment%20Variables%20Docs&envLink=https%3A%2F%2Fgithub.com%2FIgorKowalczyk%2Fviews%23-self-hosting&project-name=views&repo-name=igorkowalczyk-views&demo-title=Example%20deploy&demo-description=Example%20production%20deploy%20from%20Github%20Repository&demo-url=https%3A%2F%2Fviews.igorkowalczyk.dev&demo-image=https%3A%2F%2Fi.imgur.com%2FfmB8Tvl.png)
 
 ## ⁉️ Issues
 
-If you have any issues with the page please create [new issue here](https://github.com/igorkowalczyk/views/issues)
+If you have any issues with the page please create [new issue here](https://github.com/igorkowalczyk/github-views/issues)
 
 ## 📥 Pull Requests
 
@@ -101,8 +101,8 @@ When submitting a pull request:
 
 - Clone the repo.
 - Create a branch off of master and give it a meaningful name (e.g. my-awesome-new-feature).
-- Open a [pull request](https://github.com/igorkowalczyk/views/pulls) on [GitHub](https://github.com) and describe the feature or fix.
+- Open a [pull request](https://github.com/igorkowalczyk/github-views/pulls) on [GitHub](https://github.com) and describe the feature or fix.
 
 ## 📋 License
 
-This project is licensed under the MIT. See the [LICENSE](https://github.com/igorkowalczyk/views/blob/master/license.md) file for details
+This project is licensed under the MIT. See the [LICENSE](https://github.com/igorkowalczyk/github-views/blob/master/license.md) file for details
