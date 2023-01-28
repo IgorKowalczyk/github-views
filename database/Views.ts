@@ -1,6 +1,6 @@
 import connection from "./Connect.js";
 
-export async function IncreaseViews(username) {
+export async function IncreaseViews(username: string) {
  const collection = await connection.then((db) => db.models.views);
  if (username === "example") return 0;
  const view = await collection.findOneAndUpdate(
@@ -8,7 +8,9 @@ export async function IncreaseViews(username) {
    username,
   },
   {
-   $inc: { views: 1 },
+   $inc: {
+    views: 1,
+   },
   },
   {
    upsert: true,
@@ -18,10 +20,10 @@ export async function IncreaseViews(username) {
  return view.views;
 }
 
-export async function GetViews(username) {
+export async function GetViews(username: string) {
  const collection = await connection.then((db) => db.models.views);
  const view = await collection.findOne({
   username,
  });
- return view ? view.views : 0;
+ return view ? view.views : (0 as number);
 }

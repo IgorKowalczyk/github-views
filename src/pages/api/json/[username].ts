@@ -1,15 +1,17 @@
 import { GetViews } from "../../../../database/Views.js";
 
-export const get = async function get({ params }) {
+export const get = async function get({ params }: { params: { username: string } }) {
  try {
-  const username = params.username;
+  const username: string = params.username;
   if (!username) {
    return {
     status: 400,
     headers: {
      "content-type": "application/json",
     },
-    body: JSON.stringify({ error: "No username provided" }),
+    body: JSON.stringify({
+     error: "No username provided",
+    }),
    };
   }
   const views = await GetViews(username);
@@ -18,7 +20,9 @@ export const get = async function get({ params }) {
    headers: {
     "content-type": "application/json",
    },
-   body: JSON.stringify({ views }),
+   body: JSON.stringify({
+    views,
+   }),
   };
  } catch (error) {
   return {
@@ -26,7 +30,9 @@ export const get = async function get({ params }) {
    headers: {
     "content-type": "application/json",
    },
-   body: JSON.stringify({ error: error.message }),
+   body: JSON.stringify({
+    error: error.message,
+   }),
   };
  }
 };
