@@ -1,6 +1,6 @@
 {
   "name": "@igorkowalczyk/views",
-  "version": "3.0.0",
+  "version": "2.1.0",
   "description": "👀 Count the views of your github profile with your own custom badge",
   "private": true,
   "scripts": {
