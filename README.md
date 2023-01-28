@@ -4,7 +4,7 @@
 
 > 👀 Count the views of your github profile with your own custom badge
 
-[![GitHub License](https://img.shields.io/github/license/igorkowalczyk/github-views?color=%2334D058&logo=github&style=flat-square&label=License)](https://github.com/igorkowalczyk/github-views/blob/master/license.md)
+[![GitHub License](https://img.shields.io/github/license/igorkowalczyk/github-views?color=%2334D058&logo=github&style=flat-square&label=License)](https://github.com/igorkowalczyk/github-views/blob/main/license.md)
 [![Version](https://img.shields.io/github/v/release/igorkowalczyk/github-views?color=%2334D058&logo=github&style=flat-square&label=Version)](https://github.com/igorkowalczyk/github-views/releases)
 [![Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/igorkowalczyk/github-views?color=%2334D058&logo=github&style=flat-square&label=Vulnerabilities)](https://github.com/igorkowalczyk/github-views)
 [![Discord](https://img.shields.io/discord/666599184844980224?color=%2334D058&logo=discord&style=flat-square&logoColor=fff&label=Discord)](https://igorkowalczyk.dev/discord)
@@ -77,7 +77,28 @@ You can overwrite default `Views` text with your own label.
 ![](https://views.igorkowalczyk.dev/api/badge/YOUR-USERNAME?label=Your+own+label)
 ```
 
-### 🔩 Self Hosting
+## 📦 `JSON` format
+
+You can get the number of views in `json` format. It can be useful if you want to use the number of views in your application.
+
+> **Warning**:
+> The API is read-only, you can't change the number of views.
+
+**Request:**
+```
+https://views.igorkowalczyk.dev/api/json/YOUR-USERNAME
+```
+> **Note**:
+> Replace `YOUR-USERNAME` with your real value.
+
+**Response:**
+```json
+{ "views": 123 }
+```
+
+---
+
+## 🔩 Self Hosting
 
 1. Clone [this repository](https://github.com/igorkowalczyk/github-views) `git clone https://github.com/IgorKowalczyk/github-views.git`
 2. Run `pnpm i` to install all dependencies,
@@ -93,16 +114,17 @@ You can overwrite default `Views` text with your own label.
 
 ## ⁉️ Issues
 
-If you have any issues with the page please create [new issue here](https://github.com/igorkowalczyk/github-views/issues)
+If you come across any errors or have suggestions for improvements, please create a [new issue here](https://github.com/igorkowalczyk/github-views/issues) and describe it clearly.
+
 
 ## 📥 Pull Requests
 
-When submitting a pull request:
+When submitting a pull request, please follow these steps:
 
-- Clone the repo.
-- Create a branch off of master and give it a meaningful name (e.g. my-awesome-new-feature).
-- Open a [pull request](https://github.com/igorkowalczyk/github-views/pulls) on [GitHub](https://github.com) and describe the feature or fix.
+- Clone [this repository](https://github.com/igorkowalczyk/github-views) `https://github.com/IgorKowalczyk/github-views.git`
+- Create a branch from `main` and give it a meaningful name (e.g. `my-awesome-new-feature`).
+- Open a [pull request](https://github.com/igorkowalczyk/github-views/pulls) on [GitHub](https://github.com/) and clearly describe the feature or fix you are proposing.
 
 ## 📋 License
 
-This project is licensed under the MIT. See the [LICENSE](https://github.com/igorkowalczyk/github-views/blob/master/license.md) file for details
+This project is licensed under the MIT. See the [LICENSE](https://github.com/igorkowalczyk/github-views/blob/main/license.md) file for details
