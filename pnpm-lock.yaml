@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@astrojs/tailwind': 3.0.1
-  '@astrojs/vercel': 3.0.0
+  '@astrojs/vercel': 3.1.0
   '@igorkowalczyk/is-browser': 3.0.0
   '@tailwindcss/forms': 0.5.3
   '@typescript-eslint/eslint-plugin': 5.49.0
@@ -27,7 +27,7 @@ specifiers:
 
 dependencies:
   '@astrojs/tailwind': 3.0.1_yroyefrquwvghcn3xhop6h6pcy
-  '@astrojs/vercel': 3.0.0_astro@2.0.9
+  '@astrojs/vercel': 3.1.0_astro@2.0.9
   '@igorkowalczyk/is-browser': 3.0.0_tailwindcss@3.2.6
   astro: 2.0.9
   astro-compress: 1.1.31
@@ -149,18 +149,21 @@ packages:
       - supports-color
     dev: false
 
-  /@astrojs/vercel/3.0.0_astro@2.0.9:
-    resolution: {integrity: sha512-fzoa8C0AbiLNkAkTZV4wIEdqaE/U99x0mFSHgA3SV2OwWszch29l8pQMnLUHXTXVy1OwmNba4QRm1B8hkPwo9g==}
+  /@astrojs/vercel/3.1.0_astro@2.0.9:
+    resolution: {integrity: sha512-cwZuaFBtAa8fsAd3yFDmxmOx1+PTphXh1TaivNB9XyPT5oQAlxEz7M43nPSKTUVc7CoCIsTYWnG1b06D5TuJhw==}
     peerDependencies:
-      astro: ^2.0.0
+      astro: ^2.0.9
     dependencies:
       '@astrojs/webapi': 2.0.0
+      '@vercel/analytics': 0.1.8
       '@vercel/nft': 0.22.6
       astro: 2.0.9
       fast-glob: 3.2.12
       set-cookie-parser: 2.5.1
+      web-vitals: 3.1.1
     transitivePeerDependencies:
       - encoding
+      - react
       - supports-color
     dev: false
 
@@ -1860,6 +1863,12 @@ packages:
       '@typescript-eslint/types': 5.49.0
       eslint-visitor-keys: 3.3.0
     dev: true
+
+  /@vercel/analytics/0.1.8:
+    resolution: {integrity: sha512-PQrOI8BJ9qUiVJuQfnKiJd15eDjDJH9TBKsNeMrtelT4NAk7d9mBVz1CoZkvoFnHQ0OW7Xnqmr1F2nScfAnznQ==}
+    peerDependencies:
+      react: ^16.8||^17||^18
+    dev: false
 
   /@vercel/nft/0.22.6:
     resolution: {integrity: sha512-gTsFnnT4mGxodr4AUlW3/urY+8JKKB452LwF3m477RFUJTAaDmcz2JqFuInzvdybYIeyIv1sSONEJxsxnbQ5JQ==}
@@ -5629,6 +5638,10 @@ packages:
 
   /web-namespaces/2.0.1:
     resolution: {integrity: sha512-bKr1DkiNa2krS7qxNtdrtHAmzuYGFQLiQ13TsorsdT6ULTkPLKuu5+GsFpDlg6JFjUTwX2DyhMPG2be8uPrqsQ==}
+    dev: false
+
+  /web-vitals/3.1.1:
+    resolution: {integrity: sha512-qvllU+ZeQChqzBhZ1oyXmWsjJ8a2jHYpH8AMaVuf29yscOPZfTQTjQFRX6+eADTdsDE8IanOZ0cetweHMs8/2A==}
     dev: false
 
   /webidl-conversions/3.0.1:
