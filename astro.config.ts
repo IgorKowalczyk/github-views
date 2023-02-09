@@ -8,6 +8,8 @@ import vercel from "@astrojs/vercel/serverless";
 export default defineConfig({
  output: "server",
  site: "https://views.igorkowalczyk.dev",
- adapter: vercel(),
+ adapter: vercel({
+  analytics: true,
+ }),
  integrations: [tailwind(), compress()],
 });
