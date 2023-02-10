@@ -8,7 +8,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': 5.51.0
   '@typescript-eslint/parser': 5.51.0
   astro: 2.0.10
-  astro-compress: 1.1.31
+  astro-compress: 1.1.32
   autoprefixer: 10.4.13
   badge-maker: 3.3.1
   canvas-confetti: 1.6.0
@@ -29,7 +29,7 @@ dependencies:
   '@astrojs/vercel': 3.1.0_astro@2.0.10
   '@igorkowalczyk/is-browser': 3.0.0_tailwindcss@3.2.6
   astro: 2.0.10
-  astro-compress: 1.1.31
+  astro-compress: 1.1.32
   badge-maker: 3.3.1
   canvas-confetti: 1.6.0
   mini-svg-data-uri: 1.4.4
@@ -2040,8 +2040,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /astro-compress/1.1.31:
-    resolution: {integrity: sha512-Kr87S0+N32S+56KPRZ9uMiYK1rhBv6YIkBIps2bC5nhj4f1ustUHYffxvG83AcRl4XtQrSlVg/Uz+jufabbBQg==}
+  /astro-compress/1.1.32:
+    resolution: {integrity: sha512-JzaQqydjM3cWhYn5vAAcQpqHjhd7YECoHXY2oXoBZfyaOKncfvcoyW4VbZX8qI6CdA9tQ1n2lib46/TLfZgltg==}
     dependencies:
       '@types/csso': 5.0.0
       '@types/html-minifier-terser': 7.0.0
