@@ -21,13 +21,13 @@ specifiers:
   prettier: 2.8.4
   prettier-plugin-astro: 0.8.0
   prettier-plugin-tailwindcss: 0.2.3
-  tailwindcss: 3.2.6
+  tailwindcss: 3.2.7
   tailwindcss-text-fill: 0.2.0
 
 dependencies:
-  '@astrojs/tailwind': 3.0.1_dubptiqtm4juopjyfhvaciwnsq
+  '@astrojs/tailwind': 3.0.1_qfqke5cchqs346uastvpt4ztdq
   '@astrojs/vercel': 3.1.2_astro@2.0.12
-  '@igorkowalczyk/is-browser': 3.0.0_tailwindcss@3.2.6
+  '@igorkowalczyk/is-browser': 3.0.0_tailwindcss@3.2.7
   astro: 2.0.12
   astro-compress: 1.1.33
   badge-maker: 3.3.1
@@ -35,11 +35,11 @@ dependencies:
   mini-svg-data-uri: 1.4.4
   mongoose: 6.9.1
   prettier-plugin-astro: 0.8.0
-  tailwindcss: 3.2.6_postcss@8.4.21
-  tailwindcss-text-fill: 0.2.0_tailwindcss@3.2.6
+  tailwindcss: 3.2.7_postcss@8.4.21
+  tailwindcss-text-fill: 0.2.0_tailwindcss@3.2.7
 
 devDependencies:
-  '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.6
+  '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.7
   '@typescript-eslint/eslint-plugin': 5.52.0_mcvs2y73sfmcxqzpjj5lr7a2m4
   '@typescript-eslint/parser': 5.52.0_eslint@8.34.0
   autoprefixer: 10.4.13_postcss@8.4.21
@@ -115,7 +115,7 @@ packages:
       prismjs: 1.29.0
     dev: false
 
-  /@astrojs/tailwind/3.0.1_dubptiqtm4juopjyfhvaciwnsq:
+  /@astrojs/tailwind/3.0.1_qfqke5cchqs346uastvpt4ztdq:
     resolution: {integrity: sha512-QSYh/xmz454j1yZU9rjw2J24PpH7j3h2ClesqMaAniOtcuL8RfP7KYCnCrk01xvjwqqO+QBpZNDD/SUhHNtFFg==}
     peerDependencies:
       astro: ^2.0.4
@@ -126,7 +126,7 @@ packages:
       autoprefixer: 10.4.13_postcss@8.4.21
       postcss: 8.4.21
       postcss-load-config: 4.0.1_postcss@8.4.21
-      tailwindcss: 3.2.6_postcss@8.4.21
+      tailwindcss: 3.2.7_postcss@8.4.21
     transitivePeerDependencies:
       - ts-node
     dev: false
@@ -1480,13 +1480,13 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
-  /@igorkowalczyk/is-browser/3.0.0_tailwindcss@3.2.6:
+  /@igorkowalczyk/is-browser/3.0.0_tailwindcss@3.2.7:
     resolution: {integrity: sha512-90HHmYxNg4S9zR8COlc56mtFxG8Q5qdPJ1mWmWx2xvtySZdOUnSS/UycvvEDC3bZJiRLvGfzmpsW+DRATDWIkg==}
     engines: {node: '>=10'}
     peerDependencies:
       tailwindcss: 3.0 || 3.2
     dependencies:
-      tailwindcss: 3.2.6_postcss@8.4.21
+      tailwindcss: 3.2.7_postcss@8.4.21
     dev: false
 
   /@jridgewell/gen-mapping/0.1.1:
@@ -1599,13 +1599,13 @@ packages:
       picomatch: 2.3.1
     dev: false
 
-  /@tailwindcss/forms/0.5.3_tailwindcss@3.2.6:
+  /@tailwindcss/forms/0.5.3_tailwindcss@3.2.7:
     resolution: {integrity: sha512-y5mb86JUoiUgBjY/o6FJSFZSEttfb3Q5gllE4xoKjAAD+vBrnIhE4dViwUuow3va8mpH4s9jyUbUbrRGoRdc2Q==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1'
     dependencies:
       mini-svg-data-uri: 1.4.4
-      tailwindcss: 3.2.6_postcss@8.4.21
+      tailwindcss: 3.2.7_postcss@8.4.21
     dev: true
 
   /@trysound/sax/0.2.0:
@@ -5207,17 +5207,17 @@ packages:
       '@pkgr/utils': 2.3.1
       tslib: 2.4.1
 
-  /tailwindcss-text-fill/0.2.0_tailwindcss@3.2.6:
+  /tailwindcss-text-fill/0.2.0_tailwindcss@3.2.7:
     resolution: {integrity: sha512-3lo6a/9jXSx4+24onFv7xnHO/1DZCk6qM+LoCsEUxn79sAeoc/ts74LSH0vRhLvWe4Yn+YglFfT+lxDv6wn2sQ==}
     peerDependencies:
       tailwindcss: '>=2.0.0'
     dependencies:
       flatten-tailwindcss-theme: 1.0.0
-      tailwindcss: 3.2.6_postcss@8.4.21
+      tailwindcss: 3.2.7_postcss@8.4.21
     dev: false
 
-  /tailwindcss/3.2.6_postcss@8.4.21:
-    resolution: {integrity: sha512-BfgQWZrtqowOQMC2bwaSNe7xcIjdDEgixWGYOd6AL0CbKHJlvhfdbINeAW76l1sO+1ov/MJ93ODJ9yluRituIw==}
+  /tailwindcss/3.2.7_postcss@8.4.21:
+    resolution: {integrity: sha512-B6DLqJzc21x7wntlH/GsZwEXTBttVSl1FtCzC8WP4oBc/NKef7kaax5jeihkkCEWc831/5NDJ9gRNDK6NEioQQ==}
     engines: {node: '>=12.13.0'}
     hasBin: true
     peerDependencies:
