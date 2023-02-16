@@ -16,7 +16,7 @@ specifiers:
   eslint-config-prettier: 8.6.0
   eslint-plugin-astro: 0.23.0
   mini-svg-data-uri: 1.4.4
-  mongoose: 6.9.1
+  mongoose: 6.9.2
   postcss: 8.4.21
   prettier: 2.8.4
   prettier-plugin-astro: 0.8.0
@@ -33,7 +33,7 @@ dependencies:
   badge-maker: 3.3.1
   canvas-confetti: 1.6.0
   mini-svg-data-uri: 1.4.4
-  mongoose: 6.9.1
+  mongoose: 6.9.2
   prettier-plugin-astro: 0.8.0
   tailwindcss: 3.2.7_postcss@8.4.21
   tailwindcss-text-fill: 0.2.0_tailwindcss@3.2.7
@@ -4147,8 +4147,8 @@ packages:
       - aws-crt
     dev: false
 
-  /mongoose/6.9.1:
-    resolution: {integrity: sha512-hOz1ZWV0w6WEVLrj89Wpk7PXDYtDDF6k7/NX79lY5iKqeFtZsceBXW8xW59YFNcW5O3cH32hQ8IbDlhgyBsDMA==}
+  /mongoose/6.9.2:
+    resolution: {integrity: sha512-Yb9rWJhYm+7Yf839QuKx2dXcclbA0GAMxtdDiaedHsOQU+y28cD/8gKYp1wTwwyAjKesqaGfLG4ez7D9lKpwBw==}
     engines: {node: '>=12.0.0'}
     dependencies:
       bson: 4.7.2
