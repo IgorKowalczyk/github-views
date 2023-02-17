@@ -12,3 +12,29 @@ pre {
 ::selection {
  @apply bg-white/10;
 }
+
+* {
+ @apply box-border;
+ scrollbar-color: #08152b transparent;
+ scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+ @apply w-[10px];
+}
+
+::-webkit-scrollbar-track {
+ @apply rounded-xl bg-[#040d21];
+}
+
+::-webkit-scrollbar-thumb {
+ @apply rounded-xl bg-[#1f2532];
+}
+
+::-webkit-scrollbar-thumb:hover {
+ @apply bg-[#292f3d];
+}
+
+::-webkit-scrollbar-thumb:active {
+ @apply bg-[#343b4a];
+}
