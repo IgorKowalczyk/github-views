@@ -4,23 +4,25 @@ import { FormatNumber } from "../../../utils/FormatNumber";
 import type { Format } from "badge-maker";
 import type { Formatting } from "../../../utils/FormatNumber";
 
-export const get = async function get({ params, request }: { params: { username: string }; request: Request }) {
+interface QueryParams {
+ label?: string;
+ labelColor?: string;
+ color?: string;
+ style?: string;
+ format?: string;
+ display?: string;
+}
+
+export const get = async function get({ params, request }: { params: { username: string }; request }): Promise<Response> {
  try {
   const query = new URL(request.url).searchParams;
-  const { label, labelColor, color, style, format, display } = Object.fromEntries(query) as {
-   label?: string;
-   labelColor?: string;
-   color?: string;
-   style?: string;
-   format?: string;
-   display?: string;
-  };
+  const { label, labelColor, color, style, format, display }: QueryParams = Object.fromEntries(query);
 
   const { username } = params;
   const number = display ? await GetViews(username) : await IncreaseViews(username);
   const svg = makeBadge({
    label: label || "Views",
-   message: FormatNumber(number.toString(), format as Formatting["format"]),
+   message: FormatNumber(number, format as Formatting["format"]),
    color: color || "gray",
    labelColor: labelColor || "#555",
    style: style || "flat",
@@ -30,11 +32,11 @@ export const get = async function get({ params, request }: { params: { username:
     "Content-Type": "image/svg+xml",
    },
    status: 200,
-  }) as Response;
- } catch (error) {
+  });
+ } catch (error: unknown) {
   const svg = makeBadge({
    label: "Error",
-   message: error.message,
+   message: (error as Error).message,
    color: "red",
   } as Format);
 
@@ -43,6 +45,6 @@ export const get = async function get({ params, request }: { params: { username:
     "Content-Type": "image/svg+xml",
    },
    status: 500,
-  }) as Response;
+  });
  }
 };

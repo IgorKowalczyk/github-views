@@ -1,15 +1,21 @@
-import { Schema, set as MongooseSet } from "mongoose";
-import type { SchemaDefinition } from "mongoose";
+import mongoose, { Schema, Document, Model } from "mongoose";
 
-MongooseSet("strictQuery", true);
+mongoose.set("strictQuery", false);
 
-const usersSchema = new Schema({
+export interface IUser {
+ username: string;
+ views: number;
+}
+
+export interface IUserDocument extends IUser, Document {}
+
+export const usersSchema = new Schema<IUserDocument>({
  username: {
   type: String,
   index: true,
   unique: true,
  },
  views: Number,
-} as SchemaDefinition);
+});
 
-export default usersSchema as Schema;
+export const Views: Model<IUserDocument> = mongoose.models.views || mongoose.model<IUserDocument>("views", usersSchema);

@@ -1,8 +1,14 @@
 import { GetViews } from "../../../../database/Views.js";
 
-export const get = async function get({ params }: { params: { username: string } }) {
+type Response = {
+ status: number;
+ headers: Record<string, string>;
+ body: string;
+};
+
+export const get = async function get({ params }: { params: { username: string} }): Promise<Response> {
  try {
-  const username: string = params.username;
+  const { username } = params;
   if (!username) {
    return {
     status: 400,
@@ -15,24 +21,22 @@ export const get = async function get({ params }: { params: { username: string }
    };
   }
   const views = await GetViews(username);
+  const responseBody: { views: number } = { views };
   return {
    status: 200,
    headers: {
     "content-type": "application/json",
    },
-   body: JSON.stringify({
-    views,
-   }),
+   body: JSON.stringify(responseBody),
   };
  } catch (error) {
+  const errorResponse: { error: string } = { error: error.message };
   return {
    status: 500,
    headers: {
     "content-type": "application/json",
    },
-   body: JSON.stringify({
-    error: error.message,
-   }),
+   body: JSON.stringify(errorResponse),
   };
  }
 };
