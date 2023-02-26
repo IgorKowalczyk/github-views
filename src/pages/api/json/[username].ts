@@ -6,7 +6,7 @@ type Response = {
  body: string;
 };
 
-export const get = async function get({ params }: { params: { username: string} }): Promise<Response> {
+export const get = async function get({ params }: { params: { username: string } }): Promise<Response> {
  try {
   const { username } = params;
   if (!username) {
