@@ -20,7 +20,7 @@ specifiers:
   postcss: 8.4.21
   prettier: 2.8.4
   prettier-plugin-astro: 0.8.0
-  prettier-plugin-tailwindcss: 0.2.3
+  prettier-plugin-tailwindcss: 0.2.4
   tailwindcss: 3.2.7
   tailwindcss-text-fill: 0.2.0
 
@@ -48,7 +48,7 @@ devDependencies:
   eslint-plugin-astro: 0.23.0_eslint@8.35.0
   postcss: 8.4.21
   prettier: 2.8.4
-  prettier-plugin-tailwindcss: 0.2.3_cfgkwvtfb3vmyej4cugnuognhu
+  prettier-plugin-tailwindcss: 0.2.4_cfgkwvtfb3vmyej4cugnuognhu
 
 packages:
 
@@ -3779,8 +3779,8 @@ packages:
       sass-formatter: 0.7.5
       synckit: 0.8.4
 
-  /prettier-plugin-tailwindcss/0.2.3_cfgkwvtfb3vmyej4cugnuognhu:
-    resolution: {integrity: sha512-s2N5Dh7Ao5KTV1mao5ZBnn8EKtUcDPJEkGViZIjI0Ij9TTI5zgTz4IHOxW33jOdjHKa8CSjM88scelUiC5TNRQ==}
+  /prettier-plugin-tailwindcss/0.2.4_cfgkwvtfb3vmyej4cugnuognhu:
+    resolution: {integrity: sha512-wMyugRI2yD8gqmMpZSS8kTA0gGeKozX/R+w8iWE+yiCZL09zY0SvfiHfHabNhjGhzxlQ2S2VuTxPE3T72vppCQ==}
     engines: {node: '>=12.17.0'}
     peerDependencies:
       '@ianvs/prettier-plugin-sort-imports': '*'
