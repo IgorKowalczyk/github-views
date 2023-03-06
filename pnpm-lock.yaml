@@ -7,7 +7,7 @@ specifiers:
   '@tailwindcss/forms': 0.5.3
   '@typescript-eslint/eslint-plugin': 5.54.0
   '@typescript-eslint/parser': 5.54.0
-  astro: 2.0.17
+  astro: 2.0.18
   astro-compress: 1.1.35
   autoprefixer: 10.4.13
   badge-maker: 3.3.1
@@ -25,10 +25,10 @@ specifiers:
   tailwindcss-text-fill: 0.2.0
 
 dependencies:
-  '@astrojs/tailwind': 3.0.1_o7rlocdsudmdrstqcqbafrcodq
-  '@astrojs/vercel': 3.1.4_astro@2.0.17
+  '@astrojs/tailwind': 3.0.1_ztwm5qe42rkouqcscc322ujlja
+  '@astrojs/vercel': 3.1.4_astro@2.0.18
   '@igorkowalczyk/is-browser': 3.0.0_tailwindcss@3.2.7
-  astro: 2.0.17
+  astro: 2.0.18
   astro-compress: 1.1.35
   badge-maker: 3.3.1
   canvas-confetti: 1.6.0
@@ -88,13 +88,13 @@ packages:
       vscode-uri: 3.0.7
     dev: false
 
-  /@astrojs/markdown-remark/2.0.1_astro@2.0.17:
+  /@astrojs/markdown-remark/2.0.1_astro@2.0.18:
     resolution: {integrity: sha512-xQF1rXGJN18m+zZucwRRtmNehuhPMMhZhi6HWKrtpEAKnHSPk8lqf1GXgKH7/Sypglu8ivdECZ+EGs6kOYVasQ==}
     peerDependencies:
       astro: ^2.0.2
     dependencies:
       '@astrojs/prism': 2.0.0
-      astro: 2.0.17
+      astro: 2.0.18
       github-slugger: 1.5.0
       import-meta-resolve: 2.2.1
       rehype-raw: 6.1.1
@@ -118,14 +118,14 @@ packages:
       prismjs: 1.29.0
     dev: false
 
-  /@astrojs/tailwind/3.0.1_o7rlocdsudmdrstqcqbafrcodq:
+  /@astrojs/tailwind/3.0.1_ztwm5qe42rkouqcscc322ujlja:
     resolution: {integrity: sha512-QSYh/xmz454j1yZU9rjw2J24PpH7j3h2ClesqMaAniOtcuL8RfP7KYCnCrk01xvjwqqO+QBpZNDD/SUhHNtFFg==}
     peerDependencies:
       astro: ^2.0.4
       tailwindcss: ^3.0.24
     dependencies:
       '@proload/core': 0.3.3
-      astro: 2.0.17
+      astro: 2.0.18
       autoprefixer: 10.4.13_postcss@8.4.21
       postcss: 8.4.21
       postcss-load-config: 4.0.1_postcss@8.4.21
@@ -150,7 +150,7 @@ packages:
       - supports-color
     dev: false
 
-  /@astrojs/vercel/3.1.4_astro@2.0.17:
+  /@astrojs/vercel/3.1.4_astro@2.0.18:
     resolution: {integrity: sha512-fIgXBf8lUzS7s+bBJVqekIpQ4DL4aFlhPF6Y8JkLwfF6OZRvrnC4N8g/qobCVzt8tKiHRrkh/SFUtd0zRTpjoQ==}
     peerDependencies:
       astro: ^2.0.17
@@ -158,7 +158,7 @@ packages:
       '@astrojs/webapi': 2.0.2
       '@vercel/analytics': 0.1.8
       '@vercel/nft': 0.22.6
-      astro: 2.0.17
+      astro: 2.0.18
       fast-glob: 3.2.12
       set-cookie-parser: 2.5.1
       web-vitals: 3.1.1
@@ -170,6 +170,12 @@ packages:
 
   /@astrojs/webapi/2.0.2:
     resolution: {integrity: sha512-uSNtxLuvCWOcwy/DdIy30ocIcIUedEZpyhn1MHW3XuZ3PZHg4PMej3EP38Ns6uKgDKqMyEdscca9bMLuf4cO/w==}
+    dependencies:
+      undici: 5.20.0
+    dev: false
+
+  /@astrojs/webapi/2.0.3:
+    resolution: {integrity: sha512-jDyqYRTnbWsWOQ9Vzo6MYuVcn6fN6JVAjda3IoDJSDNl8R8iJ5oIE4OU5dUbiDQqODLEnROUfuCDX89xcROW2A==}
     dependencies:
       undici: 5.20.0
     dev: false
@@ -1249,16 +1255,16 @@ packages:
       - supports-color
     dev: true
 
-  /astro/2.0.17:
-    resolution: {integrity: sha512-K/SAoe4Tfhg4XhOu1mFOp9qiC/m8YuBmL3//WAA+mcPTlg9A21nlXH/jmsfbizQdZn/AyoPrkTWQm1pnU05OsQ==}
+  /astro/2.0.18:
+    resolution: {integrity: sha512-Jfi58oISn4uOvROek+u3WESDpCbruV80L4ds/5jq0SC4texfynSkbato2jAwMKj7MvROHP+/LmnKzfH1wNrBuA==}
     engines: {node: '>=16.12.0', npm: '>=6.14.0'}
     hasBin: true
     dependencies:
       '@astrojs/compiler': 1.2.0
       '@astrojs/language-server': 0.28.3
-      '@astrojs/markdown-remark': 2.0.1_astro@2.0.17
+      '@astrojs/markdown-remark': 2.0.1_astro@2.0.18
       '@astrojs/telemetry': 2.0.1
-      '@astrojs/webapi': 2.0.2
+      '@astrojs/webapi': 2.0.3
       '@babel/core': 7.20.12
       '@babel/generator': 7.20.7
       '@babel/parser': 7.20.13
