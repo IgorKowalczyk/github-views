@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@astrojs/tailwind': 3.0.1
-  '@astrojs/vercel': 3.1.4
+  '@astrojs/vercel': 3.2.0
   '@igorkowalczyk/is-browser': 3.0.0
   '@tailwindcss/forms': 0.5.3
   '@typescript-eslint/eslint-plugin': 5.54.1
@@ -26,7 +26,7 @@ specifiers:
 
 dependencies:
   '@astrojs/tailwind': 3.0.1_o5pmjyiyxefuvlue2yryq6hdmq
-  '@astrojs/vercel': 3.1.4_astro@2.1.0
+  '@astrojs/vercel': 3.2.0_astro@2.1.0
   '@igorkowalczyk/is-browser': 3.0.0_tailwindcss@3.2.7
   astro: 2.1.0
   astro-compress: 1.1.35
@@ -151,12 +151,12 @@ packages:
       - supports-color
     dev: false
 
-  /@astrojs/vercel/3.1.4_astro@2.1.0:
-    resolution: {integrity: sha512-fIgXBf8lUzS7s+bBJVqekIpQ4DL4aFlhPF6Y8JkLwfF6OZRvrnC4N8g/qobCVzt8tKiHRrkh/SFUtd0zRTpjoQ==}
+  /@astrojs/vercel/3.2.0_astro@2.1.0:
+    resolution: {integrity: sha512-7dHknRFezjtk07+pcDHHkWNwlha9k8+dKi/5cfTP4k9laFdlQSskZtc9IsSTwn4/yBVT6klg0P4z0e0W+e+WEQ==}
     peerDependencies:
-      astro: ^2.0.17
+      astro: ^2.1.0
     dependencies:
-      '@astrojs/webapi': 2.0.2
+      '@astrojs/webapi': 2.1.0
       '@vercel/analytics': 0.1.8
       '@vercel/nft': 0.22.6
       astro: 2.1.0
@@ -167,12 +167,6 @@ packages:
       - encoding
       - react
       - supports-color
-    dev: false
-
-  /@astrojs/webapi/2.0.2:
-    resolution: {integrity: sha512-uSNtxLuvCWOcwy/DdIy30ocIcIUedEZpyhn1MHW3XuZ3PZHg4PMej3EP38Ns6uKgDKqMyEdscca9bMLuf4cO/w==}
-    dependencies:
-      undici: 5.20.0
     dev: false
 
   /@astrojs/webapi/2.1.0:
