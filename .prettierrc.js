@@ -1,4 +1,4 @@
 module.exports = {
  ...require("@igorkowalczyk/prettier-config"),
- plugins: [require("prettier-plugin-astro"), require("prettier-plugin-tailwindcss")],
+ plugins: ["prettier-plugin-astro", "prettier-plugin-tailwindcss"],
 };
