@@ -1,5 +1,5 @@
-import { connection } from "./Connect.js";
 import type { Model } from "mongoose";
+import { connection } from "./Connect.js";
 import { IUserDocument } from "./Schema";
 
 const collection: Model<IUserDocument> = (await connection).models.views;

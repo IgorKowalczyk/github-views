@@ -1,7 +1,7 @@
 import { makeBadge } from "badge-maker";
+import type { Format } from "badge-maker";
 import { IncreaseViews, GetViews } from "../../../../database/Views";
 import { FormatNumber } from "../../../utils/FormatNumber";
-import type { Format } from "badge-maker";
 import type { Formatting } from "../../../utils/FormatNumber";
 
 interface QueryParams {
