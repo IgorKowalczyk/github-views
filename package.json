@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/IgorKowalczyk/views#readme",
   "dependencies": {
-    "@astrojs/tailwind": "3.1.0",
+    "@astrojs/tailwind": "3.1.1",
     "@astrojs/vercel": "3.2.1",
     "@igorkowalczyk/is-browser": "3.0.0",
     "astro": "2.1.3",
