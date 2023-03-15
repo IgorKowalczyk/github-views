@@ -17,7 +17,7 @@ specifiers:
   eslint: 8.36.0
   eslint-plugin-astro: 0.24.0
   mini-svg-data-uri: 1.4.4
-  mongoose: 7.0.1
+  mongoose: 7.0.2
   postcss: 8.4.21
   prettier: 2.8.4
   prettier-plugin-astro: 0.8.0
@@ -34,7 +34,7 @@ dependencies:
   badge-maker: 3.3.1
   canvas-confetti: 1.6.0
   mini-svg-data-uri: 1.4.4
-  mongoose: 7.0.1
+  mongoose: 7.0.2
   prettier-plugin-astro: 0.8.0
   tailwindcss: 3.2.7_postcss@8.4.21
   tailwindcss-text-fill: 0.2.0_tailwindcss@3.2.7
@@ -3804,8 +3804,8 @@ packages:
       saslprep: 1.0.3
     dev: false
 
-  /mongoose/7.0.1:
-    resolution: {integrity: sha512-fxm2bPRG457Hb8RLwN8cMCokK8HNem/7g+qp5SrHC7Pt4Z4jqn1+/3cuc8W7uqehKDWEtpirggI7uw08x2ZIjQ==}
+  /mongoose/7.0.2:
+    resolution: {integrity: sha512-whX+5lAOLOs6VXRr9w+6m5qb8m/IXWLLb9+0/HRUh2TiIYtTt7UvajK92zW6wllCjBkrrnz/MDIOTCWMbs8K4g==}
     engines: {node: '>=14.0.0'}
     dependencies:
       bson: 5.0.1
