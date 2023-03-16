@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@astrojs/image': ^0.16.1
+  '@astrojs/image': 0.16.1
   '@astrojs/tailwind': 3.1.1
   '@astrojs/vercel': 3.2.1
   '@igorkowalczyk/eslint-config': 1.0.3
