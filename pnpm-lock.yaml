@@ -16,7 +16,7 @@ specifiers:
   badge-maker: 3.3.1
   canvas-confetti: 1.6.0
   eslint: 8.36.0
-  eslint-plugin-astro: 0.24.0
+  eslint-plugin-astro: 0.25.0
   mini-svg-data-uri: 1.4.4
   mongoose: 7.0.2
   postcss: 8.4.21
@@ -49,7 +49,7 @@ devDependencies:
   '@typescript-eslint/parser': 5.55.0_eslint@8.36.0
   autoprefixer: 10.4.14_postcss@8.4.21
   eslint: 8.36.0
-  eslint-plugin-astro: 0.24.0_eslint@8.36.0
+  eslint-plugin-astro: 0.25.0_eslint@8.36.0
   postcss: 8.4.21
   prettier: 2.8.4
   prettier-plugin-tailwindcss: 0.2.4_cfgkwvtfb3vmyej4cugnuognhu
@@ -1057,11 +1057,6 @@ packages:
       - supports-color
     dev: true
 
-  /@typescript-eslint/types/5.54.1:
-    resolution: {integrity: sha512-G9+1vVazrfAfbtmCapJX8jRo2E4MDXxgm/IMOF4oGh3kq7XuK3JRkOg6y2Qu1VsTRmWETyTkWt1wxy7X7/yLkw==}
-    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
-    dev: true
-
   /@typescript-eslint/types/5.55.0:
     resolution: {integrity: sha512-M4iRh4AG1ChrOL6Y+mETEKGeDnT7Sparn6fhZ5LtVJF1909D5O4uqK+C5NPbLmpfZ0XIIxCdwzKiijpZUOvOug==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
@@ -1349,7 +1344,7 @@ packages:
       astrojs-compiler-sync: 0.3.1_@astrojs+compiler@1.2.0
       debug: 4.3.4
       eslint-visitor-keys: 3.3.0
-      espree: 9.4.1
+      espree: 9.5.0
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -2232,17 +2227,17 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-astro/0.24.0_eslint@8.36.0:
-    resolution: {integrity: sha512-oRGBMZPAFHhAHD8cyZez4OA5LRkgxLA+RtCIInC4nzw8thO/uojMdKXDri+sy2IFsGcu2PpOw70Uik0U5/izug==}
+  /eslint-plugin-astro/0.25.0_eslint@8.36.0:
+    resolution: {integrity: sha512-uSitJCU2g4Lv1vats5cfCtEL2lIqAU5MuHrIVCrBUTuIb3BZWAbij8TY9kW9PcRE386erw6uifOSVZ/fLLu/8A==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       eslint: '>=7.0.0'
     dependencies:
+      '@eslint-community/eslint-utils': 4.2.0_eslint@8.36.0
       '@jridgewell/sourcemap-codec': 1.4.14
-      '@typescript-eslint/types': 5.54.1
+      '@typescript-eslint/types': 5.55.0
       astro-eslint-parser: 0.12.0
       eslint: 8.36.0
-      eslint-utils: 3.0.0_eslint@8.36.0
       postcss: 8.4.21
       postcss-selector-parser: 6.0.11
     transitivePeerDependencies:
@@ -2315,21 +2310,6 @@ packages:
       estraverse: 5.3.0
     dev: true
 
-  /eslint-utils/3.0.0_eslint@8.36.0:
-    resolution: {integrity: sha512-uuQC43IGctw68pJA1RgbQS8/NP7rch6Cwd4j3ZBtgo4/8Flj4eGE7ZYSZRN3iq5pVUv6GPdW5Z1RFleo84uLDA==}
-    engines: {node: ^10.0.0 || ^12.0.0 || >= 14.0.0}
-    peerDependencies:
-      eslint: '>=5'
-    dependencies:
-      eslint: 8.36.0
-      eslint-visitor-keys: 2.1.0
-    dev: true
-
-  /eslint-visitor-keys/2.1.0:
-    resolution: {integrity: sha512-0rSmRBzXgDzIsD6mGdJgevzgezI534Cer5L/vyMX0kHzT/jiB43jRhd9YUlMGYLQy2zprNmoT8qasCGtY+QaKw==}
-    engines: {node: '>=10'}
-    dev: true
-
   /eslint-visitor-keys/3.3.0:
     resolution: {integrity: sha512-mQ+suqKJVyeuwGYHAdjMFqjCyfl8+Ldnxuyp3ldiMBFKkvytrXUZWaiPCEav8qDHKty44bD+qV1IP4T+w+xXRA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
@@ -2382,15 +2362,6 @@ packages:
       text-table: 0.2.0
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /espree/9.4.1:
-    resolution: {integrity: sha512-XwctdmTO6SIvCzd9810yyNzIrOrqNYV9Koizx4C/mRhf9uq0o4yHoCEU/670pOxOL/MSraektvSAji79kX90Vg==}
-    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
-    dependencies:
-      acorn: 8.8.2
-      acorn-jsx: 5.3.2_acorn@8.8.2
-      eslint-visitor-keys: 3.3.0
     dev: true
 
   /espree/9.5.0:
