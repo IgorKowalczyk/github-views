@@ -16,7 +16,7 @@ specifiers:
   badge-maker: 3.3.1
   canvas-confetti: 1.6.0
   eslint: 8.36.0
-  eslint-plugin-astro: 0.25.0
+  eslint-plugin-astro: 0.26.0
   mini-svg-data-uri: 1.4.4
   mongoose: 7.0.2
   postcss: 8.4.21
@@ -49,7 +49,7 @@ devDependencies:
   '@typescript-eslint/parser': 5.55.0_eslint@8.36.0
   autoprefixer: 10.4.14_postcss@8.4.21
   eslint: 8.36.0
-  eslint-plugin-astro: 0.25.0_eslint@8.36.0
+  eslint-plugin-astro: 0.26.0_eslint@8.36.0
   postcss: 8.4.21
   prettier: 2.8.4
   prettier-plugin-tailwindcss: 0.2.5_cfgkwvtfb3vmyej4cugnuognhu
@@ -1334,8 +1334,8 @@ packages:
       terser: 5.16.5
     dev: false
 
-  /astro-eslint-parser/0.12.0:
-    resolution: {integrity: sha512-1r8TXPHoUk6OSNzeGOGpklmPedleYVpZU50jIPfsQjzrGMs+XpCSCc8+AATnKraPYnTvkmNClhjafSY6w3H90g==}
+  /astro-eslint-parser/0.13.0:
+    resolution: {integrity: sha512-6dYYe7GOxZYSvLineTWQA1ienSVRrfuLJEtSeSqayp+yKXPe07gvfn0BNBMsJH822L+BRjbDIZBg1arFLadH4Q==}
     engines: {node: ^14.18.0 || >=16.0.0}
     dependencies:
       '@astrojs/compiler': 1.2.0
@@ -1345,6 +1345,7 @@ packages:
       debug: 4.3.4
       eslint-visitor-keys: 3.3.0
       espree: 9.5.0
+      semver: 7.3.8
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -2227,8 +2228,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-astro/0.25.0_eslint@8.36.0:
-    resolution: {integrity: sha512-uSitJCU2g4Lv1vats5cfCtEL2lIqAU5MuHrIVCrBUTuIb3BZWAbij8TY9kW9PcRE386erw6uifOSVZ/fLLu/8A==}
+  /eslint-plugin-astro/0.26.0_eslint@8.36.0:
+    resolution: {integrity: sha512-izKb6/3Y/unEAy6xVNqahMe5cQ1rDYz4+ItliwTXyuM46IMSieaSH3OSOOD/NfcWaEi1wt/1pwqYGeqDQBwMeg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       eslint: '>=7.0.0'
@@ -2236,7 +2237,7 @@ packages:
       '@eslint-community/eslint-utils': 4.2.0_eslint@8.36.0
       '@jridgewell/sourcemap-codec': 1.4.14
       '@typescript-eslint/types': 5.55.0
-      astro-eslint-parser: 0.12.0
+      astro-eslint-parser: 0.13.0
       eslint: 8.36.0
       postcss: 8.4.21
       postcss-selector-parser: 6.0.11
