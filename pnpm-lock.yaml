@@ -16,7 +16,7 @@ specifiers:
   badge-maker: 3.3.1
   canvas-confetti: 1.6.0
   eslint: 8.36.0
-  eslint-plugin-astro: 0.26.0
+  eslint-plugin-astro: 0.26.1
   mini-svg-data-uri: 1.4.4
   mongoose: 7.0.2
   postcss: 8.4.21
@@ -49,7 +49,7 @@ devDependencies:
   '@typescript-eslint/parser': 5.56.0_eslint@8.36.0
   autoprefixer: 10.4.14_postcss@8.4.21
   eslint: 8.36.0
-  eslint-plugin-astro: 0.26.0_eslint@8.36.0
+  eslint-plugin-astro: 0.26.1_eslint@8.36.0
   postcss: 8.4.21
   prettier: 2.8.6
   prettier-plugin-tailwindcss: 0.2.5_so7gyrgjbeyyeii5hpsxj4hm64
@@ -1056,11 +1056,6 @@ packages:
       - supports-color
     dev: true
 
-  /@typescript-eslint/types/5.55.0:
-    resolution: {integrity: sha512-M4iRh4AG1ChrOL6Y+mETEKGeDnT7Sparn6fhZ5LtVJF1909D5O4uqK+C5NPbLmpfZ0XIIxCdwzKiijpZUOvOug==}
-    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
-    dev: true
-
   /@typescript-eslint/types/5.56.0:
     resolution: {integrity: sha512-JyAzbTJcIyhuUhogmiu+t79AkdnqgPUEsxMTMc/dCZczGMJQh1MK2wgrju++yMN6AWroVAy2jxyPcPr3SWCq5w==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
@@ -1338,8 +1333,8 @@ packages:
       terser: 5.16.5
     dev: false
 
-  /astro-eslint-parser/0.13.0:
-    resolution: {integrity: sha512-6dYYe7GOxZYSvLineTWQA1ienSVRrfuLJEtSeSqayp+yKXPe07gvfn0BNBMsJH822L+BRjbDIZBg1arFLadH4Q==}
+  /astro-eslint-parser/0.13.1:
+    resolution: {integrity: sha512-BZAV77XFIDGWm+DuxZBT2OJo+4W98f+LylF64xQ0pWYfIRJA5zVK3L/RM3Gr+4obBg91RnSibN3Ofc3nIwHYiw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     dependencies:
       '@astrojs/compiler': 1.2.0
@@ -2231,16 +2226,16 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-astro/0.26.0_eslint@8.36.0:
-    resolution: {integrity: sha512-izKb6/3Y/unEAy6xVNqahMe5cQ1rDYz4+ItliwTXyuM46IMSieaSH3OSOOD/NfcWaEi1wt/1pwqYGeqDQBwMeg==}
+  /eslint-plugin-astro/0.26.1_eslint@8.36.0:
+    resolution: {integrity: sha512-FEZOrOQ5ahenbwjKz5LYJpeOZUggDM54idrq5bTJdL4GsXy1xx2eyKy5UjGhh8NwddowCCPqfDHFfDz9oNj/ew==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       eslint: '>=7.0.0'
     dependencies:
       '@eslint-community/eslint-utils': 4.2.0_eslint@8.36.0
       '@jridgewell/sourcemap-codec': 1.4.14
-      '@typescript-eslint/types': 5.55.0
-      astro-eslint-parser: 0.13.0
+      '@typescript-eslint/types': 5.56.0
+      astro-eslint-parser: 0.13.1
       eslint: 8.36.0
       postcss: 8.4.21
       postcss-selector-parser: 6.0.11
