@@ -37,7 +37,7 @@
     "@astrojs/image": "0.16.3",
     "@astrojs/tailwind": "3.1.1",
     "@astrojs/vercel": "3.2.1",
-    "@igorkowalczyk/is-browser": "3.0.0",
+    "@igorkowalczyk/is-browser": "3.1.0",
     "astro": "2.1.8",
     "astro-compress": "1.1.35",
     "badge-maker": "3.3.1",
