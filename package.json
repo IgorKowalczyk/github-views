@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/IgorKowalczyk/views.git"
+    "url": "git+https://github.com/IgorKowalczyk/github-views.git"
   },
   "keywords": [
     "views",
@@ -30,9 +30,9 @@
   "author": "Igor Kowalczyk",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/IgorKowalczyk/views/issues"
+    "url": "https://github.com/IgorKowalczyk/github-views/issues"
   },
-  "homepage": "https://github.com/IgorKowalczyk/views#readme",
+  "homepage": "https://views.igorkowalczyk.vercel.app/",
   "dependencies": {
     "@astrojs/image": "0.16.5",
     "@astrojs/tailwind": "3.1.1",
