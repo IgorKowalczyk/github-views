@@ -8,7 +8,7 @@ import compress from "astro-compress";
 // https://astro.build/config
 export default defineConfig({
  output: "server",
- site: "https://views.igorkowalczyk.dev",
+ site: "https://views.igorkowalczyk.vercel.app",
  adapter: vercel({
   analytics: true,
  }),
