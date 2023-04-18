@@ -29,8 +29,8 @@ dependencies:
     specifier: 1.4.4
     version: 1.4.4
   mongoose:
-    specifier: 7.0.3
-    version: 7.0.3
+    specifier: 7.0.4
+    version: 7.0.4
   prettier-plugin-astro:
     specifier: 0.8.0
     version: 0.8.0
@@ -3843,8 +3843,8 @@ packages:
       saslprep: 1.0.3
     dev: false
 
-  /mongoose@7.0.3:
-    resolution: {integrity: sha512-3n8vc1/mssuxKa6vfghSocp3MeiCFYzhX36Ok+PsDNNYzHC9tw3rNkAMLemIwZ2jgXqkZ7CfKOxkzjp/d/SWfg==}
+  /mongoose@7.0.4:
+    resolution: {integrity: sha512-MEmQOOqQUvW1PJcji64NtA2EFGHrEvk9o4g//isVYSJW2+8Y8u49C2qFBKzn1t6/l9onQn012o/PcFqR6ixQpQ==}
     engines: {node: '>=14.0.0'}
     dependencies:
       bson: 5.0.1
