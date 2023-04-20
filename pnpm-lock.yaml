@@ -17,8 +17,8 @@ dependencies:
     specifier: 2.3.0
     version: 2.3.0
   astro-compress:
-    specifier: 1.1.36
-    version: 1.1.36
+    specifier: 1.1.39
+    version: 1.1.39
   badge-maker:
     specifier: 3.3.1
     version: 3.3.1
@@ -1344,8 +1344,8 @@ packages:
       es-shim-unscopables: 1.0.0
     dev: true
 
-  /astro-compress@1.1.36:
-    resolution: {integrity: sha512-iAth3dQrSZg+bXia2DqsAa0NKt8oxxOJbZawPXxkPF+k2tdQflp2nfTrm3JozIbav6LF0ZhQhe306skh+5g/5Q==}
+  /astro-compress@1.1.39:
+    resolution: {integrity: sha512-ypMe3YoWl99KsxfUmOpguir1wpZbPKMTFTrfpD8Ny1eGTr/H8kDrFyIEw5QIk+WGQThUKopPnWQPAKmnti/BrA==}
     dependencies:
       '@types/csso': 5.0.0
       '@types/html-minifier-terser': 7.0.0
@@ -1355,7 +1355,7 @@ packages:
       html-minifier-terser: 7.2.0
       sharp: 0.32.0
       svgo: 3.0.2
-      terser: 5.16.9
+      terser: 5.17.1
     dev: false
 
   /astro-eslint-parser@0.13.1:
@@ -2903,7 +2903,7 @@ packages:
       entities: 4.4.0
       param-case: 3.0.4
       relateurl: 0.2.7
-      terser: 5.16.9
+      terser: 5.17.1
     dev: false
 
   /html-void-elements@2.0.1:
@@ -5092,8 +5092,8 @@ packages:
       yallist: 4.0.0
     dev: false
 
-  /terser@5.16.9:
-    resolution: {integrity: sha512-HPa/FdTB9XGI2H1/keLFZHxl6WNvAI4YalHGtDQTlMnJcoqSab1UwL4l1hGEhs6/GmLHBZIg/YgB++jcbzoOEg==}
+  /terser@5.17.1:
+    resolution: {integrity: sha512-hVl35zClmpisy6oaoKALOpS0rDYLxRFLHhRuDlEGTKey9qHjS1w9GMORjuwIMt70Wan4lwsLYyWDVnWgF+KUEw==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
