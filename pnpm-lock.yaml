@@ -17,8 +17,8 @@ dependencies:
     specifier: 2.3.0
     version: 2.3.0
   astro-compress:
-    specifier: 1.1.39
-    version: 1.1.39
+    specifier: 1.1.40
+    version: 1.1.40
   badge-maker:
     specifier: 3.3.1
     version: 3.3.1
@@ -1359,14 +1359,14 @@ packages:
       es-shim-unscopables: 1.0.0
     dev: true
 
-  /astro-compress@1.1.39:
-    resolution: {integrity: sha512-ypMe3YoWl99KsxfUmOpguir1wpZbPKMTFTrfpD8Ny1eGTr/H8kDrFyIEw5QIk+WGQThUKopPnWQPAKmnti/BrA==}
+  /astro-compress@1.1.40:
+    resolution: {integrity: sha512-ZYCofKCMtLrXmjNIfeZ+PhPjQkcAVJCJ9HPZe+amlyUtc+WCLov86dbpwWhDlfW3yeHbG2iV3UnE0zG60u8iOA==}
     dependencies:
       '@types/csso': 5.0.0
       '@types/html-minifier-terser': 7.0.0
       '@types/sharp': 0.31.1
       csso: 5.0.5
-      files-pipe: 0.0.2
+      files-pipe: 0.0.3
       html-minifier-terser: 7.2.0
       sharp: 0.32.0
       svgo: 3.0.2
@@ -2589,8 +2589,8 @@ packages:
     resolution: {integrity: sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw==}
     dev: false
 
-  /files-pipe@0.0.2:
-    resolution: {integrity: sha512-KypLRoASuRfRjtoBDt+6zPRqcifianKmcG63kkm0DXiyjujZ7N6QU1affT0LC455GHk060twOM+yIUM/OQwhMA==}
+  /files-pipe@0.0.3:
+    resolution: {integrity: sha512-6yWKK5MhB8U38HxYtudRXHA/2ssyQ77xvG7AgLGGj8Gf+jySkKUi51mO5PrJTBZLRhnYnXbfAWfMprAb6E7fAA==}
     dependencies:
       deepmerge-ts: 5.1.0
       fast-glob: 3.2.12
