@@ -17,8 +17,8 @@ dependencies:
     specifier: 2.3.0
     version: 2.3.0
   astro-compress:
-    specifier: 1.1.41
-    version: 1.1.41
+    specifier: 1.1.42
+    version: 1.1.42
   badge-maker:
     specifier: 3.3.1
     version: 3.3.1
@@ -1375,8 +1375,8 @@ packages:
       es-shim-unscopables: 1.0.0
     dev: true
 
-  /astro-compress@1.1.41:
-    resolution: {integrity: sha512-avAlzu3uNWLIKCXS5OlnJEmO779Ua8f3kdNaTqv5+BOIGel1glXqQNM8diIV48nVfuEp7aVSLaij1udjsvLAjw==}
+  /astro-compress@1.1.42:
+    resolution: {integrity: sha512-heMdV3amY/k1NA4FHuNu1Nwady834tY79x8O39fBSlSvBpgESUCX2qergd7sMsaWushwqr47hWaSrfItELGaUg==}
     dependencies:
       '@lightrix/config': 0.0.11
       '@lightrix/scripts': 1.0.3
