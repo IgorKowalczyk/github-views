@@ -35,7 +35,7 @@
   "homepage": "https://views.igorkowalczyk.vercel.app/",
   "dependencies": {
     "@astrojs/image": "0.16.6",
-    "@astrojs/tailwind": "3.1.1",
+    "@astrojs/tailwind": "3.1.2",
     "@astrojs/vercel": "3.2.5",
     "@igorkowalczyk/is-browser": "3.1.0",
     "astro": "2.3.3",
