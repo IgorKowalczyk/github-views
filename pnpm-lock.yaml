@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@astrojs/image':
-    specifier: 0.16.7
-    version: 0.16.7(astro@2.4.5)
+    specifier: 0.16.8
+    version: 0.16.8(astro@2.4.5)
   '@astrojs/tailwind':
     specifier: 3.1.2
     version: 3.1.2(astro@2.4.5)(tailwindcss@3.3.2)
@@ -97,10 +97,10 @@ packages:
   /@astrojs/compiler@1.4.0:
     resolution: {integrity: sha512-Vav3a32Ct+omowV9X9kDM2ghWAvFdjZkv5BdvBjZCKYbFVT6//IZApDIVbHI1UPuLuD2sKyLWx2T+E7clqUJdg==}
 
-  /@astrojs/image@0.16.7(astro@2.4.5):
-    resolution: {integrity: sha512-8X1DnMh3lUTA7BNt7dF0rfWTXNwvLoPWWXtLi+TdO3CW1SvdY9LJRuCEWwHfnKzcQ0EC2TfLwjukpbtJuCRxjw==}
+  /@astrojs/image@0.16.8(astro@2.4.5):
+    resolution: {integrity: sha512-ka18Y8HXllitE4TN66tmxqc1j+pgfqfq5i/D3I0QmmH2hFd7olFNVDrd15S4ZM1U5jxZORUv+PuJU0g8dZEjqQ==}
     peerDependencies:
-      astro: ^2.3.4
+      astro: ^2.4.5
       sharp: '>=0.31.0'
     peerDependenciesMeta:
       sharp:
