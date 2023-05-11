@@ -44,7 +44,7 @@
     "canvas-confetti": "1.6.0",
     "mini-svg-data-uri": "1.4.4",
     "mongoose": "7.1.1",
-    "prettier-plugin-astro": "0.8.0",
+    "prettier-plugin-astro": "0.8.1",
     "tailwindcss": "3.3.2",
     "tailwindcss-text-fill": "0.2.0"
   },
