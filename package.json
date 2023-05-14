@@ -39,7 +39,7 @@
     "@astrojs/vercel": "3.3.0",
     "@igorkowalczyk/is-browser": "3.2.0",
     "astro": "2.4.5",
-    "astro-compress": "1.1.42",
+    "astro-compress": "1.1.43",
     "badge-maker": "3.3.1",
     "canvas-confetti": "1.6.0",
     "mini-svg-data-uri": "1.4.4",
