@@ -8,8 +8,8 @@ dependencies:
     specifier: 3.1.2
     version: 3.1.2(astro@2.5.0)(tailwindcss@3.3.2)
   '@astrojs/vercel':
-    specifier: 3.3.0
-    version: 3.3.0(astro@2.5.0)(react@18.2.0)
+    specifier: 3.4.0
+    version: 3.4.0(astro@2.5.0)(react@18.2.0)
   '@igorkowalczyk/is-browser':
     specifier: 3.2.0
     version: 3.2.0(tailwindcss@3.3.2)
@@ -197,15 +197,16 @@ packages:
       - supports-color
     dev: false
 
-  /@astrojs/vercel@3.3.0(astro@2.5.0)(react@18.2.0):
-    resolution: {integrity: sha512-OwbxRL7kw5TFVwPn18/M9Dqp14SrPlEUSqzx+7WSvID/3W/MMuiwC5Ey0CoKUVPYruXxOaacDJKa1bzNoYgV/A==}
+  /@astrojs/vercel@3.4.0(astro@2.5.0)(react@18.2.0):
+    resolution: {integrity: sha512-pTD7PUos5uoUFZZXooiNN2vcALLQtGF1urtaFCEMWJVbmpYUC8YlA8RsISbF2ICEpTgDWMHttRJE10aCBHrmKA==}
     peerDependencies:
-      astro: ^2.3.4
+      astro: ^2.5.0
     dependencies:
       '@astrojs/webapi': 2.1.1
       '@vercel/analytics': 0.1.8(react@18.2.0)
       '@vercel/nft': 0.22.6
       astro: 2.5.0
+      esbuild: 0.17.19
       fast-glob: 3.2.12
       set-cookie-parser: 2.5.1
       web-vitals: 3.1.1
