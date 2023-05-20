@@ -17,8 +17,8 @@ dependencies:
     specifier: 2.5.0
     version: 2.5.0
   astro-compress:
-    specifier: 1.1.43
-    version: 1.1.43
+    specifier: 1.1.44
+    version: 1.1.44
   badge-maker:
     specifier: 3.3.1
     version: 3.3.1
@@ -1201,13 +1201,6 @@ packages:
     resolution: {integrity: sha512-21cFJr9z3g5dW8B0CVI9g2O9beqaThGQ6ZFBqHfwhzLDKUxaqTIy3vnfah/UPkfOiF2pLq+tGz+W8RyCskuslw==}
     dev: true
 
-  /@types/sharp@0.32.0:
-    resolution: {integrity: sha512-OOi3kL+FZDnPhVzsfD37J88FNeZh6gQsGcLc95NbeURRGvmSjeXiDcyWzF2o3yh/gQAUn2uhh/e+CPCa5nwAxw==}
-    deprecated: This is a stub types definition. sharp provides its own type definitions, so you do not need this installed.
-    dependencies:
-      sharp: 0.32.1
-    dev: false
-
   /@types/unist@2.0.6:
     resolution: {integrity: sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==}
     dev: false
@@ -1564,20 +1557,19 @@ packages:
       es-shim-unscopables: 1.0.0
     dev: true
 
-  /astro-compress@1.1.43:
-    resolution: {integrity: sha512-AmUXBfyf3HI70ApcUkIPOBoUY4+z+9bgC0YeYhPrjMllx0MFyR5mqgpcCpXeU2xC5pFYM9kpfOj7aTdIe1zwIw==}
+  /astro-compress@1.1.44:
+    resolution: {integrity: sha512-LoGaD4ncJ7vATNVUswgd27AuZJtMYEqX90Ha3EzhFUQqzm0tYQHtCMryvUMkdsEfa3vEgh9nBN9zr6JByulKlQ==}
     dependencies:
       '@lightrix/config': 0.0.11
       '@lightrix/scripts': 1.0.3
       '@types/csso': 5.0.0
       '@types/html-minifier-terser': 7.0.0
-      '@types/sharp': 0.32.0
       csso: 5.0.5
       files-pipe: 0.0.4
       html-minifier-terser: 7.2.0
       sharp: 0.32.1
       svgo: 3.0.2
-      terser: 5.17.3
+      terser: 5.17.4
     dev: false
 
   /astro-eslint-parser@0.14.0:
@@ -3209,7 +3201,7 @@ packages:
       entities: 4.4.0
       param-case: 3.0.4
       relateurl: 0.2.7
-      terser: 5.17.3
+      terser: 5.17.4
     dev: false
 
   /html-void-elements@2.0.1:
@@ -5370,8 +5362,8 @@ packages:
       yallist: 4.0.0
     dev: false
 
-  /terser@5.17.3:
-    resolution: {integrity: sha512-AudpAZKmZHkG9jueayypz4duuCFJMMNGRMwaPvQKWfxKedh8Z2x3OCoDqIIi1xx5+iwx1u6Au8XQcc9Lke65Yg==}
+  /terser@5.17.4:
+    resolution: {integrity: sha512-jcEKZw6UPrgugz/0Tuk/PVyLAPfMBJf5clnGueo45wTweoV8yh7Q7PEkhkJ5uuUbC7zAxEcG3tqNr1bstkQ8nw==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
