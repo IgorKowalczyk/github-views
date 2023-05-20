@@ -29,8 +29,8 @@ dependencies:
     specifier: 1.4.4
     version: 1.4.4
   mongoose:
-    specifier: 7.1.2
-    version: 7.1.2
+    specifier: 7.2.0
+    version: 7.2.0
   prettier-plugin-astro:
     specifier: 0.9.0
     version: 0.9.0
@@ -1795,8 +1795,8 @@ packages:
       node-releases: 2.0.8
       update-browserslist-db: 1.0.10(browserslist@4.21.5)
 
-  /bson@5.2.0:
-    resolution: {integrity: sha512-HevkSpDbpUfsrHWmWiAsNavANKYIErV2ePXllp1bwq5CDreAaFVj6RVlZpJnxK4WWDCJ/5jMUpaY6G526q3Hjg==}
+  /bson@5.3.0:
+    resolution: {integrity: sha512-ukmCZMneMlaC5ebPHXIkP8YJzNl5DC41N5MAIvKDqLggdao342t4McltoJBQfQya/nHBWAcSsYRqlXPoQkTJag==}
     engines: {node: '>=14.20.1'}
     dev: false
 
@@ -4131,8 +4131,8 @@ packages:
       whatwg-url: 11.0.0
     dev: false
 
-  /mongodb@5.3.0:
-    resolution: {integrity: sha512-Wy/sbahguL8c3TXQWXmuBabiLD+iVmz+tOgQf+FwkCjhUIorqbAxRbbz00g4ZoN4sXIPwpAlTANMaGRjGGTikQ==}
+  /mongodb@5.5.0:
+    resolution: {integrity: sha512-XgrkUgAAdfnZKQfk5AsYL8j7O99WHd4YXPxYxnh8dZxD+ekYWFRA3JktUsBnfg+455Smf75/+asoU/YLwNGoQQ==}
     engines: {node: '>=14.20.1'}
     peerDependencies:
       '@aws-sdk/credential-providers': ^3.201.0
@@ -4146,20 +4146,20 @@ packages:
       snappy:
         optional: true
     dependencies:
-      bson: 5.2.0
+      bson: 5.3.0
       mongodb-connection-string-url: 2.6.0
       socks: 2.7.1
     optionalDependencies:
       saslprep: 1.0.3
     dev: false
 
-  /mongoose@7.1.2:
-    resolution: {integrity: sha512-89+rFzYphsOCdIDam03ryECeOy4bFKvZqnu4NDdUduoOt2ip0/otIqVBBrjQ1Owz1xza6zy4VTifxBG/jNaJNQ==}
-    engines: {node: '>=14.0.0'}
+  /mongoose@7.2.0:
+    resolution: {integrity: sha512-sNNsPinfwBiqEZx24kBWZamebORFJ89wr0szw8SFzdy8OZLMxSDKwGUpfa8cLPsCV57z/beGUnaa0ZUGktNmcQ==}
+    engines: {node: '>=14.20.1'}
     dependencies:
-      bson: 5.2.0
+      bson: 5.3.0
       kareem: 2.5.1
-      mongodb: 5.3.0
+      mongodb: 5.5.0
       mpath: 0.9.0
       mquery: 5.0.0
       ms: 2.1.3
