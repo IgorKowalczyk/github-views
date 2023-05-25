@@ -9,8 +9,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "format": "prettier --write . --ignore-unknown --plugin-search-dir=.",
-    "format:check": "prettier --check .",
+    "format": "prettier --write . --ignore-unknown --cache",
+    "format:check": "prettier --check --cache .",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx,.astro",
     "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx,.astro --fix"
   },
