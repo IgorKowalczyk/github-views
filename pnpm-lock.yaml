@@ -12,8 +12,8 @@ dependencies:
     specifier: 3.1.3
     version: 3.1.3(astro@2.5.6)(tailwindcss@3.3.2)
   '@astrojs/vercel':
-    specifier: 3.4.0
-    version: 3.4.0(astro@2.5.6)(react@18.2.0)
+    specifier: 3.4.1
+    version: 3.4.1(astro@2.5.6)(react@18.2.0)
   '@igorkowalczyk/is-browser':
     specifier: 4.0.3
     version: 4.0.3(tailwindcss@3.3.2)
@@ -201,12 +201,12 @@ packages:
       - supports-color
     dev: false
 
-  /@astrojs/vercel@3.4.0(astro@2.5.6)(react@18.2.0):
-    resolution: {integrity: sha512-pTD7PUos5uoUFZZXooiNN2vcALLQtGF1urtaFCEMWJVbmpYUC8YlA8RsISbF2ICEpTgDWMHttRJE10aCBHrmKA==}
+  /@astrojs/vercel@3.4.1(astro@2.5.6)(react@18.2.0):
+    resolution: {integrity: sha512-EFYxpEGFA4QXVxF0Wk10fHoBypuoP1SkSU+K6osLl3Xjxb1jx3rdsmM56w+FNX3z4QD9dpEqjfVD7lu+VM9udA==}
     peerDependencies:
-      astro: ^2.5.0
+      astro: ^2.5.6
     dependencies:
-      '@astrojs/webapi': 2.1.1
+      '@astrojs/webapi': 2.2.0
       '@vercel/analytics': 0.1.8(react@18.2.0)
       '@vercel/nft': 0.22.6
       astro: 2.5.6
@@ -218,12 +218,6 @@ packages:
       - encoding
       - react
       - supports-color
-    dev: false
-
-  /@astrojs/webapi@2.1.1:
-    resolution: {integrity: sha512-mHZ7VgPNMeV3TYIw3SGHTKaJosBxA8bTzZ3QhNw509qvCJca4Lkjes8JywimuwTn+TMjEiv7ksNfwRluad3jqA==}
-    dependencies:
-      undici: 5.22.0
     dev: false
 
   /@astrojs/webapi@2.2.0:
