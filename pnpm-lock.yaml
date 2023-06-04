@@ -21,8 +21,8 @@ dependencies:
     specifier: 2.5.7
     version: 2.5.7
   astro-compress:
-    specifier: 1.1.46
-    version: 1.1.46
+    specifier: 1.1.47
+    version: 1.1.47
   badge-maker:
     specifier: 3.3.1
     version: 3.3.1
@@ -786,8 +786,8 @@ packages:
     resolution: {integrity: sha512-xnkseuNADM0gt2bs+BvhO0p78Mk762YnZdsuzFV018NoG1Sj1SCQvpSqa7XUaTam5vAGasABV9qXASMKnFMwMw==}
     engines: {node: '>=6.0.0'}
 
-  /@jridgewell/source-map@0.3.2:
-    resolution: {integrity: sha512-m7O9o2uR8k2ObDysZYzdfhb08VuEml5oWGiosa1VdaPZ/A6QyPkAJuwN0Q1lhULOf6B7MtQmHENS743hWtCrgw==}
+  /@jridgewell/source-map@0.3.3:
+    resolution: {integrity: sha512-b+fsZXeLYi9fEULmfBrhxn4IrPlINf8fiNarzTof004v3lFdntdwa9PF7vFJqm3mg7s+ScJMxXaE3Acp1irZcg==}
     dependencies:
       '@jridgewell/gen-mapping': 0.3.2
       '@jridgewell/trace-mapping': 0.3.17
@@ -1337,17 +1337,17 @@ packages:
       es-shim-unscopables: 1.0.0
     dev: true
 
-  /astro-compress@1.1.46:
-    resolution: {integrity: sha512-5PiZsCOlYO04jATC/XlpdMT6869QLsbpSNoihutUxkdWpDpoXwNMyxxXsL7QljdXHyFg6XmTDpxOODxvqerVWA==}
+  /astro-compress@1.1.47:
+    resolution: {integrity: sha512-UBhhDfZffcPVdDFA4v42G68BdcNL6ZlYoXZdHTappiLWDvZPlhRmK6iuwya3SAGl4La4kqKCfNSqwKbG3agdBQ==}
     dependencies:
       '@types/csso': 5.0.0
       '@types/html-minifier-terser': 7.0.0
       csso: 5.0.5
-      files-pipe: 0.0.6
+      files-pipe: 0.0.7
       html-minifier-terser: 7.2.0
       sharp: 0.32.1
       svgo: 3.0.2
-      terser: 5.17.6
+      terser: 5.17.7
     dev: false
 
   /astro-eslint-parser@0.14.0:
@@ -2509,8 +2509,8 @@ packages:
     resolution: {integrity: sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw==}
     dev: false
 
-  /files-pipe@0.0.6:
-    resolution: {integrity: sha512-izHIHcqKEM0V2nw3FvzAqL0nx3IiZ2RC7k4eczIhlJ4X5JWJsxVl4c6b+Uid3zvNd6RiPxjFerbFcodFXMPHBw==}
+  /files-pipe@0.0.7:
+    resolution: {integrity: sha512-BkXQoAEo1X3RqmEucIBLL1ddc/LM3lqsf5ipIf/bRrUTn3SQZWhThgpIl1/ma2VNesB2hBoY+CB0rrZ3b1tQhA==}
     dependencies:
       deepmerge-ts: 5.1.0
       fast-glob: 3.2.12
@@ -2899,7 +2899,7 @@ packages:
       entities: 4.4.0
       param-case: 3.0.4
       relateurl: 0.2.7
-      terser: 5.17.6
+      terser: 5.17.7
     dev: false
 
   /html-void-elements@2.0.1:
@@ -5062,12 +5062,12 @@ packages:
       yallist: 4.0.0
     dev: false
 
-  /terser@5.17.6:
-    resolution: {integrity: sha512-V8QHcs8YuyLkLHsJO5ucyff1ykrLVsR4dNnS//L5Y3NiSXpbK1J+WMVUs67eI0KTxs9JtHhgEQpXQVHlHI92DQ==}
+  /terser@5.17.7:
+    resolution: {integrity: sha512-/bi0Zm2C6VAexlGgLlVxA0P2lru/sdLyfCVaRMfKVo9nWxbmz7f/sD8VPybPeSUJaJcwmCJis9pBIhcVcG1QcQ==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
-      '@jridgewell/source-map': 0.3.2
+      '@jridgewell/source-map': 0.3.3
       acorn: 8.8.2
       commander: 2.20.3
       source-map-support: 0.5.21
