@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@astrojs/image':
-    specifier: 0.17.1
-    version: 0.17.1(astro@2.7.3)
+    specifier: 0.17.2
+    version: 0.17.2(astro@2.7.3)
   '@astrojs/tailwind':
     specifier: 4.0.0
     version: 4.0.0(astro@2.7.3)(tailwindcss@3.3.2)
@@ -110,10 +110,10 @@ packages:
     resolution: {integrity: sha512-/HSFkJ+Yv+WUWSq0QVsIlhBKam5VUpGV+s8MvPguC/krHmw4Ww9TIgmfJSvV8/BN0sHJB7pCgf7yInae1zb+TQ==}
     dev: false
 
-  /@astrojs/image@0.17.1(astro@2.7.3):
-    resolution: {integrity: sha512-+kb99ZTvl4BpbY6BeIAwJq08aGF/H4V9S6351I2GwIddQYilEQfHQ9b6EVfxoHIE6eSo8bRfUeKFkOmWVppWwA==}
+  /@astrojs/image@0.17.2(astro@2.7.3):
+    resolution: {integrity: sha512-hw5vGBlyPwyt9E4ux7eej7dJrcSlTAaMYKYd8OWIJVsFSbV75sXNi+5lwbpNjDLGVIS6Baa4nzayjN5Gxo73MQ==}
     peerDependencies:
-      astro: ^2.7.0
+      astro: ^2.7.3
       sharp: '>=0.31.0'
     peerDependenciesMeta:
       sharp:
