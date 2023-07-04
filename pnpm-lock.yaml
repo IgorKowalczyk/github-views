@@ -21,8 +21,8 @@ dependencies:
     specifier: 2.7.3
     version: 2.7.3
   astro-compress:
-    specifier: 1.1.48
-    version: 1.1.48
+    specifier: 1.1.49
+    version: 1.1.49
   badge-maker:
     specifier: 3.3.1
     version: 3.3.1
@@ -1360,8 +1360,8 @@ packages:
       es-shim-unscopables: 1.0.0
     dev: true
 
-  /astro-compress@1.1.48:
-    resolution: {integrity: sha512-oQVCAcJ0/A+8iX1l8ozrpkCZKihX+1tPAJ1cKTqAHpljMNqgVYJsR3b3rw05U9KFsYOF2sNugKoFM0OLu5fZdg==}
+  /astro-compress@1.1.49:
+    resolution: {integrity: sha512-AesUqim8kYslKmZqacAo3W422eVT7hWDrVaA4tXdWH8fpBI3qRbukl7+OO0dWmLIf6ubukMZiqg3THmSCEl5ow==}
     dependencies:
       '@types/csso': 5.0.0
       '@types/html-minifier-terser': 7.0.0
