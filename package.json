@@ -36,8 +36,8 @@
   "dependencies": {
     "@astrojs/image": "0.17.2",
     "@astrojs/tailwind": "4.0.0",
+    "@igorkowalczyk/is-browser": "5.0.0",
     "@astrojs/vercel": "3.7.0",
-    "@igorkowalczyk/is-browser": "4.0.3",
     "astro": "2.8.0",
     "astro-compress": "1.1.49",
     "badge-maker": "3.3.1",
