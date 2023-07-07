@@ -1,0 +1,27 @@
+name: Deploy
+on: [push]
+
+jobs:
+ deploy:
+  name: Deploy
+  runs-on: ubuntu-latest
+  permissions:
+   id-token: write
+   contents: read
+  steps:
+   - name: 🧱 Checkout repository
+     uses: actions/checkout@v3
+   - name: 🔩 Setup PNPM
+     uses: pnpm/action-setup@v2
+     with:
+      version: latest
+   - name: 🚀 Install dependencies
+     run: pnpm install
+   - name: � Build Astro
+     run: pnpm run build
+   - name: � Upload to Deno Deploy
+     uses: denoland/deployctl@v1
+     with:
+      project: github-views
+      entrypoint: server/entry.mjs
+      root: dist

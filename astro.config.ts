@@ -1,7 +1,6 @@
 // https://astro.build/config
-import image from "@astrojs/image";
+import deno from "@astrojs/deno";
 import tailwind from "@astrojs/tailwind";
-import vercel from "@astrojs/vercel/serverless";
 import { defineConfig } from "astro/config";
 import compress from "astro-compress";
 
@@ -9,8 +8,6 @@ import compress from "astro-compress";
 export default defineConfig({
  output: "server",
  site: "https://views.igorkowalczyk.vercel.app",
- adapter: vercel({
-  analytics: true,
- }),
- integrations: [tailwind(), compress(), image()],
+ adapter: deno(),
+ integrations: [tailwind(), compress()],
 });
