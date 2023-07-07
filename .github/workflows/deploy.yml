@@ -17,9 +17,9 @@ jobs:
       version: latest
    - name: 🚀 Install dependencies
      run: pnpm install
-   - name: � Build Astro
+   - name: 🚀 Build Astro
      run: pnpm run build
-   - name: � Upload to Deno Deploy
+   - name: 🚀 Upload to Deno Deploy
      uses: denoland/deployctl@v1
      with:
       project: github-views
