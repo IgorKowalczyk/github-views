@@ -47,11 +47,11 @@ dependencies:
 
 devDependencies:
   '@igorkowalczyk/eslint-config':
-    specifier: 1.4.2
-    version: 1.4.2(@typescript-eslint/parser@6.0.0)(eslint@8.44.0)(prettier@3.0.0)
+    specifier: 1.5.3
+    version: 1.5.3(@typescript-eslint/parser@6.0.0)(eslint@8.44.0)(prettier@3.0.0)
   '@igorkowalczyk/prettier-config':
-    specifier: 1.4.2
-    version: 1.4.2(prettier@3.0.0)
+    specifier: 1.5.3
+    version: 1.5.3(prettier@3.0.0)
   '@tailwindcss/forms':
     specifier: 0.5.3
     version: 0.5.3(tailwindcss@3.3.2)
@@ -77,8 +77,8 @@ devDependencies:
     specifier: 3.0.0
     version: 3.0.0
   prettier-plugin-tailwindcss:
-    specifier: 0.3.0
-    version: 0.3.0(prettier-plugin-astro@0.10.0)(prettier@3.0.0)
+    specifier: 0.4.0
+    version: 0.4.0(prettier-plugin-astro@0.10.0)(prettier@3.0.0)
 
 packages:
 
@@ -756,17 +756,18 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
-  /@igorkowalczyk/eslint-config@1.4.2(@typescript-eslint/parser@6.0.0)(eslint@8.44.0)(prettier@3.0.0):
-    resolution: {integrity: sha512-lYiBRdKCesNp/7l2BOtyYJ0NlUfq23nplZogVXjnu3NIHW3njjiGnwnCquSWB62Yp7bRlnkr1yVEAyBMmZ7MtQ==}
+  /@igorkowalczyk/eslint-config@1.5.3(@typescript-eslint/parser@6.0.0)(eslint@8.44.0)(prettier@3.0.0):
+    resolution: {integrity: sha512-Kil/vqC2fECExVVh7iKLBb9I1zaXqHb3n9RyIjXvLFcrQBLu0NTgndrY9GBa1ajQ4D8n2XQvmLEcnhDp4lE0Aw==}
     peerDependencies:
       eslint: '>=7.0.0'
     dependencies:
       eslint: 8.44.0
-      eslint-config-prettier: 8.8.0(eslint@8.44.0)
       eslint-plugin-import: 2.27.5(@typescript-eslint/parser@6.0.0)(eslint@8.44.0)
-      eslint-plugin-prettier: 4.2.1(eslint-config-prettier@8.8.0)(eslint@8.44.0)(prettier@3.0.0)
+      eslint-plugin-prettier: 5.0.0(eslint@8.44.0)(prettier@3.0.0)
     transitivePeerDependencies:
+      - '@types/eslint'
       - '@typescript-eslint/parser'
+      - eslint-config-prettier
       - eslint-import-resolver-typescript
       - eslint-import-resolver-webpack
       - prettier
@@ -782,8 +783,8 @@ packages:
       tailwindcss: 3.3.2
     dev: false
 
-  /@igorkowalczyk/prettier-config@1.4.2(prettier@3.0.0):
-    resolution: {integrity: sha512-vna+pvYtlZu5R6pnQkZbXdfRCDd9TPTlgznAC9Bfu/3aMmiLLBu5DUuvlvcEKBiGAcp00E6+pvNusF+TTZFbSQ==}
+  /@igorkowalczyk/prettier-config@1.5.3(prettier@3.0.0):
+    resolution: {integrity: sha512-McaL1pV41A03rKSyc9wZUOxW9xUrDFwu8zfXQBF41xYf7CFmlP0q2vIQJgzhrKimDXl1i7452YAxtJwvKB5FAg==}
     peerDependencies:
       prettier: '>=2.0.0'
     dependencies:
@@ -2237,15 +2238,6 @@ packages:
     engines: {node: '>=12'}
     dev: false
 
-  /eslint-config-prettier@8.8.0(eslint@8.44.0):
-    resolution: {integrity: sha512-wLbQiFre3tdGgpDv67NQKnJuTlcUVYHas3k+DZCc2U2BadthoEY4B7hLPvAxaqdyOGCzuLfii2fqGph10va7oA==}
-    hasBin: true
-    peerDependencies:
-      eslint: '>=7.0.0'
-    dependencies:
-      eslint: 8.44.0
-    dev: true
-
   /eslint-import-resolver-node@0.3.7:
     resolution: {integrity: sha512-gozW2blMLJCeFpBwugLTGyvVjNoeo1knonXAcatC6bjPBZitotxdWf7Gimr25N4c0AAOo4eOUfaG82IJPDpqCA==}
     dependencies:
@@ -2335,21 +2327,24 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-prettier@4.2.1(eslint-config-prettier@8.8.0)(eslint@8.44.0)(prettier@3.0.0):
-    resolution: {integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==}
-    engines: {node: '>=12.0.0'}
+  /eslint-plugin-prettier@5.0.0(eslint@8.44.0)(prettier@3.0.0):
+    resolution: {integrity: sha512-AgaZCVuYDXHUGxj/ZGu1u8H8CYgDY3iG6w5kUFw4AzMVXzB7VvbKgYR4nATIN+OvUrghMbiDLeimVjVY5ilq3w==}
+    engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
-      eslint: '>=7.28.0'
+      '@types/eslint': '>=8.0.0'
+      eslint: '>=8.0.0'
       eslint-config-prettier: '*'
-      prettier: '>=2.0.0'
+      prettier: '>=3.0.0'
     peerDependenciesMeta:
+      '@types/eslint':
+        optional: true
       eslint-config-prettier:
         optional: true
     dependencies:
       eslint: 8.44.0
-      eslint-config-prettier: 8.8.0(eslint@8.44.0)
       prettier: 3.0.0
       prettier-linter-helpers: 1.0.0
+      synckit: 0.8.5
     dev: true
 
   /eslint-scope@5.1.1:
@@ -4363,8 +4358,8 @@ packages:
       synckit: 0.8.4
     dev: false
 
-  /prettier-plugin-tailwindcss@0.3.0(prettier-plugin-astro@0.10.0)(prettier@3.0.0):
-    resolution: {integrity: sha512-009/Xqdy7UmkcTBpwlq7jsViDqXAYSOMLDrHAdTMlVZOrKfM2o9Ci7EMWTMZ7SkKBFTG04UM9F9iM2+4i6boDA==}
+  /prettier-plugin-tailwindcss@0.4.0(prettier-plugin-astro@0.10.0)(prettier@3.0.0):
+    resolution: {integrity: sha512-Rna0sDPETA0KNhMHlN8wxKNgfSa8mTl2hPPAGxnbv6tUcHT6J4RQmQ8TLXyhB7Dm5Von4iHloBxTyClYM6wT0A==}
     engines: {node: '>=12.17.0'}
     peerDependencies:
       '@ianvs/prettier-plugin-sort-imports': '*'
@@ -4372,7 +4367,7 @@ packages:
       '@shopify/prettier-plugin-liquid': '*'
       '@shufo/prettier-plugin-blade': '*'
       '@trivago/prettier-plugin-sort-imports': '*'
-      prettier: '>=2.2.0'
+      prettier: ^2.2 || ^3.0
       prettier-plugin-astro: '*'
       prettier-plugin-css-order: '*'
       prettier-plugin-import-sort: '*'
@@ -5028,6 +5023,14 @@ packages:
       '@pkgr/utils': 2.3.1
       tslib: 2.4.1
 
+  /synckit@0.8.5:
+    resolution: {integrity: sha512-L1dapNV6vu2s/4Sputv8xGsCdAVlb5nRDMFU/E27D44l5U6cw1g0dGd45uLc+OXjNMmF4ntiMdCimzcjFKQI8Q==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    dependencies:
+      '@pkgr/utils': 2.3.1
+      tslib: 2.6.0
+    dev: true
+
   /tailwindcss-text-fill@0.2.0(tailwindcss@3.3.2):
     resolution: {integrity: sha512-3lo6a/9jXSx4+24onFv7xnHO/1DZCk6qM+LoCsEUxn79sAeoc/ts74LSH0vRhLvWe4Yn+YglFfT+lxDv6wn2sQ==}
     peerDependencies:
@@ -5196,6 +5199,10 @@ packages:
 
   /tslib@2.4.1:
     resolution: {integrity: sha512-tGyy4dAjRIEwI7BzsB0lynWgOpfqjUdq91XXAlIWD2OwKBH7oCl/GZG/HT4BOHrTlPMOASlMQ7veyTqpmRcrNA==}
+
+  /tslib@2.6.0:
+    resolution: {integrity: sha512-7At1WUettjcSRHXCyYtTselblcHl9PJFFVKiCAy/bY97+BPZXSQ2wbq0P9s8tK2G7dFQfNnlJnPAiArVBVBsfA==}
+    dev: true
 
   /tunnel-agent@0.6.0:
     resolution: {integrity: sha512-McnNiV1l8RYeY8tBgEpuodCC1mLUdbSN+CYBL7kJsJNInOP8UjDDEwdk6Mw60vdLLrr5NHKZhMAOSrR2NZuQ+w==}
