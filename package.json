@@ -9,7 +9,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "format": "prettier --write . --ignore-unknown --cache",
+    "format": "prettier --write . --ignore-unknown --cache --plugin=prettier-plugin-astro --plugin=prettier-plugin-tailwindcss",
     "format:check": "prettier --check --cache .",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx,.astro",
     "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx,.astro --fix"
