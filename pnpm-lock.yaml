@@ -50,8 +50,8 @@ devDependencies:
     specifier: 1.4.2
     version: 1.4.2(@typescript-eslint/parser@6.0.0)(eslint@8.44.0)(prettier@2.8.8)
   '@igorkowalczyk/prettier-config':
-    specifier: 1.4.2
-    version: 1.4.2(prettier@2.8.8)
+    specifier: 1.5.3
+    version: 1.5.3(prettier@2.8.8)
   '@tailwindcss/forms':
     specifier: 0.5.3
     version: 0.5.3(tailwindcss@3.3.2)
@@ -782,8 +782,8 @@ packages:
       tailwindcss: 3.3.2
     dev: false
 
-  /@igorkowalczyk/prettier-config@1.4.2(prettier@2.8.8):
-    resolution: {integrity: sha512-vna+pvYtlZu5R6pnQkZbXdfRCDd9TPTlgznAC9Bfu/3aMmiLLBu5DUuvlvcEKBiGAcp00E6+pvNusF+TTZFbSQ==}
+  /@igorkowalczyk/prettier-config@1.5.3(prettier@2.8.8):
+    resolution: {integrity: sha512-McaL1pV41A03rKSyc9wZUOxW9xUrDFwu8zfXQBF41xYf7CFmlP0q2vIQJgzhrKimDXl1i7452YAxtJwvKB5FAg==}
     peerDependencies:
       prettier: '>=2.0.0'
     dependencies:
