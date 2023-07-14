@@ -77,8 +77,8 @@ devDependencies:
     specifier: 0.11.0
     version: 0.11.0
   prettier-plugin-tailwindcss:
-    specifier: 0.4.0
-    version: 0.4.0(prettier-plugin-astro@0.11.0)(prettier@3.0.0)
+    specifier: 0.4.1
+    version: 0.4.1(prettier-plugin-astro@0.11.0)(prettier@3.0.0)
 
 packages:
 
@@ -4348,8 +4348,8 @@ packages:
       synckit: 0.8.5
     dev: false
 
-  /prettier-plugin-tailwindcss@0.4.0(prettier-plugin-astro@0.11.0)(prettier@3.0.0):
-    resolution: {integrity: sha512-Rna0sDPETA0KNhMHlN8wxKNgfSa8mTl2hPPAGxnbv6tUcHT6J4RQmQ8TLXyhB7Dm5Von4iHloBxTyClYM6wT0A==}
+  /prettier-plugin-tailwindcss@0.4.1(prettier-plugin-astro@0.11.0)(prettier@3.0.0):
+    resolution: {integrity: sha512-hwn2EiJmv8M+AW4YDkbjJ6HlZCTzLyz1QlySn9sMuKV/Px0fjwldlB7tol8GzdgqtkdPtzT3iJ4UzdnYXP25Ag==}
     engines: {node: '>=12.17.0'}
     peerDependencies:
       '@ianvs/prettier-plugin-sort-imports': '*'
