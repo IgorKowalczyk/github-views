@@ -33,8 +33,8 @@ dependencies:
     specifier: 1.4.4
     version: 1.4.4
   mongoose:
-    specifier: 7.3.4
-    version: 7.3.4
+    specifier: 7.4.0
+    version: 7.4.0
   tailwindcss:
     specifier: 3.3.3
     version: 3.3.3
@@ -1603,8 +1603,8 @@ packages:
       node-releases: 2.0.8
       update-browserslist-db: 1.0.10(browserslist@4.21.5)
 
-  /bson@5.3.0:
-    resolution: {integrity: sha512-ukmCZMneMlaC5ebPHXIkP8YJzNl5DC41N5MAIvKDqLggdao342t4McltoJBQfQya/nHBWAcSsYRqlXPoQkTJag==}
+  /bson@5.4.0:
+    resolution: {integrity: sha512-WRZ5SQI5GfUuKnPTNmAYPiKIof3ORXAF4IRU5UcgmivNIon01rWQlw5RUH954dpu8yGL8T59YShVddIPaU/gFA==}
     engines: {node: '>=14.20.1'}
     dev: false
 
@@ -3818,41 +3818,49 @@ packages:
       whatwg-url: 11.0.0
     dev: false
 
-  /mongodb@5.6.0:
-    resolution: {integrity: sha512-z8qVs9NfobHJm6uzK56XBZF8XwM9H294iRnB7wNjF0SnY93si5HPziIJn+qqvUR5QOff/4L0gCD6SShdR/GtVQ==}
+  /mongodb@5.7.0:
+    resolution: {integrity: sha512-zm82Bq33QbqtxDf58fLWBwTjARK3NSvKYjyz997KSy6hpat0prjeX/kxjbPVyZY60XYPDNETaHkHJI2UCzSLuw==}
     engines: {node: '>=14.20.1'}
     peerDependencies:
       '@aws-sdk/credential-providers': ^3.201.0
+      '@mongodb-js/zstd': ^1.1.0
+      kerberos: ^2.0.1
       mongodb-client-encryption: '>=2.3.0 <3'
       snappy: ^7.2.2
     peerDependenciesMeta:
       '@aws-sdk/credential-providers':
+        optional: true
+      '@mongodb-js/zstd':
+        optional: true
+      kerberos:
         optional: true
       mongodb-client-encryption:
         optional: true
       snappy:
         optional: true
     dependencies:
-      bson: 5.3.0
+      bson: 5.4.0
       mongodb-connection-string-url: 2.6.0
       socks: 2.7.1
     optionalDependencies:
       saslprep: 1.0.3
     dev: false
 
-  /mongoose@7.3.4:
-    resolution: {integrity: sha512-luvv4PKFiFYaHNn5wGIRrMML3Vvoa8lkdhcLE1S/6gY9s9CUOdEu9olbDrkhvnwRQ20j1SrQFO5JEApW0xwL3w==}
+  /mongoose@7.4.0:
+    resolution: {integrity: sha512-oHE1eqodfKzugXRlQxpo+msIea7jPcRoayDuEMr50+bYwM/juA5f+1stjkWlXcg6vo1PdJFVA6DGaKOPLuG5mA==}
     engines: {node: '>=14.20.1'}
     dependencies:
-      bson: 5.3.0
+      bson: 5.4.0
       kareem: 2.5.1
-      mongodb: 5.6.0
+      mongodb: 5.7.0
       mpath: 0.9.0
       mquery: 5.0.0
       ms: 2.1.3
       sift: 16.0.1
     transitivePeerDependencies:
       - '@aws-sdk/credential-providers'
+      - '@mongodb-js/zstd'
+      - kerberos
       - mongodb-client-encryption
       - snappy
       - supports-color
