@@ -6,7 +6,7 @@ import { defineConfig } from "astro/config";
 // https://astro.build/config
 export default defineConfig({
  output: "server",
- site: "https://views.igorkowalczyk.vercel.app",
+ site: "https://github-views.deno.dev",
  adapter: deno(),
  integrations: [tailwind()],
 });

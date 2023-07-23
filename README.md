@@ -1,4 +1,4 @@
-<img width="170" height="170" align="left" style="float: left; margin: 0 10px 0 0; border-radius: 50%;" src="https://views.igorkowalczyk.vercel.app/favicons/android-chrome-144x144.png">
+<img width="170" height="170" align="left" style="float: left; margin: 0 10px 0 0; border-radius: 50%;" src="https://github-views.deno.dev/favicons/android-chrome-144x144.png">
 
 ## Github Profile Views
 
@@ -15,11 +15,11 @@
 > Don't forget to replace example `YOUR-USERNAME` parameter with real value.
 
 ## ✨ Basic usage
- - Go to https://views.igorkowalczyk.vercel.app and enter your Github username or any other text
+ - Go to https://github-views.deno.dev and enter your Github username or any other text
  - Copy the generated markdown code with the style you like and paste it in your `README.md` file
  
 ```markdown
-![](https://views.igorkowalczyk.vercel.app/api/badge/YOUR-USERNAME)
+![](https://github-views.deno.dev/api/badge/YOUR-USERNAME)
 ```
 
 ## 🖼️ Available styles
@@ -29,8 +29,8 @@
 
 | Style | Example | Usage |
 | ----- | ---- | ---- |
-| `flat` | ![](https://views.igorkowalczyk.vercel.app/api/badge/example?style=flat&display=true) | `style=flat` |
-| `classic` | ![](https://views.igorkowalczyk.vercel.app/api/badge/example?style=classic&display=true) | `style=classic` |
+| `flat` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true) | `style=flat` |
+| `classic` | ![](https://github-views.deno.dev/api/badge/example?style=classic&display=true) | `style=classic` |
 
 > **Note**:
 > To apply the style, add to the URL `?style=YOUR-STYLE`, if you use other parameters you can use `&style=YOUR-STYLE`
@@ -42,17 +42,17 @@
 
 | Color | Example | Usage | Label Color | Label usage | 
 | ----- | ---- | ---- | ---- |  ---- | 
-| `blue` | ![](https://views.igorkowalczyk.vercel.app/api/badge/example?style=flat&display=true&color=blue) | `color=blue`  | ![](https://views.igorkowalczyk.vercel.app/api/badge/example?style=flat&display=true&labelColor=blue) | `labelColor=blue` |
-| `cyan` | ![](https://views.igorkowalczyk.vercel.app/api/badge/example?style=flat&display=true&color=cyan) | `color=cyan` | ![](https://views.igorkowalczyk.vercel.app/api/badge/example?style=flat&display=true&labelColor=cyan) | `labelColor=cyan` |
-| `green` | ![](https://views.igorkowalczyk.vercel.app/api/badge/example?style=flat&display=true&color=green) | `color=green` |  ![](https://views.igorkowalczyk.vercel.app/api/badge/example?style=flat&display=true&labelColor=green) | `labelColor=green` |
-| `yellow` | ![](https://views.igorkowalczyk.vercel.app/api/badge/example?style=flat&display=true&color=yellow) | `color=yellow` | ![](https://views.igorkowalczyk.vercel.app/api/badge/example?style=flat&display=true&labelColor=yellow) | `labelColor=yellow` |
-| `orange` | ![](https://views.igorkowalczyk.vercel.app/api/badge/example?style=flat&display=true&color=orange) | `color=orange` | ![](https://views.igorkowalczyk.vercel.app/api/badge/example?style=flat&display=true&labelColor=orange) | `labelColor=orange` |
-| `red` | ![](https://views.igorkowalczyk.vercel.app/api/badge/example?style=flat&display=true&color=red) | `color=red` | ![](https://views.igorkowalczyk.vercel.app/api/badge/example?style=flat&display=true&labelColor=red) | `labelColor=red` |
-| `pink` | ![](https://views.igorkowalczyk.vercel.app/api/badge/example?style=flat&display=true&color=pink) | `color=pink` | ![](https://views.igorkowalczyk.vercel.app/api/badge/example?style=flat&display=true&labelColor=pink) | `labelColor=pink` |
-| `purple` | ![](https://views.igorkowalczyk.vercel.app/api/badge/example?style=flat&display=true&color=purple) | `color=purple` | ![](https://views.igorkowalczyk.vercel.app/api/badge/example?style=flat&display=true&labelColor=purple) | `labelColor=purple` | ![](https://views.igorkowalczyk.vercel.app/api/badge/example?style=flat&display=true&labelColor=gray) | `labelColor=gray` |
-| `gray` | ![](https://views.igorkowalczyk.vercel.app/api/badge/example?style=flat&display=true&color=gray) | `color=gray` | ![](https://views.igorkowalczyk.vercel.app/api/badge/example?style=flat&display=true&labelColor=lightgrey) | `labelColor=gray` |
-| `black` | ![](https://views.igorkowalczyk.vercel.app/api/badge/example?style=flat&display=true&color=black) | `color=black` | ![](https://views.igorkowalczyk.vercel.app/api/badge/example?style=flat&display=true&labelColor=black) | `labelColor=black` |
-| `ff69b4` | ![](https://views.igorkowalczyk.vercel.app/api/badge/example?style=flat&display=true&color=ff69b4) | `color=ff69b4` | ![](https://views.igorkowalczyk.vercel.app/api/badge/example?style=flat&display=true&labelColor=ff69b4) | `labelColor=ff69b4` |
+| `blue` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&color=blue) | `color=blue`  | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&labelColor=blue) | `labelColor=blue` |
+| `cyan` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&color=cyan) | `color=cyan` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&labelColor=cyan) | `labelColor=cyan` |
+| `green` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&color=green) | `color=green` |  ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&labelColor=green) | `labelColor=green` |
+| `yellow` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&color=yellow) | `color=yellow` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&labelColor=yellow) | `labelColor=yellow` |
+| `orange` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&color=orange) | `color=orange` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&labelColor=orange) | `labelColor=orange` |
+| `red` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&color=red) | `color=red` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&labelColor=red) | `labelColor=red` |
+| `pink` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&color=pink) | `color=pink` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&labelColor=pink) | `labelColor=pink` |
+| `purple` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&color=purple) | `color=purple` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&labelColor=purple) | `labelColor=purple` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&labelColor=gray) | `labelColor=gray` |
+| `gray` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&color=gray) | `color=gray` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&labelColor=lightgrey) | `labelColor=gray` |
+| `black` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&color=black) | `color=black` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&labelColor=black) | `labelColor=black` |
+| `ff69b4` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&color=ff69b4) | `color=ff69b4` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&labelColor=ff69b4) | `labelColor=ff69b4` |
 
 > **Note**:
 > To apply the style, add to the URL `?color=YOUR-COLOR`, if you use other parameters you can use `&color=YOUR-COLOR`
@@ -64,13 +64,13 @@
 
 You can overwrite default `Views` text with your own label.
 
-![](https://views.igorkowalczyk.vercel.app/api/badge/example?label=Your+own+label&display=true&color=blue)
+![](https://github-views.deno.dev/api/badge/example?label=Your+own+label&display=true&color=blue)
 
 > **Note**:
 > Replace whitespace with `+` character in multi-word labels.
 
 ```markdown
-![](https://views.igorkowalczyk.vercel.app/api/badge/YOUR-USERNAME?label=Your+own+label)
+![](https://github-views.deno.dev/api/badge/YOUR-USERNAME?label=Your+own+label)
 ```
 
 ## 📦 `JSON` format
@@ -82,7 +82,7 @@ You can get the number of views in `json` format. It can be useful if you want t
 
 **Request:**
 ```
-https://views.igorkowalczyk.vercel.app/api/json/YOUR-USERNAME
+https://github-views.deno.dev/api/json/YOUR-USERNAME
 ```
 > **Note**:
 > Replace `YOUR-USERNAME` with your real value.
