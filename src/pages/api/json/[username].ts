@@ -1,4 +1,4 @@
-import { GetViews } from "../../../../database/Views.js";
+import { GetViews } from "@/database/index";
 
 type Response = {
  status: number;
@@ -21,7 +21,7 @@ export const get = async function get({ params }: { params: { username: string }
    };
   }
   const views = await GetViews(username);
-  const responseBody: { views: number } = { views };
+  const responseBody: { views: number } = { views: Number(views) };
   return {
    status: 200,
    headers: {
@@ -29,8 +29,8 @@ export const get = async function get({ params }: { params: { username: string }
    },
    body: JSON.stringify(responseBody),
   };
- } catch (error) {
-  const errorResponse: { error: string } = { error: error.message };
+ } catch (error: unknown) {
+  const errorResponse: { error: string } = { error: error instanceof Error ? error.message : "Unknown error" };
   return {
    status: 500,
    headers: {

@@ -1,44 +1,49 @@
-import { makeBadge } from "badge-maker";
-import type { Format } from "badge-maker";
-import { IncreaseViews, GetViews } from "../../../../database/Views";
+import { badgen, StyleOption } from "badgen";
 import { FormatNumber } from "../../../utils/FormatNumber";
-import type { Formatting } from "../../../utils/FormatNumber";
+import { IncreaseViews, GetViews } from "@/database/index";
 
 interface QueryParams {
  label?: string;
  labelColor?: string;
  color?: string;
- style?: string;
- format?: string;
+ style?: StyleOption;
+ format?: "short" | "long";
  display?: string;
 }
 
-export const get = async function get({ params, request }: { params: { username: string }; request }): Promise<Response> {
+export const get = async function get({ params, request }: { params: { username: string }; request: Request }): Promise<Response> {
  try {
   const query = new URL(request.url).searchParams;
   const { label, labelColor, color, style, format, display }: QueryParams = Object.fromEntries(query);
-
   const { username } = params;
-  const number = display ? await GetViews(username) : await IncreaseViews(username);
-  const svg = makeBadge({
-   label: label || "Views",
-   message: FormatNumber(number, format as Formatting["format"]),
-   color: color || "gray",
-   labelColor: labelColor || "#555",
+  const number: number = display ? await GetViews(username) : await IncreaseViews(username);
+
+  // Validate the format to ensure it's "short" or "long"
+  const isValidFormat = format === "short" || format === "long";
+
+  const badge = badgen({
+   label: label || "views",
+   labelColor: labelColor,
+   status: FormatNumber(number, isValidFormat ? format! : "short"),
+   color: color,
    style: style || "flat",
-  } as Format);
-  return new Response(svg, {
+  });
+
+  return new Response(badge, {
    headers: {
     "Content-Type": "image/svg+xml",
    },
    status: 200,
   });
  } catch (error: unknown) {
-  const svg = makeBadge({
-   label: "Error",
-   message: (error as Error).message,
-   color: "red",
-  } as Format);
+  const errorResponse: { error: string } = { error: error instanceof Error ? error.message : "Unknown error" };
+  const svg = badgen({
+   label: "error",
+   labelColor: "#000",
+   status: errorResponse.error,
+   color: "#e05d44",
+   style: "flat",
+  });
 
   return new Response(svg, {
    headers: {
