@@ -1,6 +1,6 @@
 {
   "name": "@igorkowalczyk/views",
-  "version": "2.2.0",
+  "version": "3.0.0",
   "description": "👀 Count the views of your github profile with your own custom badge",
   "private": true,
   "scripts": {
@@ -21,7 +21,8 @@
     "github",
     "profile",
     "astro",
-    "mongodb",
+    "deno",
+    "deno-kv",
     "views-counter",
     "counter"
   ],
@@ -32,12 +33,11 @@
   },
   "homepage": "https://views.igorkowalczyk.vercel.app/",
   "dependencies": {
-    "@astrojs/deno": "^4.2.0",
+    "@astrojs/deno": "4.2.0",
     "@astrojs/tailwind": "4.0.0",
     "@igorkowalczyk/is-browser": "5.0.0",
     "astro": "2.9.1",
-    "badge-maker": "^3.3.1",
-    "badgen": "^3.2.3",
+    "badgen": "3.2.3",
     "canvas-confetti": "1.6.0",
     "mini-svg-data-uri": "1.4.4",
     "tailwindcss": "3.3.3",
