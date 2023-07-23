@@ -22,7 +22,7 @@ export const get = async function get({ params, request }: { params: { username:
   const isValidFormat = format === "short" || format === "long";
 
   const badge = badgen({
-   label: label || "views",
+   label: label || "Views",
    labelColor: labelColor,
    status: FormatNumber(number, isValidFormat ? format! : "short"),
    color: color,
