@@ -50,7 +50,7 @@
 | `red` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&color=red) | `color=red` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&labelColor=red) | `labelColor=red` |
 | `pink` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&color=pink) | `color=pink` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&labelColor=pink) | `labelColor=pink` |
 | `purple` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&color=purple) | `color=purple` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&labelColor=purple) | `labelColor=purple` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&labelColor=gray) | `labelColor=gray` |
-| `gray` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&color=gray) | `color=gray` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&labelColor=lightgrey) | `labelColor=gray` |
+| `gray` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&color=gray) | `color=gray` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&labelColor=gray) | `labelColor=gray` |
 | `black` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&color=black) | `color=black` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&labelColor=black) | `labelColor=black` |
 | `ff69b4` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&color=ff69b4) | `color=ff69b4` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&labelColor=ff69b4) | `labelColor=ff69b4` |
 
