@@ -30,8 +30,8 @@ dependencies:
     specifier: 1.4.4
     version: 1.4.4
   mongoose:
-    specifier: 7.4.0
-    version: 7.4.0
+    specifier: 7.4.1
+    version: 7.4.1
   tailwindcss:
     specifier: 3.3.3
     version: 3.3.3
@@ -3810,8 +3810,8 @@ packages:
       saslprep: 1.0.3
     dev: false
 
-  /mongoose@7.4.0:
-    resolution: {integrity: sha512-oHE1eqodfKzugXRlQxpo+msIea7jPcRoayDuEMr50+bYwM/juA5f+1stjkWlXcg6vo1PdJFVA6DGaKOPLuG5mA==}
+  /mongoose@7.4.1:
+    resolution: {integrity: sha512-o3E5KHHiHdaiwCJG3+9r70sncRKki71Ktf/TfXdW6myu+53rtZ56uLl5ylkQiCf60V3COJuOeekcxXVsjQ7cBA==}
     engines: {node: '>=14.20.1'}
     dependencies:
       bson: 5.4.0
