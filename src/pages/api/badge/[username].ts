@@ -32,6 +32,9 @@ export const get = async function get({ params, request }: { params: { username:
   return new Response(badge, {
    headers: {
     "Content-Type": "image/svg+xml",
+    "Cache-Control": "no-cache, no-store, must-revalidate",
+    Pragma: "no-cache",
+    Expires: "0",
    },
    status: 200,
   });
@@ -48,6 +51,9 @@ export const get = async function get({ params, request }: { params: { username:
   return new Response(svg, {
    headers: {
     "Content-Type": "image/svg+xml",
+    "Cache-Control": "no-cache, no-store, must-revalidate",
+    Pragma: "no-cache",
+    Expires: "0",
    },
    status: 500,
   });

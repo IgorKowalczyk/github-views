@@ -13,7 +13,10 @@ export const get = async function get({ params }: { params: { username: string }
    return {
     status: 400,
     headers: {
-     "content-type": "application/json",
+     "Content-Type": "application/json",
+     "Cache-Control": "no-cache, no-store, must-revalidate",
+     Pragma: "no-cache",
+     Expires: "0",
     },
     body: JSON.stringify({
      error: "No username provided",
@@ -25,7 +28,10 @@ export const get = async function get({ params }: { params: { username: string }
   return {
    status: 200,
    headers: {
-    "content-type": "application/json",
+    "Content-Type": "application/json",
+    "Cache-Control": "no-cache, no-store, must-revalidate",
+    Pragma: "no-cache",
+    Expires: "0",
    },
    body: JSON.stringify(responseBody),
   };
@@ -34,7 +40,10 @@ export const get = async function get({ params }: { params: { username: string }
   return {
    status: 500,
    headers: {
-    "content-type": "application/json",
+    "Content-Type": "application/json",
+    "Cache-Control": "no-cache, no-store, must-revalidate",
+    Pragma: "no-cache",
+    Expires: "0",
    },
    body: JSON.stringify(errorResponse),
   };
