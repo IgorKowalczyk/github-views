@@ -35,6 +35,7 @@ export const get = async function get({ params, request }: { params: { username:
     "Cache-Control": "no-cache, no-store, must-revalidate",
     Pragma: "no-cache",
     Expires: "0",
+    Age: "0",
    },
    status: 200,
   });
@@ -54,6 +55,7 @@ export const get = async function get({ params, request }: { params: { username:
     "Cache-Control": "no-cache, no-store, must-revalidate",
     Pragma: "no-cache",
     Expires: "0",
+    Age: "0",
    },
    status: 500,
   });
