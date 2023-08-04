@@ -4,7 +4,6 @@ export interface Props {
 }
 
 const { url } = Astro.props;
-import { Image } from "@astrojs/image/components";
 ---
 
-<Image alt="Badge" src={url} width={100} height={20} format={"svg"} class="h-auto w-auto" />
+<img src={url} alt="Badge" class="h-auto w-auto" />

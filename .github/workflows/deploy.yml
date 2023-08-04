@@ -1,17 +1,19 @@
-name: Prettier format
+name: Deploy
 
-on:
- workflow_dispatch:
+on: [push, pull_request]
 
 jobs:
- check:
-  name: Format code
+ deploy:
+  name: Deploy
   runs-on: ubuntu-latest
   strategy:
    fail-fast: false
    matrix:
     language: ["javascript"]
     node: ["18.x"]
+  permissions:
+   id-token: write
+   contents: read
   steps:
    - name: 🧱 Checkout repository
      uses: actions/checkout@v3
@@ -26,12 +28,11 @@ jobs:
       cache: "pnpm"
    - name: 🚀 Install dependencies
      run: pnpm install
-   - name: "🚀 Format code"
-     run: "pnpm run format"
-   - name: "🚀 Commit formatted code"
-     uses: stefanzweifel/git-auto-commit-action@v4
+   - name: 🚀 Build project
+     run: pnpm run build
+   - name: 🚀 Upload to Deno Deploy
+     uses: denoland/deployctl@v1
      with:
-      commit_message: "[🚀] Code formatting"
-      branch: ${{ github.head_ref }}
-      commit_user_name: IgorKowalczykBot
-      commit_user_email: "igor.kowalczyk.bot@onet.pl"
+      project: "github-views"
+      entrypoint: "server/entry.mjs"
+      root: "dist"

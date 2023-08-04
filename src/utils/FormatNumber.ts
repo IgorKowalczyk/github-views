@@ -1,7 +1,3 @@
-export interface Formatting {
- format: "short" | "long";
-}
-
 export const FormatNumber = (number: number, format: "short" | "long"): string => {
  if (format === "short") {
   const formatted = Intl.NumberFormat("en-US", {

@@ -1,4 +1,4 @@
-import { GetViews } from "../../../../database/Views.js";
+import { GetViews } from "@/database/index";
 
 type Response = {
  status: number;
@@ -13,7 +13,10 @@ export const get = async function get({ params }: { params: { username: string }
    return {
     status: 400,
     headers: {
-     "content-type": "application/json",
+     "Content-Type": "application/json",
+     "Cache-Control": "no-cache, no-store, must-revalidate",
+     Pragma: "no-cache",
+     Expires: "0",
     },
     body: JSON.stringify({
      error: "No username provided",
@@ -21,20 +24,28 @@ export const get = async function get({ params }: { params: { username: string }
    };
   }
   const views = await GetViews(username);
-  const responseBody: { views: number } = { views };
+  const responseBody: { views: number } = { views: Number(views) };
   return {
    status: 200,
    headers: {
-    "content-type": "application/json",
+    "Content-Type": "application/json",
+    "Cache-Control": "no-cache, no-store, must-revalidate",
+    Pragma: "no-cache",
+    Expires: "0",
+    Age: "0",
    },
    body: JSON.stringify(responseBody),
   };
- } catch (error) {
-  const errorResponse: { error: string } = { error: error.message };
+ } catch (error: unknown) {
+  const errorResponse: { error: string } = { error: error instanceof Error ? error.message : "Unknown error" };
   return {
    status: 500,
    headers: {
-    "content-type": "application/json",
+    "Content-Type": "application/json",
+    "Cache-Control": "no-cache, no-store, must-revalidate",
+    Pragma: "no-cache",
+    Expires: "0",
+    Age: "0",
    },
    body: JSON.stringify(errorResponse),
   };
