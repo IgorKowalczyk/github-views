@@ -35,7 +35,7 @@
   "dependencies": {
     "@astrojs/deno": "4.3.0",
     "@astrojs/tailwind": "4.0.0",
-    "@igorkowalczyk/is-browser": "5.0.0",
+    "@igorkowalczyk/is-browser": "5.0.1",
     "astro": "2.10.7",
     "badgen": "3.2.3",
     "canvas-confetti": "1.6.0",
