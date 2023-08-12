@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "@igorkowalczyk/eslint-config": "1.5.5",
-    "@igorkowalczyk/prettier-config": "1.5.4",
+    "@igorkowalczyk/prettier-config": "1.5.5",
     "@tailwindcss/forms": "0.5.4",
     "@typescript-eslint/eslint-plugin": "6.3.0",
     "@typescript-eslint/parser": "6.3.0",
