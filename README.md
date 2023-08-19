@@ -11,7 +11,7 @@
 
 ---
 
-> **Note**:
+> [!NOTE]
 > Don't forget to replace example `YOUR-USERNAME` parameter with real value.
 
 ## ✨ Basic usage
@@ -24,7 +24,7 @@
 
 ## 🖼️ Available styles
 
-> **Note**:
+> [!NOTE]
 > The default style is `flat`
 
 | Style | Example | Usage |
@@ -32,12 +32,12 @@
 | `flat` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true) | `style=flat` |
 | `classic` | ![](https://github-views.deno.dev/api/badge/example?style=classic&display=true) | `style=classic` |
 
-> **Note**:
+> [!NOTE]
 > To apply the style, add to the URL `?style=YOUR-STYLE`, if you use other parameters you can use `&style=YOUR-STYLE`
 
 ## 🎨 Custom colors
 
-> **Note**:
+> [!NOTE]
 > The default color is `blue`
 
 | Color | Example | Usage | Label Color | Label usage | 
@@ -54,10 +54,10 @@
 | `black` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&color=black) | `color=black` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&labelColor=black) | `labelColor=black` |
 | `ff69b4` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&color=ff69b4) | `color=ff69b4` | ![](https://github-views.deno.dev/api/badge/example?style=flat&display=true&labelColor=ff69b4) | `labelColor=ff69b4` |
 
-> **Note**:
+> [!NOTE]
 > To apply the style, add to the URL `?color=YOUR-COLOR`, if you use other parameters you can use `&color=YOUR-COLOR`
 
-> **Warning**:
+> [!WARNING]
 > HEX colors should be used without `#` symbol prefix.
 
 ## 📝 Custom text
@@ -66,7 +66,7 @@ You can overwrite default `Views` text with your own label.
 
 ![](https://github-views.deno.dev/api/badge/example?label=Your+own+label&display=true&color=blue)
 
-> **Note**:
+> [!NOTE]
 > Replace whitespace with `+` character in multi-word labels.
 
 ```markdown
@@ -77,14 +77,14 @@ You can overwrite default `Views` text with your own label.
 
 You can get the number of views in `json` format. It can be useful if you want to use the number of views in your application.
 
-> **Warning**:
+> [!WARNING]
 > The API is read-only, you can't change the number of views.
 
 **Request:**
 ```
 https://github-views.deno.dev/api/json/YOUR-USERNAME
 ```
-> **Note**:
+> [!NOTE]
 > Replace `YOUR-USERNAME` with your real value.
 
 **Response:**
@@ -108,7 +108,7 @@ https://github-views.deno.dev/api/json/YOUR-USERNAME
 3. Select the repository with this project
 4. Click "Deploy" and wait for the project to build
 
-> **Note**:
+> [!NOTE]
 > This project requires private access to [Deno KV](https://deno.com/kv).
 
 ## 🖥️ Hosting with Vercel
