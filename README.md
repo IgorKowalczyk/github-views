@@ -115,7 +115,7 @@ https://github-views.deno.dev/api/json/YOUR-USERNAME
 3. Select the repository with this project
 4. Click "Deploy" and wait for the project to build
 
-> [!NOTE]
+> [!IMPORTANT]
 > This project requires private access to [Deno KV](https://deno.com/kv).
 
 ## 🖥️ Hosting with Vercel
