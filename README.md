@@ -10,6 +10,10 @@
   </a>
   <a aria-label="Powered by" href="https://deno.com/deploy">
     <img src="https://img.shields.io/static/v1?label=Powered%20by&message=Deno&color=blue&logo=deno">
+  </a>
+  <a aria-label="Powered by" href="https://astro.build">
+    <img src="https://img.shields.io/static/v1?label=Powered%20by&message=Astro&color=blue&logo=astro&logoColor=fff">
+  </a>
 </div>
 
 ---
