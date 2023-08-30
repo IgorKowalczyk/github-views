@@ -1,13 +1,16 @@
-<img width="170" height="170" align="left" style="float: left; margin: 0 10px 0 0; border-radius: 50%;" src="https://github-views.deno.dev/favicons/android-chrome-144x144.png">
+![Github Profile Views](https://github.com/IgorKowalczyk/github-views/assets/49127376/1e3f22d5-5fbd-41ff-bd6f-4aee9dfae847)
 
-## Github Profile Views
 
-> 👀 Count the views of your github profile with your own custom badge
-
-[![GitHub License](https://img.shields.io/github/license/igorkowalczyk/github-views?color=%2334D058&logo=github&style=flat-square&label=License)](https://github.com/igorkowalczyk/github-views/blob/main/license.md)
-[![Version](https://img.shields.io/github/v/release/igorkowalczyk/github-views?color=%2334D058&logo=github&style=flat-square&label=Version)](https://github.com/igorkowalczyk/github-views/releases)
-[![Discord](https://img.shields.io/discord/666599184844980224?color=%2334D058&logo=discord&style=flat-square&logoColor=fff&label=Discord)](https://igorkowalczyk.dev/discord)
-<br><br><br>
+<div align="center">
+  <a aria-label="GitHub License" href="https://github.com/igorkowalczyk/github-views/blob/main/license.md">
+    <img src="https://img.shields.io/github/license/igorkowalczyk/github-views?color=blue&logo=github&label=License">
+  </a>
+  <a aria-label="Version" href="https://github.com/igorkowalczyk/github-views/releases">
+    <img src="https://img.shields.io/github/v/release/igorkowalczyk/github-views?color=blue&logo=github&label=Version">
+  </a>
+  <a aria-label="Powered by" href="https://deno.com/deploy">
+    <img src="https://img.shields.io/static/v1?label=Powered%20by&message=Deno&color=blue&logo=deno">
+</div>
 
 ---
 
@@ -19,7 +22,7 @@
  - Copy the generated markdown code with the style you like and paste it in your `README.md` file
  
 ```markdown
-![](https://github-views.deno.dev/api/badge/YOUR-USERNAME)
+![Github Views](https://github-views.deno.dev/api/badge/YOUR-USERNAME)
 ```
 
 ## 🖼️ Available styles
@@ -70,7 +73,7 @@ You can overwrite default `Views` text with your own label.
 > Replace whitespace with `+` character in multi-word labels.
 
 ```markdown
-![](https://github-views.deno.dev/api/badge/YOUR-USERNAME?label=Your+own+label)
+![Github Views](https://github-views.deno.dev/api/badge/YOUR-USERNAME?label=Your+own+label)
 ```
 
 ## 📦 `JSON` format
