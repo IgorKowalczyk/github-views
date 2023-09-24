@@ -12,8 +12,8 @@ dependencies:
     specifier: 5.0.0
     version: 5.0.0(astro@3.1.2)(tailwindcss@3.3.3)
   '@igorkowalczyk/is-browser':
-    specifier: 5.0.1
-    version: 5.0.1(tailwindcss@3.3.3)
+    specifier: 5.0.2
+    version: 5.0.2(tailwindcss@3.3.3)
   astro:
     specifier: 3.1.2
     version: 3.1.2
@@ -873,8 +873,8 @@ packages:
       - supports-color
     dev: true
 
-  /@igorkowalczyk/is-browser@5.0.1(tailwindcss@3.3.3):
-    resolution: {integrity: sha512-f9xiKC6boHQzhqpqH0xmpJuN+P+2CKuytQgo+x0rDn633INkDxITJOUcIUFnuMzfjlCGJTSd6FsEZ6fauJfD9Q==}
+  /@igorkowalczyk/is-browser@5.0.2(tailwindcss@3.3.3):
+    resolution: {integrity: sha512-ETJp+hw0YI5A4WmdXZLXT2hU7OmhbT+j3Jk3S7Mm6v0HlV/rnDvNLCGvNoOpdQFdBcsLbRXBFibgxdzaMbJkjw==}
     engines: {node: '>=16'}
     peerDependencies:
       tailwindcss: '>=3.0.0'
