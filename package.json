@@ -33,7 +33,7 @@
   },
   "homepage": "https://github-views.deno.dev/",
   "dependencies": {
-    "@astrojs/deno": "5.0.0",
+    "@astrojs/deno": "5.0.1",
     "@astrojs/tailwind": "5.0.0",
     "@igorkowalczyk/is-browser": "5.0.2",
     "astro": "3.1.4",

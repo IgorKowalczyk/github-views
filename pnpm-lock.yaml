@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@astrojs/deno':
-    specifier: 5.0.0
-    version: 5.0.0(astro@3.1.4)
+    specifier: 5.0.1
+    version: 5.0.1(astro@3.1.4)
   '@astrojs/tailwind':
     specifier: 5.0.0
     version: 5.0.0(astro@3.1.4)(tailwindcss@3.3.3)
@@ -100,10 +100,10 @@ packages:
   /@astrojs/compiler@2.1.0:
     resolution: {integrity: sha512-Mp+qrNhly+27bL/Zq8lGeUY+YrdoU0eDfIlAeGIPrzt0PnI/jGpvPUdCaugv4zbCrDkOUScFfcbeEiYumrdJnw==}
 
-  /@astrojs/deno@5.0.0(astro@3.1.4):
-    resolution: {integrity: sha512-jvxPul1YrBaXxc0Y2QlVgqZvXcm2TUJvXzSLtx1KR75ACco7YTtm2C+xbXr4EYJHewMokoxnF48A3G03bn6xSQ==}
+  /@astrojs/deno@5.0.1(astro@3.1.4):
+    resolution: {integrity: sha512-nYztGqHqC+q3A9ynjj3gblAkO/ZylDwahjVTx+2DvZgX4U+BJU/gL5BZkNtL+P10opCKJi29NvvVFvk6jwZHmA==}
     peerDependencies:
-      astro: ^3.0.0
+      astro: ^3.1.4
     dependencies:
       astro: 3.1.4
       esbuild: 0.19.2
