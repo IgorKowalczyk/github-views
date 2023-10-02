@@ -7,16 +7,16 @@ settings:
 dependencies:
   '@astrojs/deno':
     specifier: 5.0.1
-    version: 5.0.1(astro@3.2.0)
+    version: 5.0.1(astro@3.2.1)
   '@astrojs/tailwind':
     specifier: 5.0.0
-    version: 5.0.0(astro@3.2.0)(tailwindcss@3.3.3)
+    version: 5.0.0(astro@3.2.1)(tailwindcss@3.3.3)
   '@igorkowalczyk/is-browser':
     specifier: 5.0.2
     version: 5.0.2(tailwindcss@3.3.3)
   astro:
-    specifier: 3.2.0
-    version: 3.2.0
+    specifier: 3.2.1
+    version: 3.2.1
   badgen:
     specifier: 3.2.3
     version: 3.2.3
@@ -100,12 +100,12 @@ packages:
   /@astrojs/compiler@2.1.0:
     resolution: {integrity: sha512-Mp+qrNhly+27bL/Zq8lGeUY+YrdoU0eDfIlAeGIPrzt0PnI/jGpvPUdCaugv4zbCrDkOUScFfcbeEiYumrdJnw==}
 
-  /@astrojs/deno@5.0.1(astro@3.2.0):
+  /@astrojs/deno@5.0.1(astro@3.2.1):
     resolution: {integrity: sha512-nYztGqHqC+q3A9ynjj3gblAkO/ZylDwahjVTx+2DvZgX4U+BJU/gL5BZkNtL+P10opCKJi29NvvVFvk6jwZHmA==}
     peerDependencies:
       astro: ^3.1.4
     dependencies:
-      astro: 3.2.0
+      astro: 3.2.1
       esbuild: 0.19.2
     dev: false
 
@@ -113,13 +113,13 @@ packages:
     resolution: {integrity: sha512-NQ4ppp1CM0HNkKbJNM4saVSfmUYzGlRalF6wx7F6T/MYHYSWGuojY89/oFTy4t8VlOGUCUijlsVNNeziWaUo5g==}
     dev: false
 
-  /@astrojs/markdown-remark@3.2.0(astro@3.2.0):
+  /@astrojs/markdown-remark@3.2.0(astro@3.2.1):
     resolution: {integrity: sha512-jigyLfefUZPKgVmmraCkVpdUuFH1R3SrpgQO13axsgwLDBgkggaQpNR5Ag4O9PDualeBtbdt30aYSfvnBKx9Hg==}
     peerDependencies:
       astro: ^3.1.0
     dependencies:
       '@astrojs/prism': 3.0.0
-      astro: 3.2.0
+      astro: 3.2.1
       github-slugger: 2.0.0
       import-meta-resolve: 3.0.0
       mdast-util-definitions: 6.0.0
@@ -144,13 +144,13 @@ packages:
       prismjs: 1.29.0
     dev: false
 
-  /@astrojs/tailwind@5.0.0(astro@3.2.0)(tailwindcss@3.3.3):
+  /@astrojs/tailwind@5.0.0(astro@3.2.1)(tailwindcss@3.3.3):
     resolution: {integrity: sha512-bMZZNNm/SW+ijUKMQDhdiuNWDdR3CubEKUHb2Ran4Arx1ikWn/kKIkFDXUV+MUnsLa7s19x9VMRlARRyKbqMkQ==}
     peerDependencies:
       astro: ^3.0.0
       tailwindcss: ^3.0.24
     dependencies:
-      astro: 3.2.0
+      astro: 3.2.1
       autoprefixer: 10.4.16(postcss@8.4.31)
       postcss: 8.4.31
       postcss-load-config: 4.0.1(postcss@8.4.31)
@@ -1372,14 +1372,14 @@ packages:
       - supports-color
     dev: true
 
-  /astro@3.2.0:
-    resolution: {integrity: sha512-sDQnSFV46ZzNkVU6co5f8wilZFmGiWsqnIVoMhd5/XPU76iZdA40WqFyBOhGaji7hGuqbcjN8MGobMg53lsoUg==}
+  /astro@3.2.1:
+    resolution: {integrity: sha512-idPwpMSdFg8wuS9HVkefDcbRdKpCkQzZGeKw3XO6enLcCv6ZvACRdWgl9xhM/N3RO4AOzrnJPAk1cbYcP3FdNQ==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
     dependencies:
       '@astrojs/compiler': 2.1.0
       '@astrojs/internal-helpers': 0.2.0
-      '@astrojs/markdown-remark': 3.2.0(astro@3.2.0)
+      '@astrojs/markdown-remark': 3.2.0(astro@3.2.1)
       '@astrojs/telemetry': 3.0.2
       '@babel/core': 7.22.11
       '@babel/generator': 7.22.10
