@@ -52,7 +52,7 @@
     "autoprefixer": "10.4.16",
     "eslint": "8.50.0",
     "eslint-plugin": "^1.0.1",
-    "eslint-plugin-astro": "0.29.0",
+    "eslint-plugin-astro": "0.29.1",
     "postcss": "8.4.31",
     "prettier": "3.0.3",
     "prettier-plugin-astro": "0.12.0",
