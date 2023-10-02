@@ -36,7 +36,7 @@
     "@astrojs/deno": "5.0.1",
     "@astrojs/tailwind": "5.0.0",
     "@igorkowalczyk/is-browser": "5.0.2",
-    "astro": "3.2.1",
+    "astro": "3.2.2",
     "badgen": "3.2.3",
     "canvas-confetti": "1.6.1",
     "mini-svg-data-uri": "1.4.4",
