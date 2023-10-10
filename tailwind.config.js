@@ -9,15 +9,12 @@ module.exports = {
    fontFamily: {
     inter: ["Inter", ...fontFamily.sans],
    },
-   fontWeight: {
-    semibold: 700,
-   },
    colors: {
-    background: "#040d21",
-    "background-secondary": "#08152b",
+    background: "#101110",
+    "background-secondary": "#161617",
    },
    boxShadow: {
-    main: "0 0 500px 100px rgba(0, 134, 245, 0.05)",
+    main: "0 0 500px 100px rgb(16, 17, 16)",
    },
   },
  },
@@ -31,8 +28,6 @@ module.exports = {
   }),
   /* eslint-disable global-require */
   require("@igorkowalczyk/is-browser"),
-  require("@tailwindcss/forms"),
-  require("tailwindcss-text-fill"),
   /* eslint-enable global-require */
  ],
 };
