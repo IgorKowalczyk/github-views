@@ -9,9 +9,9 @@ let url = "/api/badge/example";
 
 <Layout title="Profile views - create your own badges">
  <main>
-  <Header text="Profile views" id="main" />
+  <Header text="@igorkowalczyk/profile-views" id="main" />
   <Description text="Create your own badge that will count views anywhere you want!" />
-  <div class="relative mb-6 mt-2 flex flex-row gap-2">
+  <div class="relative mb-6 mt-2 flex w-full flex-col items-center gap-2 text-neutral-300 md:flex-row">
    <Input id="input" placeholder="Your username" type="text" />
    <button id="submit" class="group rounded-md border border-transparent bg-white/[10%] px-4 py-2 font-inter text-sm font-medium text-white duration-200 hover:bg-white/[15%] motion-reduce:transition-none">
     <span class="mt-[2px] inline-flex"
@@ -21,8 +21,8 @@ let url = "/api/badge/example";
    >
    <canvas id="confetti" class="pointer-events-none absolute right-[-100px] top-[-120px]"> </canvas>
   </div>
-  <Header text="Examples" id="change" />
-  <table class="border-[2px] border-white/10 p-2" id="examples">
+  <Header text="Examples 🔥" id="change" />
+  <table class="mx-auto mt-4 p-2" id="examples">
    <thead>
     <tr>
      <th>Style</th>
@@ -133,12 +133,12 @@ let url = "/api/badge/example";
      examples.classList.remove("hidden");
      rendered.classList.add("hidden");
      description.classList.add("hidden");
-     header.innerText = "Examples";
+     header.innerText = "Examples 🔥";
     } else {
      examples.classList.add("hidden");
      rendered.classList.remove("hidden");
      description.classList.remove("hidden");
-     header.innerText = "Your badges";
+     header.innerText = "Your badges 🎉";
     }
     document.querySelectorAll(".pre").forEach((pre) => {
      const settings = pre.innerText.split("?");
@@ -146,6 +146,7 @@ let url = "/api/badge/example";
      pre.innerText = `${base}?${settings[1]}`;
     });
     document.querySelectorAll("img").forEach((img) => {
+     if (img.classList.contains("noreplace")) return;
      const settings = img.src.split("?")[1];
      img.src = string + "?" + settings;
     });

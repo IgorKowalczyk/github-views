@@ -11,7 +11,7 @@ interface QueryParams {
  display?: string;
 }
 
-export const get = async function get({ params, request }: { params: { username: string }; request: Request }): Promise<Response> {
+export const GET = async function GET({ params, request }: { params: { username: string }; request: Request }): Promise<Response> {
  try {
   const query = new URL(request.url).searchParams;
   const { label, labelColor, color, style, format, display }: QueryParams = Object.fromEntries(query);
