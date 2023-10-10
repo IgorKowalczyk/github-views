@@ -1,7 +1,12 @@
 tr,
+th {
+ @apply p-2;
+}
+
+tr,
 td,
 th {
- @apply max-w-md overflow-x-auto overflow-y-hidden border-[1px] border-neutral-800 p-2;
+ @apply max-w-md overflow-x-auto overflow-y-hidden border-[1px] border-neutral-800;
 }
 
 pre {
