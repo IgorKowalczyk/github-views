@@ -1,5 +1,5 @@
 module.exports = {
- extends: ["@igorkowalczyk/eslint-config", "plugin:astro/recommended"],
+ extends: ["@igorkowalczyk/eslint-config/legacy", "plugin:astro/recommended"],
  env: {
   node: true,
   es2022: true,
