@@ -40,7 +40,7 @@
     "badgen": "3.2.3",
     "canvas-confetti": "1.9.0",
     "mini-svg-data-uri": "1.4.4",
-    "tailwindcss": "3.3.4",
+    "tailwindcss": "3.3.5",
     "tailwindcss-text-fill": "0.2.0"
   },
   "devDependencies": {
