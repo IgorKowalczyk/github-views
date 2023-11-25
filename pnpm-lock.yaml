@@ -21,8 +21,8 @@ dependencies:
     specifier: 3.2.3
     version: 3.2.3
   canvas-confetti:
-    specifier: 1.9.1
-    version: 1.9.1
+    specifier: 1.9.2
+    version: 1.9.2
   mini-svg-data-uri:
     specifier: 1.4.4
     version: 1.4.4
@@ -1622,8 +1622,8 @@ packages:
   /caniuse-lite@1.0.30001538:
     resolution: {integrity: sha512-HWJnhnID+0YMtGlzcp3T9drmBJUVDchPJ08tpUGFLs9CYlwWPH2uLgpHn8fND5pCgXVtnGS3H4QR9XLMHVNkHw==}
 
-  /canvas-confetti@1.9.1:
-    resolution: {integrity: sha512-jieDCn9OnPgFu5q+rbOGUmIGOjzgOnecW1/6KH07kAFAMwOczcTc4clde9pdyUPIAd/2wxZ8C5u7mBAcOpGK8Q==}
+  /canvas-confetti@1.9.2:
+    resolution: {integrity: sha512-6Xi7aHHzKwxZsem4mCKoqP6YwUG3HamaHHAlz1hTNQPCqXhARFpSXnkC9TWlahHY5CG6hSL5XexNjxK8irVErg==}
     dev: false
 
   /ccount@2.0.1:
