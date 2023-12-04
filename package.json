@@ -44,7 +44,7 @@
     "tailwindcss-text-fill": "0.2.0"
   },
   "devDependencies": {
-    "@igorkowalczyk/eslint-config": "2.0.3",
+    "@igorkowalczyk/eslint-config": "2.1.0",
     "@igorkowalczyk/prettier-config": "2.0.3",
     "@tailwindcss/forms": "0.5.7",
     "@typescript-eslint/eslint-plugin": "6.13.2",
