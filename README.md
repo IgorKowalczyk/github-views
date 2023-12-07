@@ -114,7 +114,7 @@ https://github-views.deno.dev/api/json/YOUR-USERNAME
 1. Go to https://deno.com/deploy and create an account
 2. Click "New Project" and select your account and forked repository
 3. Click "Add build step" and wait for the project to build
-2. Go to repository settings -> [Secrets and variables -> Actions -> Variables](https://docs.github.com/en/actions/learn-github-actions/variables) and add `DENO_DEPLOY_PROJECT` variable with your [Deno Deploy](https://deno.com/deploy) project name.
+2. Go to [repository settings](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings) -> [Secrets and variables -> Actions -> Variables](https://docs.github.com/en/actions/learn-github-actions/variables) and add `DENO_DEPLOY_PROJECT` variable with your [Deno Deploy](https://deno.com/deploy) project name.
 4. Wait for the project to build and go to the project URL
 
 > [!IMPORTANT]
