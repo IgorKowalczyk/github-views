@@ -118,7 +118,7 @@ https://github-views.deno.dev/api/json/YOUR-USERNAME
 4. Wait for the project to build and go to the project URL
 
 > [!IMPORTANT]
-> This project requires private access to [Deno KV](https://deno.com/kv).
+> This project requires access to [Deno KV](https://deno.com/kv) which is currently in beta.
 
 ## 🖥️ Hosting with Vercel
 
