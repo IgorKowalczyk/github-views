@@ -73,12 +73,12 @@ You can overwrite default `Views` text with your own label.
 
 ![](https://github-views.deno.dev/api/badge/example?label=Your+own+label&display=true&color=blue)
 
-> [!NOTE]
-> Replace whitespace with `+` character in multi-word labels.
-
 ```markdown
 ![Github Views](https://github-views.deno.dev/api/badge/YOUR-USERNAME?label=Your+own+label)
 ```
+
+> [!NOTE]
+> Replace whitespace with `+` character in multi-word labels.
 
 ## 📦 `JSON` format
 
@@ -110,17 +110,21 @@ https://github-views.deno.dev/api/json/YOUR-USERNAME
 
 ## 🖥️ Hosting with Deno Deploy
 
+1. Fork this repository on GitHub
 1. Go to https://deno.com/deploy and create an account
-2. Click "New Project" and select repository from Github
-3. Select the repository with this project
-4. Click "Deploy" and wait for the project to build
+2. Click "New Project" and select your account and forked repository
+3. Click "Add build step" and wait for the project to build
+2. Go to [repository settings](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings) -> [Secrets and variables -> Actions -> Variables](https://docs.github.com/en/actions/learn-github-actions/variables) and add `DENO_DEPLOY_PROJECT` variable with your [Deno Deploy](https://deno.com/deploy) project name.
+4. Wait for the project to build and go to the project URL
 
 > [!IMPORTANT]
-> This project requires private access to [Deno KV](https://deno.com/kv).
+> This project requires access to [Deno KV](https://deno.com/kv) which is currently in beta.
 
 ## 🖥️ Hosting with Vercel
 
-Version `v3` does not support Vercel hosting. If you want to host this project on Vercel, use version [v2](https://github.com/IgorKowalczyk/github-views/tree/v2.2.1) and follow the instructions corresponding to the version.
+> [!WARNING]
+> Versions `>= v3` does not support Vercel hosting. If you want to host this project on Vercel, use versions 
+`<= v2`. To do this, go to [v2 branch](https://github.com/IgorKowalczyk/github-views/tree/v2.2.1) and follow the instructions corresponding to the version.
 
 ## ⁉️ Issues
 

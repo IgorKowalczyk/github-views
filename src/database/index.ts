@@ -1,4 +1,4 @@
-import "./patch.js";
+import "./patch";
 
 export async function IncreaseViews(username: string) {
  if (username === "example") return 0;
