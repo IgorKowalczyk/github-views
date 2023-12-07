@@ -110,10 +110,12 @@ https://github-views.deno.dev/api/json/YOUR-USERNAME
 
 ## 🖥️ Hosting with Deno Deploy
 
+1. Fork this repository on GitHub
 1. Go to https://deno.com/deploy and create an account
-2. Click "New Project" and select repository from Github
-3. Select the repository with this project
-4. Click "Deploy" and wait for the project to build
+2. Click "New Project" and select your account and forked repository
+3. Click "Add build step" and wait for the project to build
+2. Go to repository settings -> Secrets and variables -> Actions -> Variables and add `DENO_DEPLOY_PROJECT` variable with your [Deno Deploy](https://deno.com/deploy) project name.
+4. Wait for the project to build and go to the project URL
 
 > [!IMPORTANT]
 > This project requires private access to [Deno KV](https://deno.com/kv).
