@@ -122,7 +122,8 @@ https://github-views.deno.dev/api/json/YOUR-USERNAME
 
 ## 🖥️ Hosting with Vercel
 
-Version `v3` does not support Vercel hosting. If you want to host this project on Vercel, use version [v2](https://github.com/IgorKowalczyk/github-views/tree/v2.2.1) and follow the instructions corresponding to the version.
+Versions `>= v3` does not support Vercel hosting. If you want to host this project on Vercel, use versions 
+`<= v2`. To do this, go to [v2 branch](https://github.com/IgorKowalczyk/github-views/tree/v2.2.1) and follow the instructions corresponding to the version.
 
 ## ⁉️ Issues
 
