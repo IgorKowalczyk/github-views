@@ -1,4 +1,5 @@
-import { badgen, StyleOption } from "badgen";
+import { badgen } from "badgen";
+import type { StyleOption } from "badgen";
 import { FormatNumber } from "../../../utils/FormatNumber";
 import { IncreaseViews, GetViews } from "@/database/index";
 
