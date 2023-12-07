@@ -33,6 +33,6 @@ jobs:
    - name: 🚀 Upload to Deno Deploy
      uses: denoland/deployctl@v1
      with:
-      project: ${{ env.DENO_DEPLOY_PROJECT }}
+      project: ${{ vars.DENO_DEPLOY_PROJECT }}
       entrypoint: "server/entry.mjs"
       root: "dist"
