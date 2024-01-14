@@ -36,10 +36,10 @@ dependencies:
 devDependencies:
   '@igorkowalczyk/eslint-config':
     specifier: 2.2.0
-    version: 2.2.0(@typescript-eslint/parser@6.18.1)(eslint@8.56.0)(prettier@3.1.1)
+    version: 2.2.0(@typescript-eslint/parser@6.18.1)(eslint@8.56.0)(prettier@3.2.2)
   '@igorkowalczyk/prettier-config':
     specifier: 2.2.0
-    version: 2.2.0(prettier@3.1.1)
+    version: 2.2.0(prettier@3.2.2)
   '@tailwindcss/forms':
     specifier: 0.5.7
     version: 0.5.7(tailwindcss@3.4.1)
@@ -65,14 +65,14 @@ devDependencies:
     specifier: 8.4.33
     version: 8.4.33
   prettier:
-    specifier: 3.1.1
-    version: 3.1.1
+    specifier: 3.2.2
+    version: 3.2.2
   prettier-plugin-astro:
     specifier: 0.12.3
     version: 0.12.3
   prettier-plugin-tailwindcss:
     specifier: 0.5.11
-    version: 0.5.11(prettier-plugin-astro@0.12.3)(prettier@3.1.1)
+    version: 0.5.11(prettier-plugin-astro@0.12.3)(prettier@3.2.2)
 
 packages:
 
@@ -658,7 +658,7 @@ packages:
     resolution: {integrity: sha512-dvuCeX5fC9dXgJn9t+X5atfmgQAzUOWqS1254Gh0m6i8wKd10ebXkfNKiRK+1GWi/yTvvLDHpoxLr0xxxeslWw==}
     dev: true
 
-  /@igorkowalczyk/eslint-config@2.2.0(@typescript-eslint/parser@6.18.1)(eslint@8.56.0)(prettier@3.1.1):
+  /@igorkowalczyk/eslint-config@2.2.0(@typescript-eslint/parser@6.18.1)(eslint@8.56.0)(prettier@3.2.2):
     resolution: {integrity: sha512-s4y/t4qLMQMQAo2GuBDRzmGXLNNTHInIAFWtB66wBFKXBMsxT0ntqbIyxfWbvOGNOrODZCO+jAbWX1rPCAYmww==}
     peerDependencies:
       eslint: '>=8.0.0'
@@ -666,7 +666,7 @@ packages:
       '@eslint/js': 8.55.0
       eslint: 8.56.0
       eslint-plugin-import: 2.29.0(@typescript-eslint/parser@6.18.1)(eslint@8.56.0)
-      eslint-plugin-prettier: 5.0.1(eslint@8.56.0)(prettier@3.1.1)
+      eslint-plugin-prettier: 5.0.1(eslint@8.56.0)(prettier@3.2.2)
       globals: 13.23.0
     transitivePeerDependencies:
       - '@types/eslint'
@@ -687,12 +687,12 @@ packages:
       tailwindcss: 3.4.1
     dev: false
 
-  /@igorkowalczyk/prettier-config@2.2.0(prettier@3.1.1):
+  /@igorkowalczyk/prettier-config@2.2.0(prettier@3.2.2):
     resolution: {integrity: sha512-8BvOhnNaMmICIuo50zTaFMuQMGB0PZdZ472c9qB9zRWBWMaQSaRmRD4YPwF8lvrsDT5Z0JGO7M5ZIsueTozYhQ==}
     peerDependencies:
       prettier: ^3.0
     dependencies:
-      prettier: 3.1.1
+      prettier: 3.2.2
     dev: true
 
   /@jridgewell/gen-mapping@0.3.3:
@@ -1642,6 +1642,7 @@ packages:
 
   /color-name@1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
+    requiresBuild: true
 
   /color-string@1.9.1:
     resolution: {integrity: sha512-shrVawQFojnZv6xM40anx4CkoDP+fZsw/ZerEMsW/pyzsRbElpsL/DBVW7q3ExxwusdNXI3lXpuhEZkzs8p5Eg==}
@@ -2119,7 +2120,7 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-prettier@5.0.1(eslint@8.56.0)(prettier@3.1.1):
+  /eslint-plugin-prettier@5.0.1(eslint@8.56.0)(prettier@3.2.2):
     resolution: {integrity: sha512-m3u5RnR56asrwV/lDC4GHorlW75DsFfmUcjfCYylTUs85dBRnB7VM6xG8eCMJdeDRnppzmxZVf1GEPJvl1JmNg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -2134,7 +2135,7 @@ packages:
         optional: true
     dependencies:
       eslint: 8.56.0
-      prettier: 3.1.1
+      prettier: 3.2.2
       prettier-linter-helpers: 1.0.0
       synckit: 0.8.6
     dev: true
@@ -4050,11 +4051,11 @@ packages:
     engines: {node: ^14.15.0 || >=16.0.0}
     dependencies:
       '@astrojs/compiler': 1.8.2
-      prettier: 3.1.1
+      prettier: 3.2.2
       sass-formatter: 0.7.8
     dev: true
 
-  /prettier-plugin-tailwindcss@0.5.11(prettier-plugin-astro@0.12.3)(prettier@3.1.1):
+  /prettier-plugin-tailwindcss@0.5.11(prettier-plugin-astro@0.12.3)(prettier@3.2.2):
     resolution: {integrity: sha512-AvI/DNyMctyyxGOjyePgi/gqj5hJYClZ1avtQvLlqMT3uDZkRbi4HhGUpok3DRzv9z7Lti85Kdj3s3/1CeNI0w==}
     engines: {node: '>=14.21.3'}
     peerDependencies:
@@ -4103,12 +4104,12 @@ packages:
       prettier-plugin-twig-melody:
         optional: true
     dependencies:
-      prettier: 3.1.1
+      prettier: 3.2.2
       prettier-plugin-astro: 0.12.3
     dev: true
 
-  /prettier@3.1.1:
-    resolution: {integrity: sha512-22UbSzg8luF4UuZtzgiUOfcGM8s4tjBv6dJRT7j275NXsy2jb4aJa4NNveul5x4eqlF1wuhuR2RElK71RvmVaw==}
+  /prettier@3.2.2:
+    resolution: {integrity: sha512-HTByuKZzw7utPiDO523Tt2pLtEyK7OibUD9suEJQrPUCYQqrHr74GGX6VidMrovbf/I50mPqr8j/II6oBAuc5A==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
