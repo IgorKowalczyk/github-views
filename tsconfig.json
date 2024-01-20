@@ -4,8 +4,8 @@
   "verbatimModuleSyntax": true,
   "baseUrl": ".",
   "paths": {
-   "@/*": ["src/*"]
+   "@/*": ["src/*"],
   },
-  "target": "esnext"
- }
+  "target": "esnext",
+ },
 }
