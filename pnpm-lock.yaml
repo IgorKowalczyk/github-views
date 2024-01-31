@@ -59,8 +59,8 @@ devDependencies:
     specifier: ^1.0.1
     version: 1.0.1
   eslint-plugin-astro:
-    specifier: 0.31.3
-    version: 0.31.3(eslint@8.56.0)
+    specifier: 0.31.4
+    version: 0.31.4(eslint@8.56.0)
   postcss:
     specifier: 8.4.33
     version: 8.4.33
@@ -1247,8 +1247,8 @@ packages:
       is-shared-array-buffer: 1.0.2
     dev: true
 
-  /astro-eslint-parser@0.16.0:
-    resolution: {integrity: sha512-k9ASvY8pa6qttM+fvNJCILxxjftfNg/ou5cjd25SVHsc7moplezGGM9fgMUyf24SRYt8ShO603oHRDn2KqwxMg==}
+  /astro-eslint-parser@0.16.3:
+    resolution: {integrity: sha512-CGaBseNtunAV2DCpwBXqTKq8+9Tw65XZetMaC0FsMoZuLj0gxNIkbCf2QyKYScVrNOU7/ayfNdVw8ZCSHBiqCg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     dependencies:
       '@astrojs/compiler': 2.5.0
@@ -1256,6 +1256,7 @@ packages:
       '@typescript-eslint/types': 5.62.0
       astrojs-compiler-sync: 0.3.3(@astrojs/compiler@2.5.0)
       debug: 4.3.4
+      entities: 4.5.0
       eslint-visitor-keys: 3.4.3
       espree: 9.6.1
       semver: 7.5.4
@@ -1896,7 +1897,6 @@ packages:
   /entities@4.5.0:
     resolution: {integrity: sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw==}
     engines: {node: '>=0.12'}
-    dev: false
 
   /es-abstract@1.22.3:
     resolution: {integrity: sha512-eiiY8HQeYfYH2Con2berK+To6GrK2RxbPawDkGq4UiCQQfZHb6wX9qQqkbpPqaxQFcl8d9QzZqo0tGE0VcrdwA==}
@@ -2069,8 +2069,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-astro@0.31.3(eslint@8.56.0):
-    resolution: {integrity: sha512-dxNT4cusvLiWFT0ebTd7HP9GixZbua7QYARD1ilqhJEANCSJA7RIas57vnD1PHNDCdYyTit7JU4NDPLWkcG2HA==}
+  /eslint-plugin-astro@0.31.4(eslint@8.56.0):
+    resolution: {integrity: sha512-aU1KYSo7TdnSTBenyAWuRFB07lVUe0/6u9cltC2ZCx0QgcfC+HP7e87OkmvoKh+RZuaSsVgLG4zCOI8LZ6nS/Q==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       eslint: '>=7.0.0'
@@ -2078,7 +2078,7 @@ packages:
       '@eslint-community/eslint-utils': 4.4.0(eslint@8.56.0)
       '@jridgewell/sourcemap-codec': 1.4.15
       '@typescript-eslint/types': 5.62.0
-      astro-eslint-parser: 0.16.0
+      astro-eslint-parser: 0.16.3
       eslint: 8.56.0
       eslint-compat-utils: 0.4.1(eslint@8.56.0)
       postcss: 8.4.33
