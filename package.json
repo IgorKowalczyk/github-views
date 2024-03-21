@@ -53,7 +53,7 @@
     "eslint": "8.57.0",
     "eslint-plugin": "^1.0.1",
     "eslint-plugin-astro": "0.32.0",
-    "postcss": "8.4.37",
+    "postcss": "8.4.38",
     "prettier": "3.2.5",
     "prettier-plugin-astro": "0.13.0",
     "prettier-plugin-tailwindcss": "0.5.12"
