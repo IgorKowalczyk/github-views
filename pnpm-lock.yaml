@@ -59,8 +59,8 @@ devDependencies:
     specifier: ^1.0.1
     version: 1.0.1
   eslint-plugin-astro:
-    specifier: 0.32.0
-    version: 0.32.0(eslint@8.57.0)
+    specifier: 0.33.1
+    version: 0.33.1(eslint@8.57.0)
   postcss:
     specifier: 8.4.38
     version: 8.4.38
@@ -2080,8 +2080,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-astro@0.32.0(eslint@8.57.0):
-    resolution: {integrity: sha512-T8Chx9yG4vrWLCMkQGEbBvUJYSwMVXbw95+EpceFue/jr8JavjYw9A6K1xUxMyycnlWOGMiK7wJ5d/hHNsKBhg==}
+  /eslint-plugin-astro@0.33.1(eslint@8.57.0):
+    resolution: {integrity: sha512-wVyxAf8Ulmljv5qJQLgspWe17LR4hLXcksIENtUlEC3W7rleBVEKXS+hIqzBfCbpkBLZpl1tsYes1AGpYHd13w==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       eslint: '>=7.0.0'
