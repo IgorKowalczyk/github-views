@@ -10,16 +10,16 @@ importers:
     dependencies:
       '@astrojs/deno':
         specifier: 5.0.1
-        version: 5.0.1(astro@4.6.1(typescript@5.3.3))
+        version: 5.0.1(astro@4.6.2(typescript@5.3.3))
       '@astrojs/tailwind':
         specifier: 5.1.0
-        version: 5.1.0(astro@4.6.1(typescript@5.3.3))(tailwindcss@3.4.3)
+        version: 5.1.0(astro@4.6.2(typescript@5.3.3))(tailwindcss@3.4.3)
       '@igorkowalczyk/is-browser':
         specifier: 5.0.2
         version: 5.0.2(tailwindcss@3.4.3)
       astro:
-        specifier: 4.6.1
-        version: 4.6.1(typescript@5.3.3)
+        specifier: 4.6.2
+        version: 4.6.2(typescript@5.3.3)
       badgen:
         specifier: 3.2.3
         version: 3.2.3
@@ -523,6 +523,9 @@ packages:
   '@types/babel__traverse@7.20.4':
     resolution: {integrity: sha512-mSM/iKUk5fDDrEV/e83qY+Cr3I1+Q3qqTuEn++HAWYjEa1+NxZr6CNrcJGf2ZTnq4HoFGC3zaTPZTobCzCFukA==}
 
+  '@types/cookie@0.5.4':
+    resolution: {integrity: sha512-7z/eR6O859gyWIAjuvBWFzNURmf2oPBmJlfVWkwehU5nzIyjwBsTh7WMmEEV4JFnHuQ3ex4oyTvfKzcyJVDBNA==}
+
   '@types/debug@4.1.12':
     resolution: {integrity: sha512-vIChWdVG3LG1SMxEvI/AK+FWJthlrqlTu7fbrlywTkkaONwk/UAGaULXRlf8vkzFBLVm0zkMdCquhL5aOjhXPQ==}
 
@@ -727,8 +730,8 @@ packages:
     resolution: {integrity: sha512-yTgzioUI9MKgBF4LxP7YI+uuZLrnXgHDeW4dpa3VqCNbDmPzL7ix93tc0JJIwWGcskoSAAHZZVaBSp8bHyZZZA==}
     engines: {node: ^14.18.0 || >=16.0.0}
 
-  astro@4.6.1:
-    resolution: {integrity: sha512-gcL22NEhuRi4wu9/x5Kn2eJf7nT6GeU5BxdN6AHbUnX6UzEDIWtpgHs5lBIZYExKbHKN9PjEGXWQzQtFwLU+5g==}
+  astro@4.6.2:
+    resolution: {integrity: sha512-Kl+Wd7MJMQFnI3+V0JxF4HPbs8M67eltqQgtztReOwDLSl0VnOd39rM61W/3LEh10FZ0F13xrDgtdgfXzuLVbg==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -2840,9 +2843,9 @@ snapshots:
 
   '@astrojs/compiler@2.7.1': {}
 
-  '@astrojs/deno@5.0.1(astro@4.6.1(typescript@5.3.3))':
+  '@astrojs/deno@5.0.1(astro@4.6.2(typescript@5.3.3))':
     dependencies:
-      astro: 4.6.1(typescript@5.3.3)
+      astro: 4.6.2(typescript@5.3.3)
       esbuild: 0.19.8
 
   '@astrojs/internal-helpers@0.4.0': {}
@@ -2874,9 +2877,9 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/tailwind@5.1.0(astro@4.6.1(typescript@5.3.3))(tailwindcss@3.4.3)':
+  '@astrojs/tailwind@5.1.0(astro@4.6.2(typescript@5.3.3))(tailwindcss@3.4.3)':
     dependencies:
-      astro: 4.6.1(typescript@5.3.3)
+      astro: 4.6.2(typescript@5.3.3)
       autoprefixer: 10.4.19(postcss@8.4.38)
       postcss: 8.4.38
       postcss-load-config: 4.0.2(postcss@8.4.38)
@@ -3271,6 +3274,8 @@ snapshots:
     dependencies:
       '@babel/types': 7.24.0
 
+  '@types/cookie@0.5.4': {}
+
   '@types/debug@4.1.12':
     dependencies:
       '@types/ms': 0.7.34
@@ -3532,7 +3537,7 @@ snapshots:
       - supports-color
       - typescript
 
-  astro@4.6.1(typescript@5.3.3):
+  astro@4.6.2(typescript@5.3.3):
     dependencies:
       '@astrojs/compiler': 2.7.1
       '@astrojs/internal-helpers': 0.4.0
@@ -3545,6 +3550,7 @@ snapshots:
       '@babel/traverse': 7.24.1
       '@babel/types': 7.24.0
       '@types/babel__core': 7.20.5
+      '@types/cookie': 0.5.4
       acorn: 8.11.2
       aria-query: 5.3.0
       axobject-query: 4.0.0
