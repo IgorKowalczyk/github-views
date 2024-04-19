@@ -1,4 +1,3 @@
-/* eslint-disable global-require */
 import config from "@igorkowalczyk/prettier-config";
 
 export default {

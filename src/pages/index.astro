@@ -4,7 +4,7 @@ import Header from "../components/Header.astro";
 import Image from "../components/Image.astro";
 import Input from "../components/Input.astro";
 import Layout from "../layouts/Layout.astro";
-let url = "/api/badge/example";
+const url = "/api/badge/example";
 ---
 
 <Layout title="Profile views - create your own badges">
@@ -22,71 +22,73 @@ let url = "/api/badge/example";
    <canvas id="confetti" class="pointer-events-none absolute right-[-100px] top-[-120px]"> </canvas>
   </div>
   <Header text="Examples 🔥" id="change" />
-  <table class="mx-auto mt-4 p-2" id="examples">
-   <thead>
-    <tr>
-     <th>Style</th>
-     <th>Default badge</th>
-     <th>Color</th>
-     <th>Custom text & color</th>
-    </tr>
-   </thead>
-   <tbody>
-    <tr>
-     <td class="p-2">
-      <pre>flat</pre>
-     </td>
-     <td>
-      <Image url={`${url}?style=flat&display=true`} />
-     </td>
-     <td>
-      <Image url={`${url}?style=flat&color=blue&display=true`} />
-     </td>
-     <td>
-      <Image url={`${url}?style=flat&color=purple&label=Custom+text&display=true`} />
-     </td>
-    </tr>
+  <div class="overflow-scroll">
+   <table class="mx-auto mt-4 p-2" id="examples">
+    <thead>
+     <tr>
+      <th>Style</th>
+      <th>Default badge</th>
+      <th>Color</th>
+      <th>Custom text & color</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td class="p-2">
+       <pre>flat</pre>
+      </td>
+      <td>
+       <Image url={`${url}?style=flat&display=true`} />
+      </td>
+      <td>
+       <Image url={`${url}?style=flat&color=blue&display=true`} />
+      </td>
+      <td>
+       <Image url={`${url}?style=flat&color=purple&label=Custom+text&display=true`} />
+      </td>
+     </tr>
 
-    <tr>
-     <td class="p-2">
-      <pre>classic</pre>
-     </td>
-     <td>
-      <Image url={`${url}?style=classic&display=true`} />
-     </td>
-     <td>
-      <Image url={`${url}?style=classic&color=blue&display=true`} />
-     </td>
-     <td>
-      <Image url={`${url}?style=classic&color=purple&label=Custom+text&display=true`} />
-     </td>
-    </tr>
-   </tbody>
-  </table>
+     <tr>
+      <td class="p-2">
+       <pre>classic</pre>
+      </td>
+      <td>
+       <Image url={`${url}?style=classic&display=true`} />
+      </td>
+      <td>
+       <Image url={`${url}?style=classic&color=blue&display=true`} />
+      </td>
+      <td>
+       <Image url={`${url}?style=classic&color=purple&label=Custom+text&display=true`} />
+      </td>
+     </tr>
+    </tbody>
+   </table>
 
-  <div id="markdown" class="mb-4 hidden">
-   <Description text="Copy the markdown code below and paste it anywhere you want!" />
+   <div id="markdown" class="mb-4 hidden">
+    <Description text="Copy the markdown code below and paste it anywhere you want!" />
+   </div>
+   <table class="hidden border-[2px] border-white/10 p-2" id="rendered">
+    <tbody>
+     <tr>
+      <td>
+       <Image url={`${url}?style=flat&display=true`} />
+      </td>
+      <td class="p-2">
+       <pre class="pre">![Views](https://github-views.deno.dev/api/badge/example?style=flat)</pre>
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <Image url={`${url}?style=classic&display=true`} />
+      </td>
+      <td class="p-2">
+       <pre class="pre">![Views](https://github-views.deno.dev/api/badge/example?style=classic)</pre>
+      </td>
+     </tr>
+    </tbody>
+   </table>
   </div>
-  <table class="hidden border-[2px] border-white/10 p-2" id="rendered">
-   <tbody>
-    <tr>
-     <td>
-      <Image url={`${url}?style=flat&display=true`} />
-     </td>
-     <td class="p-2">
-      <pre class="pre">![Views](https://github-views.deno.dev/api/badge/example?style=flat)</pre>
-     </td>
-    </tr>
-    <tr>
-     <td>
-      <Image url={`${url}?style=classic&display=true`} />
-     </td>
-     <td class="p-2">
-      <pre class="pre">![Views](https://github-views.deno.dev/api/badge/example?style=classic)</pre>
-     </td>
-    </tr>
-   </tbody>
-  </table>
 
   <p class="my-4 text-center font-medium">
    Looking for more customizations?
@@ -118,7 +120,7 @@ let url = "/api/badge/example";
   });
  </script>
 
- <script define:vars={{ url }}>
+ <script define:vars={{ url }} is:inline>
   let string = url;
   const submit = document.getElementById("submit");
   const input = document.getElementById("input");
@@ -148,7 +150,7 @@ let url = "/api/badge/example";
     });
     document.querySelectorAll("img").forEach((img) => {
      if (img.classList.contains("noreplace")) return;
-     const settings = img.src.split("?")[1];
+     const [, settings] = img.src.split("?");
      img.src = string + "?" + settings;
     });
    } catch (e) {
