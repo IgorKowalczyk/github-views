@@ -57,9 +57,6 @@ importers:
       eslint:
         specifier: 9.0.0
         version: 9.0.0
-      eslint-plugin:
-        specifier: ^1.0.1
-        version: 1.0.1
       eslint-plugin-astro:
         specifier: 0.34.0
         version: 0.34.0(eslint@9.0.0)(typescript@5.3.3)
@@ -1157,10 +1154,6 @@ packages:
         optional: true
       eslint-config-prettier:
         optional: true
-
-  eslint-plugin@1.0.1:
-    resolution: {integrity: sha512-ervp8C09On0fLA258TvE08AqAr/bhRYgHVZd3BrJjD4JfOA2JGANDLGs06j51oWqfPd7Feoo3OoqHD+fuI2sFQ==}
-    engines: {node: '>=0.10.0'}
 
   eslint-scope@8.0.1:
     resolution: {integrity: sha512-pL8XjgP4ZOmmwfFE8mEhSxA7ZY4C+LWyqjQ3o4yWkkmD0qcMT9kkW3zWHOczhWcjTSgqycYAgwSlXvZltv65og==}
@@ -2293,10 +2286,6 @@ packages:
 
   remark-stringify@11.0.0:
     resolution: {integrity: sha512-1OSmLd3awB/t8qdoEOMazZkNsfVTeY4fTsgzcQFdXNq8ToTN4ZGwrMnlda4K6smTFKD+GRV6O48i6Z4iKgPPpw==}
-
-  requireindex@1.1.0:
-    resolution: {integrity: sha512-LBnkqsDE7BZKvqylbmn7lTIVdpx4K/QCduRATpO5R+wtPmky/a8pN1bO2D6wXppn1497AJF9mNjqAXr6bdl9jg==}
-    engines: {node: '>=0.10.5'}
 
   resolve-from@4.0.0:
     resolution: {integrity: sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==}
@@ -4093,10 +4082,6 @@ snapshots:
       prettier-linter-helpers: 1.0.0
       synckit: 0.8.6
 
-  eslint-plugin@1.0.1:
-    dependencies:
-      requireindex: 1.1.0
-
   eslint-scope@8.0.1:
     dependencies:
       esrecurse: 4.3.0
@@ -5452,8 +5437,6 @@ snapshots:
       '@types/mdast': 4.0.3
       mdast-util-to-markdown: 2.1.0
       unified: 11.0.4
-
-  requireindex@1.1.0: {}
 
   resolve-from@4.0.0: {}
 
