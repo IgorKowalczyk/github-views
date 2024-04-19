@@ -9,8 +9,8 @@
     "preview": "deno run --allow-net --allow-read --unstable --allow-env ./dist/server/entry.mjs",
     "format": "prettier . --write --ignore-unknown --cache --plugin=prettier-plugin-astro --plugin=prettier-plugin-tailwindcss",
     "format:check": "prettier . --check --cache",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx,.astro",
-    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx,.astro --fix"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "repository": {
     "type": "git",
