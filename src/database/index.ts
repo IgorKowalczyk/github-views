@@ -1,6 +1,6 @@
-import "./patch";
+import "./patch.ts";
 
-export async function IncreaseViews(username: string) {
+export async function IncreaseViews(username: string): Promise<number> {
  if (username === "example") return 0;
  const kv = await Deno.openKv();
  await kv.atomic().sum([username], 1n).commit();
@@ -8,9 +8,9 @@ export async function IncreaseViews(username: string) {
  return Number(view.value || 0);
 }
 
-export async function GetViews(username: string) {
+export async function GetViews(username: string): Promise<number> {
  if (username === "example") return 0;
  const kv = await Deno.openKv();
  const view = await kv.get([username]);
- return view.value || 0;
+ return (view.value as number) || 0;
 }

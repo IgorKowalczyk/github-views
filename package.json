@@ -9,8 +9,8 @@
     "preview": "deno run --allow-net --allow-read --unstable --allow-env ./dist/server/entry.mjs",
     "format": "prettier . --write --ignore-unknown --cache --plugin=prettier-plugin-astro --plugin=prettier-plugin-tailwindcss",
     "format:check": "prettier . --check --cache",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx,.astro",
-    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx,.astro --fix"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "repository": {
     "type": "git",
@@ -50,8 +50,7 @@
     "@typescript-eslint/eslint-plugin": "7.7.0",
     "@typescript-eslint/parser": "7.7.0",
     "autoprefixer": "10.4.19",
-    "eslint": "8.57.0",
-    "eslint-plugin": "^1.0.1",
+    "eslint": "9.0.0",
     "eslint-plugin-astro": "0.34.0",
     "postcss": "8.4.38",
     "prettier": "3.2.5",

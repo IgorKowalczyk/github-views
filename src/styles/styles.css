@@ -6,7 +6,7 @@ th {
 tr,
 td,
 th {
- @apply max-w-md overflow-x-auto overflow-y-hidden border-[1px] border-neutral-800;
+ @apply max-w-md overflow-x-auto overflow-y-hidden whitespace-pre border-[1px] border-neutral-800;
 }
 
 pre {

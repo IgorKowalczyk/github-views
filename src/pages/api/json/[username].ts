@@ -1,7 +1,6 @@
-import type { APIRoute } from "astro";
-import { GetViews } from "@/database/index";
+import { GetViews } from "../../../database/index.ts";
 
-export const GET: APIRoute = async function GET({ params }: { params: { username: string } }): Promise<Response> {
+export const GET = async function GET({ params }: { params: { username: string } }): Promise<Response> {
  try {
   const { username } = params;
 
