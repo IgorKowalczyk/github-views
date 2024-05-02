@@ -58,8 +58,8 @@ importers:
         specifier: 9.1.1
         version: 9.1.1
       eslint-plugin-astro:
-        specifier: 1.1.1
-        version: 1.1.1(eslint@9.1.1)(typescript@5.3.3)
+        specifier: 1.1.2
+        version: 1.1.2(eslint@9.1.1)(typescript@5.3.3)
       postcss:
         specifier: 8.4.38
         version: 8.4.38
@@ -992,8 +992,8 @@ packages:
     resolution: {integrity: sha512-yMBKppFur/fbHu9/6USUe03bZ4knMYiwFBcyiaXB8Go0qNehwX6inYPzK9U0NeQvGxKthcmHcaR8P5MStSRBAw==}
     engines: {node: '>= 0.4'}
 
-  astro-eslint-parser@1.0.1:
-    resolution: {integrity: sha512-dbBnHjxLjX4G6mFo9GCl8VcHIM8xwtxfqzqefUjOU1PwRJ48qWrVeIl2/mz4Usl3YyT+BFO2AP3it17oLjdqtQ==}
+  astro-eslint-parser@1.0.2:
+    resolution: {integrity: sha512-8hJaCuqxObShWl2wEsnASqh/DbQ2O+S66m0Q3ctJlzBPEQ4pfGwwama3FCjZO3GDLQsjvn1T0v93Vxyu/+5fGw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   astro@4.7.1:
@@ -1366,8 +1366,8 @@ packages:
       eslint-import-resolver-webpack:
         optional: true
 
-  eslint-plugin-astro@1.1.1:
-    resolution: {integrity: sha512-DDRPLz25oahOHpET5ubbK/G/O8D2CP18XKhQmf8r2jF4BJ5JCk8YGfK4kNmInsw5J41eeZiK1T8aey5ItLrr/g==}
+  eslint-plugin-astro@1.1.2:
+    resolution: {integrity: sha512-bVKnu0SH5hMxiw0k/gOpbQxZMztW8EYOv1WnK+ofOP1offosmexbYz087kqZ7kFYe2j7Yoz6UIJxisdjFgdTbw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: '>=8.57.0'
@@ -3799,7 +3799,7 @@ snapshots:
       is-array-buffer: 3.0.2
       is-shared-array-buffer: 1.0.2
 
-  astro-eslint-parser@1.0.1(typescript@5.3.3):
+  astro-eslint-parser@1.0.2(typescript@5.3.3):
     dependencies:
       '@astrojs/compiler': 2.7.1
       '@typescript-eslint/scope-manager': 7.8.0
@@ -4310,12 +4310,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-astro@1.1.1(eslint@9.1.1)(typescript@5.3.3):
+  eslint-plugin-astro@1.1.2(eslint@9.1.1)(typescript@5.3.3):
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@9.1.1)
       '@jridgewell/sourcemap-codec': 1.4.15
       '@typescript-eslint/types': 7.8.0
-      astro-eslint-parser: 1.0.1(typescript@5.3.3)
+      astro-eslint-parser: 1.0.2(typescript@5.3.3)
       eslint: 9.1.1
       eslint-compat-utils: 0.5.0(eslint@9.1.1)
       globals: 15.1.0
