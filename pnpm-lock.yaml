@@ -10,16 +10,16 @@ importers:
     dependencies:
       '@astrojs/deno':
         specifier: 5.0.1
-        version: 5.0.1(astro@4.9.0(typescript@5.3.3))
+        version: 5.0.1(astro@4.9.1(typescript@5.3.3))
       '@astrojs/tailwind':
         specifier: 5.1.0
-        version: 5.1.0(astro@4.9.0(typescript@5.3.3))(tailwindcss@3.4.3)
+        version: 5.1.0(astro@4.9.1(typescript@5.3.3))(tailwindcss@3.4.3)
       '@igorkowalczyk/is-browser':
         specifier: 5.0.2
         version: 5.0.2(tailwindcss@3.4.3)
       astro:
-        specifier: 4.9.0
-        version: 4.9.0(typescript@5.3.3)
+        specifier: 4.9.1
+        version: 4.9.1(typescript@5.3.3)
       badgen:
         specifier: 3.2.3
         version: 3.2.3
@@ -1141,8 +1141,8 @@ packages:
     resolution: {integrity: sha512-8hJaCuqxObShWl2wEsnASqh/DbQ2O+S66m0Q3ctJlzBPEQ4pfGwwama3FCjZO3GDLQsjvn1T0v93Vxyu/+5fGw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  astro@4.9.0:
-    resolution: {integrity: sha512-beb3go5Oh5QDjns7YVxG1r40Flt/cuXB+YFTnVRqbh2NuMpYRoXZqIT+ZNaorleEfrLjLFXfsn1AAKVP+XZ2KA==}
+  astro@4.9.1:
+    resolution: {integrity: sha512-9TsoAu0WBPiqyAIj9H0JW7R+tIjPjFsPKo70Nja6WL3imTTuUJQmnCre4ZVmoNV3oicTTlb+N4zjRYANW0Ty9A==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -3122,9 +3122,9 @@ snapshots:
 
   '@astrojs/compiler@2.8.0': {}
 
-  '@astrojs/deno@5.0.1(astro@4.9.0(typescript@5.3.3))':
+  '@astrojs/deno@5.0.1(astro@4.9.1(typescript@5.3.3))':
     dependencies:
-      astro: 4.9.0(typescript@5.3.3)
+      astro: 4.9.1(typescript@5.3.3)
       esbuild: 0.19.8
 
   '@astrojs/internal-helpers@0.4.0': {}
@@ -3156,9 +3156,9 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/tailwind@5.1.0(astro@4.9.0(typescript@5.3.3))(tailwindcss@3.4.3)':
+  '@astrojs/tailwind@5.1.0(astro@4.9.1(typescript@5.3.3))(tailwindcss@3.4.3)':
     dependencies:
-      astro: 4.9.0(typescript@5.3.3)
+      astro: 4.9.1(typescript@5.3.3)
       autoprefixer: 10.4.19(postcss@8.4.38)
       postcss: 8.4.38
       postcss-load-config: 4.0.2(postcss@8.4.38)
@@ -4043,7 +4043,7 @@ snapshots:
       - supports-color
       - typescript
 
-  astro@4.9.0(typescript@5.3.3):
+  astro@4.9.1(typescript@5.3.3):
     dependencies:
       '@astrojs/compiler': 2.8.0
       '@astrojs/internal-helpers': 0.4.0
