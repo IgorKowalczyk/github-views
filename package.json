@@ -55,6 +55,6 @@
     "postcss": "8.4.38",
     "prettier": "3.3.2",
     "prettier-plugin-astro": "0.14.0",
-    "prettier-plugin-tailwindcss": "0.6.4"
+    "prettier-plugin-tailwindcss": "0.6.5"
   }
 }
