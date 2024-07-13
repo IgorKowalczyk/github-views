@@ -38,10 +38,10 @@ importers:
     devDependencies:
       '@igorkowalczyk/eslint-config':
         specifier: 2.2.0
-        version: 2.2.0(@typescript-eslint/parser@7.16.0(eslint@9.7.0)(typescript@5.3.3))(eslint@9.7.0)(prettier@3.3.2)
+        version: 2.2.0(@typescript-eslint/parser@7.16.0(eslint@9.7.0)(typescript@5.3.3))(eslint@9.7.0)(prettier@3.3.3)
       '@igorkowalczyk/prettier-config':
         specifier: 2.2.0
-        version: 2.2.0(prettier@3.3.2)
+        version: 2.2.0(prettier@3.3.3)
       '@tailwindcss/forms':
         specifier: 0.5.7
         version: 0.5.7(tailwindcss@3.4.4)
@@ -64,14 +64,14 @@ importers:
         specifier: 8.4.39
         version: 8.4.39
       prettier:
-        specifier: 3.3.2
-        version: 3.3.2
+        specifier: 3.3.3
+        version: 3.3.3
       prettier-plugin-astro:
         specifier: 0.14.0
         version: 0.14.0
       prettier-plugin-tailwindcss:
         specifier: 0.6.5
-        version: 0.6.5(prettier-plugin-astro@0.14.0)(prettier@3.3.2)
+        version: 0.6.5(prettier-plugin-astro@0.14.0)(prettier@3.3.3)
 
 packages:
 
@@ -2401,8 +2401,8 @@ packages:
       prettier-plugin-svelte:
         optional: true
 
-  prettier@3.3.2:
-    resolution: {integrity: sha512-rAVeHYMcv8ATV5d508CFdn+8/pHPpXeIid1DdrPwXnaAdH7cqjVbpJaT5eq4yRAFU/lsbwYwSF/n5iNrdJHPQA==}
+  prettier@3.3.3:
+    resolution: {integrity: sha512-i2tDNA0O5IrMO757lfrdQZCc2jPNDVntV0m/+4whiDfWaTKfMNgR7Qz0NAeGz/nRqF4m5/6CLzbP4/liHt12Ew==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -3331,12 +3331,12 @@ snapshots:
 
   '@humanwhocodes/retry@0.3.0': {}
 
-  '@igorkowalczyk/eslint-config@2.2.0(@typescript-eslint/parser@7.16.0(eslint@9.7.0)(typescript@5.3.3))(eslint@9.7.0)(prettier@3.3.2)':
+  '@igorkowalczyk/eslint-config@2.2.0(@typescript-eslint/parser@7.16.0(eslint@9.7.0)(typescript@5.3.3))(eslint@9.7.0)(prettier@3.3.3)':
     dependencies:
       '@eslint/js': 8.55.0
       eslint: 9.7.0
       eslint-plugin-import: 2.29.0(@typescript-eslint/parser@7.16.0(eslint@9.7.0)(typescript@5.3.3))(eslint@9.7.0)
-      eslint-plugin-prettier: 5.0.1(eslint@9.7.0)(prettier@3.3.2)
+      eslint-plugin-prettier: 5.0.1(eslint@9.7.0)(prettier@3.3.3)
       globals: 13.23.0
     transitivePeerDependencies:
       - '@types/eslint'
@@ -3351,9 +3351,9 @@ snapshots:
     dependencies:
       tailwindcss: 3.4.4
 
-  '@igorkowalczyk/prettier-config@2.2.0(prettier@3.3.2)':
+  '@igorkowalczyk/prettier-config@2.2.0(prettier@3.3.3)':
     dependencies:
-      prettier: 3.3.2
+      prettier: 3.3.3
 
   '@img/sharp-darwin-arm64@0.33.3':
     optionalDependencies:
@@ -4300,10 +4300,10 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-plugin-prettier@5.0.1(eslint@9.7.0)(prettier@3.3.2):
+  eslint-plugin-prettier@5.0.1(eslint@9.7.0)(prettier@3.3.3):
     dependencies:
       eslint: 9.7.0
-      prettier: 3.3.2
+      prettier: 3.3.3
       prettier-linter-helpers: 1.0.0
       synckit: 0.8.6
 
@@ -5489,16 +5489,16 @@ snapshots:
   prettier-plugin-astro@0.14.0:
     dependencies:
       '@astrojs/compiler': 1.8.2
-      prettier: 3.3.2
+      prettier: 3.3.3
       sass-formatter: 0.7.8
 
-  prettier-plugin-tailwindcss@0.6.5(prettier-plugin-astro@0.14.0)(prettier@3.3.2):
+  prettier-plugin-tailwindcss@0.6.5(prettier-plugin-astro@0.14.0)(prettier@3.3.3):
     dependencies:
-      prettier: 3.3.2
+      prettier: 3.3.3
     optionalDependencies:
       prettier-plugin-astro: 0.14.0
 
-  prettier@3.3.2: {}
+  prettier@3.3.3: {}
 
   prismjs@1.29.0: {}
 
