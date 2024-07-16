@@ -13,10 +13,10 @@ importers:
         version: 5.0.1(astro@4.11.5(typescript@5.3.3))
       '@astrojs/tailwind':
         specifier: 5.1.0
-        version: 5.1.0(astro@4.11.5(typescript@5.3.3))(tailwindcss@3.4.5)
+        version: 5.1.0(astro@4.11.5(typescript@5.3.3))(tailwindcss@3.4.6)
       '@igorkowalczyk/is-browser':
         specifier: 5.0.2
-        version: 5.0.2(tailwindcss@3.4.5)
+        version: 5.0.2(tailwindcss@3.4.6)
       astro:
         specifier: 4.11.5
         version: 4.11.5(typescript@5.3.3)
@@ -30,11 +30,11 @@ importers:
         specifier: 1.4.4
         version: 1.4.4
       tailwindcss:
-        specifier: 3.4.5
-        version: 3.4.5
+        specifier: 3.4.6
+        version: 3.4.6
       tailwindcss-text-fill:
         specifier: 0.2.0
-        version: 0.2.0(tailwindcss@3.4.5)
+        version: 0.2.0(tailwindcss@3.4.6)
     devDependencies:
       '@igorkowalczyk/eslint-config':
         specifier: 2.2.0
@@ -44,7 +44,7 @@ importers:
         version: 2.2.0(prettier@3.3.3)
       '@tailwindcss/forms':
         specifier: 0.5.7
-        version: 0.5.7(tailwindcss@3.4.5)
+        version: 0.5.7(tailwindcss@3.4.6)
       '@typescript-eslint/eslint-plugin':
         specifier: 7.16.1
         version: 7.16.1(@typescript-eslint/parser@7.16.1(eslint@9.7.0)(typescript@5.3.3))(eslint@9.7.0)(typescript@5.3.3)
@@ -2689,8 +2689,8 @@ packages:
     peerDependencies:
       tailwindcss: '>=2.0.0'
 
-  tailwindcss@3.4.5:
-    resolution: {integrity: sha512-DlTxttYcogpDfx3tf/8jfnma1nfAYi2cBUYV2YNoPPecwmO3YGiFlOX9D8tGAu+EDF38ryBzvrDKU/BLMsUwbw==}
+  tailwindcss@3.4.6:
+    resolution: {integrity: sha512-1uRHzPB+Vzu57ocybfZ4jh5Q3SdlH7XW23J5sQoM9LhE9eIOlzxer/3XPSsycvih3rboRsvt0QCmzSrqyOYUIA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -2990,13 +2990,13 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/tailwind@5.1.0(astro@4.11.5(typescript@5.3.3))(tailwindcss@3.4.5)':
+  '@astrojs/tailwind@5.1.0(astro@4.11.5(typescript@5.3.3))(tailwindcss@3.4.6)':
     dependencies:
       astro: 4.11.5(typescript@5.3.3)
       autoprefixer: 10.4.19(postcss@8.4.39)
       postcss: 8.4.39
       postcss-load-config: 4.0.2(postcss@8.4.39)
-      tailwindcss: 3.4.5
+      tailwindcss: 3.4.6
     transitivePeerDependencies:
       - ts-node
 
@@ -3362,9 +3362,9 @@ snapshots:
       - prettier
       - supports-color
 
-  '@igorkowalczyk/is-browser@5.0.2(tailwindcss@3.4.5)':
+  '@igorkowalczyk/is-browser@5.0.2(tailwindcss@3.4.6)':
     dependencies:
-      tailwindcss: 3.4.5
+      tailwindcss: 3.4.6
 
   '@igorkowalczyk/prettier-config@2.2.0(prettier@3.3.3)':
     dependencies:
@@ -3537,10 +3537,10 @@ snapshots:
     dependencies:
       '@types/hast': 3.0.4
 
-  '@tailwindcss/forms@0.5.7(tailwindcss@3.4.5)':
+  '@tailwindcss/forms@0.5.7(tailwindcss@3.4.6)':
     dependencies:
       mini-svg-data-uri: 1.4.4
-      tailwindcss: 3.4.5
+      tailwindcss: 3.4.6
 
   '@types/babel__core@7.20.5':
     dependencies:
@@ -5904,12 +5904,12 @@ snapshots:
       '@pkgr/core': 0.1.1
       tslib: 2.6.2
 
-  tailwindcss-text-fill@0.2.0(tailwindcss@3.4.5):
+  tailwindcss-text-fill@0.2.0(tailwindcss@3.4.6):
     dependencies:
       flatten-tailwindcss-theme: 1.0.0
-      tailwindcss: 3.4.5
+      tailwindcss: 3.4.6
 
-  tailwindcss@3.4.5:
+  tailwindcss@3.4.6:
     dependencies:
       '@alloc/quick-lru': 5.2.0
       arg: 5.0.2
