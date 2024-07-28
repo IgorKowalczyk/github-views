@@ -15,8 +15,8 @@ importers:
         specifier: 5.1.0
         version: 5.1.0(astro@4.12.2(typescript@5.3.3))(tailwindcss@3.4.7)
       '@igorkowalczyk/is-browser':
-        specifier: 5.0.2
-        version: 5.0.2(tailwindcss@3.4.7)
+        specifier: 5.0.4
+        version: 5.0.4(tailwindcss@3.4.7)
       astro:
         specifier: 4.12.2
         version: 4.12.2(typescript@5.3.3)
@@ -541,8 +541,8 @@ packages:
     peerDependencies:
       eslint: '>=8.0.0'
 
-  '@igorkowalczyk/is-browser@5.0.2':
-    resolution: {integrity: sha512-ETJp+hw0YI5A4WmdXZLXT2hU7OmhbT+j3Jk3S7Mm6v0HlV/rnDvNLCGvNoOpdQFdBcsLbRXBFibgxdzaMbJkjw==}
+  '@igorkowalczyk/is-browser@5.0.4':
+    resolution: {integrity: sha512-Zx7R3z+htZ+uUjROBmDSavGV3K7V50B8EgarJonHsFDWC9ELmA9KtlnLmWBKGImTzr0OgUgZcFeZ0DCVrstSSQ==}
     engines: {node: '>=16'}
     peerDependencies:
       tailwindcss: '>=3.0.0'
@@ -3377,7 +3377,7 @@ snapshots:
       - prettier
       - supports-color
 
-  '@igorkowalczyk/is-browser@5.0.2(tailwindcss@3.4.7)':
+  '@igorkowalczyk/is-browser@5.0.4(tailwindcss@3.4.7)':
     dependencies:
       tailwindcss: 3.4.7
 
