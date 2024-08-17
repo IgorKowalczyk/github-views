@@ -130,7 +130,6 @@ https://github-views.deno.dev/api/json/YOUR-USERNAME
 
 If you come across any errors or have suggestions for improvements, please create a [new issue here](https://github.com/igorkowalczyk/github-views/issues) and describe it clearly.
 
-
 ## 📥 Pull Requests
 
 When submitting a pull request, please follow these steps:
