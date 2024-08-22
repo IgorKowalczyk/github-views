@@ -10,16 +10,16 @@ importers:
     dependencies:
       '@astrojs/deno':
         specifier: 5.0.1
-        version: 5.0.1(astro@4.14.3(rollup@4.21.0)(typescript@5.3.3))
+        version: 5.0.1(astro@4.14.4(rollup@4.21.0)(typescript@5.3.3))
       '@astrojs/tailwind':
         specifier: 5.1.0
-        version: 5.1.0(astro@4.14.3(rollup@4.21.0)(typescript@5.3.3))(tailwindcss@3.4.10)
+        version: 5.1.0(astro@4.14.4(rollup@4.21.0)(typescript@5.3.3))(tailwindcss@3.4.10)
       '@igorkowalczyk/is-browser':
         specifier: 5.0.4
         version: 5.0.4(tailwindcss@3.4.10)
       astro:
-        specifier: 4.14.3
-        version: 4.14.3(rollup@4.21.0)(typescript@5.3.3)
+        specifier: 4.14.4
+        version: 4.14.4(rollup@4.21.0)(typescript@5.3.3)
       badgen:
         specifier: 3.2.3
         version: 3.2.3
@@ -1010,8 +1010,8 @@ packages:
     resolution: {integrity: sha512-8hJaCuqxObShWl2wEsnASqh/DbQ2O+S66m0Q3ctJlzBPEQ4pfGwwama3FCjZO3GDLQsjvn1T0v93Vxyu/+5fGw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  astro@4.14.3:
-    resolution: {integrity: sha512-+Hox1EhiS5iHy4pfZaLidpD9x7WVAcgGgjTo1JOYSQ0+a2ZA9mbLtGVEXbUeeYweviNc0ZNHMnI4r9S2e8xnXg==}
+  astro@4.14.4:
+    resolution: {integrity: sha512-gpHGyY9qVJg1WXD/0UFoV3cdGZifhmCkJ3fuYV1zUlh+lWbjEB7/cE+KoSvj6aXHJGyLuTbvWOoxZs2yAdnREw==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -2997,9 +2997,9 @@ snapshots:
 
   '@astrojs/compiler@2.9.1': {}
 
-  '@astrojs/deno@5.0.1(astro@4.14.3(rollup@4.21.0)(typescript@5.3.3))':
+  '@astrojs/deno@5.0.1(astro@4.14.4(rollup@4.21.0)(typescript@5.3.3))':
     dependencies:
-      astro: 4.14.3(rollup@4.21.0)(typescript@5.3.3)
+      astro: 4.14.4(rollup@4.21.0)(typescript@5.3.3)
       esbuild: 0.19.8
 
   '@astrojs/internal-helpers@0.4.1': {}
@@ -3031,9 +3031,9 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/tailwind@5.1.0(astro@4.14.3(rollup@4.21.0)(typescript@5.3.3))(tailwindcss@3.4.10)':
+  '@astrojs/tailwind@5.1.0(astro@4.14.4(rollup@4.21.0)(typescript@5.3.3))(tailwindcss@3.4.10)':
     dependencies:
-      astro: 4.14.3(rollup@4.21.0)(typescript@5.3.3)
+      astro: 4.14.4(rollup@4.21.0)(typescript@5.3.3)
       autoprefixer: 10.4.20(postcss@8.4.41)
       postcss: 8.4.41
       postcss-load-config: 4.0.2(postcss@8.4.41)
@@ -3856,7 +3856,7 @@ snapshots:
       - supports-color
       - typescript
 
-  astro@4.14.3(rollup@4.21.0)(typescript@5.3.3):
+  astro@4.14.4(rollup@4.21.0)(typescript@5.3.3):
     dependencies:
       '@astrojs/compiler': 2.10.3
       '@astrojs/internal-helpers': 0.4.1
