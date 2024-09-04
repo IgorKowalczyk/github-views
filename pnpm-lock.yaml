@@ -53,7 +53,7 @@ importers:
         version: 8.4.0(eslint@9.9.1(jiti@1.21.0))(typescript@5.3.3)
       autoprefixer:
         specifier: 10.4.20
-        version: 10.4.20(postcss@8.4.44)
+        version: 10.4.20(postcss@8.4.45)
       eslint:
         specifier: 9.9.1
         version: 9.9.1(jiti@1.21.0)
@@ -61,8 +61,8 @@ importers:
         specifier: 1.2.3
         version: 1.2.3(eslint@9.9.1(jiti@1.21.0))(typescript@5.3.3)
       postcss:
-        specifier: 8.4.44
-        version: 8.4.44
+        specifier: 8.4.45
+        version: 8.4.45
       prettier:
         specifier: 3.3.3
         version: 3.3.3
@@ -2379,8 +2379,8 @@ packages:
   postcss-value-parser@4.2.0:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
 
-  postcss@8.4.44:
-    resolution: {integrity: sha512-Aweb9unOEpQ3ezu4Q00DPvvM2ZTUitJdNKeP/+uQgr1IBIqu574IaZoURId7BKtWMREwzKa9OgzPzezWGPWFQw==}
+  postcss@8.4.45:
+    resolution: {integrity: sha512-7KTLTdzdZZYscUc65XmjFiB73vBhBfbPztCYdUNvlaso9PrzjzcmjqBPR0lNGkcVlcO4BjiO5rK/qNz+XAen1Q==}
     engines: {node: ^10 || ^12 || >=14}
 
   preferred-pm@4.0.0:
@@ -3042,9 +3042,9 @@ snapshots:
   '@astrojs/tailwind@5.1.0(astro@4.15.2(rollup@4.21.0)(typescript@5.3.3))(tailwindcss@3.4.10)':
     dependencies:
       astro: 4.15.2(rollup@4.21.0)(typescript@5.3.3)
-      autoprefixer: 10.4.20(postcss@8.4.44)
-      postcss: 8.4.44
-      postcss-load-config: 4.0.2(postcss@8.4.44)
+      autoprefixer: 10.4.20(postcss@8.4.45)
+      postcss: 8.4.45
+      postcss-load-config: 4.0.2(postcss@8.4.45)
       tailwindcss: 3.4.10
     transitivePeerDependencies:
       - ts-node
@@ -3955,14 +3955,14 @@ snapshots:
       '@astrojs/compiler': 2.10.2
       synckit: 0.9.0
 
-  autoprefixer@10.4.20(postcss@8.4.44):
+  autoprefixer@10.4.20(postcss@8.4.45):
     dependencies:
       browserslist: 4.23.3
       caniuse-lite: 1.0.30001646
       fraction.js: 4.3.7
       normalize-range: 0.1.2
       picocolors: 1.0.1
-      postcss: 8.4.44
+      postcss: 8.4.45
       postcss-value-parser: 4.2.0
 
   available-typed-arrays@1.0.5: {}
@@ -4363,7 +4363,7 @@ snapshots:
       eslint: 9.9.1(jiti@1.21.0)
       eslint-compat-utils: 0.5.0(eslint@9.9.1(jiti@1.21.0))
       globals: 15.1.0
-      postcss: 8.4.44
+      postcss: 8.4.45
       postcss-selector-parser: 6.0.13
     transitivePeerDependencies:
       - supports-color
@@ -5542,28 +5542,28 @@ snapshots:
     dependencies:
       find-up: 4.1.0
 
-  postcss-import@15.1.0(postcss@8.4.44):
+  postcss-import@15.1.0(postcss@8.4.45):
     dependencies:
-      postcss: 8.4.44
+      postcss: 8.4.45
       postcss-value-parser: 4.2.0
       read-cache: 1.0.0
       resolve: 1.22.8
 
-  postcss-js@4.0.1(postcss@8.4.44):
+  postcss-js@4.0.1(postcss@8.4.45):
     dependencies:
       camelcase-css: 2.0.1
-      postcss: 8.4.44
+      postcss: 8.4.45
 
-  postcss-load-config@4.0.2(postcss@8.4.44):
+  postcss-load-config@4.0.2(postcss@8.4.45):
     dependencies:
       lilconfig: 3.0.0
       yaml: 2.3.4
     optionalDependencies:
-      postcss: 8.4.44
+      postcss: 8.4.45
 
-  postcss-nested@6.0.1(postcss@8.4.44):
+  postcss-nested@6.0.1(postcss@8.4.45):
     dependencies:
-      postcss: 8.4.44
+      postcss: 8.4.45
       postcss-selector-parser: 6.0.13
 
   postcss-selector-parser@6.0.13:
@@ -5573,7 +5573,7 @@ snapshots:
 
   postcss-value-parser@4.2.0: {}
 
-  postcss@8.4.44:
+  postcss@8.4.45:
     dependencies:
       nanoid: 3.3.7
       picocolors: 1.0.1
@@ -5989,11 +5989,11 @@ snapshots:
       normalize-path: 3.0.0
       object-hash: 3.0.0
       picocolors: 1.0.1
-      postcss: 8.4.44
-      postcss-import: 15.1.0(postcss@8.4.44)
-      postcss-js: 4.0.1(postcss@8.4.44)
-      postcss-load-config: 4.0.2(postcss@8.4.44)
-      postcss-nested: 6.0.1(postcss@8.4.44)
+      postcss: 8.4.45
+      postcss-import: 15.1.0(postcss@8.4.45)
+      postcss-js: 4.0.1(postcss@8.4.45)
+      postcss-load-config: 4.0.2(postcss@8.4.45)
+      postcss-nested: 6.0.1(postcss@8.4.45)
       postcss-selector-parser: 6.0.13
       resolve: 1.22.8
       sucrase: 3.34.0
@@ -6171,7 +6171,7 @@ snapshots:
   vite@5.4.2:
     dependencies:
       esbuild: 0.21.5
-      postcss: 8.4.44
+      postcss: 8.4.45
       rollup: 4.21.0
     optionalDependencies:
       fsevents: 2.3.3
