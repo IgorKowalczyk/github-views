@@ -13,10 +13,10 @@ importers:
         version: 5.0.1(astro@4.15.4(rollup@4.21.0)(typescript@5.3.3))
       '@astrojs/tailwind':
         specifier: 5.1.0
-        version: 5.1.0(astro@4.15.4(rollup@4.21.0)(typescript@5.3.3))(tailwindcss@3.4.10)
+        version: 5.1.0(astro@4.15.4(rollup@4.21.0)(typescript@5.3.3))(tailwindcss@3.4.11)
       '@igorkowalczyk/is-browser':
         specifier: 5.0.4
-        version: 5.0.4(tailwindcss@3.4.10)
+        version: 5.0.4(tailwindcss@3.4.11)
       astro:
         specifier: 4.15.4
         version: 4.15.4(rollup@4.21.0)(typescript@5.3.3)
@@ -30,11 +30,11 @@ importers:
         specifier: 1.4.4
         version: 1.4.4
       tailwindcss:
-        specifier: 3.4.10
-        version: 3.4.10
+        specifier: 3.4.11
+        version: 3.4.11
       tailwindcss-text-fill:
         specifier: 0.2.0
-        version: 0.2.0(tailwindcss@3.4.10)
+        version: 0.2.0(tailwindcss@3.4.11)
     devDependencies:
       '@igorkowalczyk/eslint-config':
         specifier: 2.2.0
@@ -44,7 +44,7 @@ importers:
         version: 2.2.0(prettier@3.3.3)
       '@tailwindcss/forms':
         specifier: 0.5.9
-        version: 0.5.9(tailwindcss@3.4.10)
+        version: 0.5.9(tailwindcss@3.4.11)
       '@typescript-eslint/eslint-plugin':
         specifier: 8.5.0
         version: 8.5.0(@typescript-eslint/parser@8.5.0(eslint@9.10.0(jiti@1.21.0))(typescript@5.3.3))(eslint@9.10.0(jiti@1.21.0))(typescript@5.3.3)
@@ -1077,10 +1077,6 @@ packages:
   brace-expansion@2.0.1:
     resolution: {integrity: sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA==}
 
-  braces@3.0.2:
-    resolution: {integrity: sha512-b8um+L1RzM3WDSzvhm6gIz1yfTbBt6YTlcEKAvsmqCZZFw46z626lVj9j1yEPW33H5H+lBQpZMP1k8l+78Ha0A==}
-    engines: {node: '>=8'}
-
   braces@3.0.3:
     resolution: {integrity: sha512-yQbXgO/OSZVD2IsiLlro+7Hf6Q18EJrKSEsdoMzKePKXct3gvD8oLcOQdIzGupr5Fj+EDe8gO/lxc1BzfMpxvA==}
     engines: {node: '>=8'}
@@ -1511,10 +1507,6 @@ packages:
   file-entry-cache@8.0.0:
     resolution: {integrity: sha512-XXTUwCvisa5oacNGRP9SfNtYBNAMi+RPwBFmblZEF7N7swHYQS6/Zfk7SRwx4D5j3CH211YNRco1DEMNVfZCnQ==}
     engines: {node: '>=16.0.0'}
-
-  fill-range@7.0.1:
-    resolution: {integrity: sha512-qOo9F+dMUmC2Lcb4BbVvnKJxTPjCm+RRpe4gDuGrzkL7mEVl/djYSu2OdQ2Pa302N4oqkSg9ir6jaLWJ2USVpQ==}
-    engines: {node: '>=8'}
 
   fill-range@7.1.1:
     resolution: {integrity: sha512-YsGpe3WHLK8ZYi4tWDg2Jy3ebRz2rXowDxnld4bkQB00cc/1Zw9AWnC0i9ztDJitivtQvaI9KaLyKrc+hBW0yg==}
@@ -2113,10 +2105,6 @@ packages:
 
   micromark@4.0.0:
     resolution: {integrity: sha512-o/sd0nMof8kYff+TqcDx3VSrgBTcZpSvYcAHIfHhv5VAuNmisCxjhx6YmxS8PFEpb9z5WKWKPdzf0jM23ro3RQ==}
-
-  micromatch@4.0.5:
-    resolution: {integrity: sha512-DMy+ERcEW2q8Z2Po+WNXuw3c5YaUSFjAO5GsJqfEl7UjvtIuFKO6ZrKvcItdy98dwFI2N1tg3zNIdKaQT+aNdA==}
-    engines: {node: '>=8.6'}
 
   micromatch@4.0.8:
     resolution: {integrity: sha512-PXwfBhYu0hBCPw8Dn0E+WDYb7af3dSLVWKi3HGv84IdF4TyFoC0ysxFd0Goxw7nSv4T/PzEJQxsYsEiFCKo2BA==}
@@ -2726,8 +2714,8 @@ packages:
     peerDependencies:
       tailwindcss: '>=2.0.0'
 
-  tailwindcss@3.4.10:
-    resolution: {integrity: sha512-KWZkVPm7yJRhdu4SRSl9d4AK2wM3a50UsvgHZO7xY77NQr2V+fIrEuoDGQcbvswWvFGbS2f6e+jC/6WJm1Dl0w==}
+  tailwindcss@3.4.11:
+    resolution: {integrity: sha512-qhEuBcLemjSJk5ajccN9xJFtM/h0AVCPaA6C92jNP+M2J8kX+eMJHI7R2HFKUvvAsMpcfLILMCFYSeDwpMmlUg==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -3040,13 +3028,13 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/tailwind@5.1.0(astro@4.15.4(rollup@4.21.0)(typescript@5.3.3))(tailwindcss@3.4.10)':
+  '@astrojs/tailwind@5.1.0(astro@4.15.4(rollup@4.21.0)(typescript@5.3.3))(tailwindcss@3.4.11)':
     dependencies:
       astro: 4.15.4(rollup@4.21.0)(typescript@5.3.3)
       autoprefixer: 10.4.20(postcss@8.4.45)
       postcss: 8.4.45
       postcss-load-config: 4.0.2(postcss@8.4.45)
-      tailwindcss: 3.4.10
+      tailwindcss: 3.4.11
     transitivePeerDependencies:
       - ts-node
 
@@ -3395,9 +3383,9 @@ snapshots:
       - prettier
       - supports-color
 
-  '@igorkowalczyk/is-browser@5.0.4(tailwindcss@3.4.10)':
+  '@igorkowalczyk/is-browser@5.0.4(tailwindcss@3.4.11)':
     dependencies:
-      tailwindcss: 3.4.10
+      tailwindcss: 3.4.11
 
   '@igorkowalczyk/prettier-config@2.2.0(prettier@3.3.3)':
     dependencies:
@@ -3585,10 +3573,10 @@ snapshots:
 
   '@shikijs/vscode-textmate@9.2.0': {}
 
-  '@tailwindcss/forms@0.5.9(tailwindcss@3.4.10)':
+  '@tailwindcss/forms@0.5.9(tailwindcss@3.4.11)':
     dependencies:
       mini-svg-data-uri: 1.4.4
-      tailwindcss: 3.4.10
+      tailwindcss: 3.4.11
 
   '@types/babel__core@7.20.5':
     dependencies:
@@ -4010,10 +3998,6 @@ snapshots:
     dependencies:
       balanced-match: 1.0.2
 
-  braces@3.0.2:
-    dependencies:
-      fill-range: 7.0.1
-
   braces@3.0.3:
     dependencies:
       fill-range: 7.1.1
@@ -4069,7 +4053,7 @@ snapshots:
   chokidar@3.6.0:
     dependencies:
       anymatch: 3.1.3
-      braces: 3.0.2
+      braces: 3.0.3
       glob-parent: 5.1.2
       is-binary-path: 2.1.0
       is-glob: 4.0.3
@@ -4539,10 +4523,6 @@ snapshots:
   file-entry-cache@8.0.0:
     dependencies:
       flat-cache: 4.0.1
-
-  fill-range@7.0.1:
-    dependencies:
-      to-regex-range: 5.0.1
 
   fill-range@7.1.1:
     dependencies:
@@ -5327,11 +5307,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  micromatch@4.0.5:
-    dependencies:
-      braces: 3.0.2
-      picomatch: 2.3.1
-
   micromatch@4.0.8:
     dependencies:
       braces: 3.0.3
@@ -5969,12 +5944,12 @@ snapshots:
       '@pkgr/core': 0.1.1
       tslib: 2.6.2
 
-  tailwindcss-text-fill@0.2.0(tailwindcss@3.4.10):
+  tailwindcss-text-fill@0.2.0(tailwindcss@3.4.11):
     dependencies:
       flatten-tailwindcss-theme: 1.0.0
-      tailwindcss: 3.4.10
+      tailwindcss: 3.4.11
 
-  tailwindcss@3.4.10:
+  tailwindcss@3.4.11:
     dependencies:
       '@alloc/quick-lru': 5.2.0
       arg: 5.0.2
@@ -5986,7 +5961,7 @@ snapshots:
       is-glob: 4.0.3
       jiti: 1.21.0
       lilconfig: 2.1.0
-      micromatch: 4.0.5
+      micromatch: 4.0.8
       normalize-path: 3.0.0
       object-hash: 3.0.0
       picocolors: 1.0.1
