@@ -58,8 +58,8 @@ importers:
         specifier: 9.10.0
         version: 9.10.0(jiti@1.21.0)
       eslint-plugin-astro:
-        specifier: 1.2.3
-        version: 1.2.3(eslint@9.10.0(jiti@1.21.0))(typescript@5.3.3)
+        specifier: 1.2.4
+        version: 1.2.4(eslint@9.10.0(jiti@1.21.0))(typescript@5.3.3)
       postcss:
         specifier: 8.4.45
         version: 8.4.45
@@ -86,9 +86,6 @@ packages:
   '@ampproject/remapping@2.2.1':
     resolution: {integrity: sha512-lFMjJTrFL3j7L9yBxwYfCq2k6qqwHyzuUl/XBnif78PWTJYyL/dfowQHWE3sp6U6ZzqWiiIZnpTMO96zhkjwtg==}
     engines: {node: '>=6.0.0'}
-
-  '@astrojs/compiler@2.10.2':
-    resolution: {integrity: sha512-bvH+v8AirwpRWCkYJEyWYdc5Cs/BjG2ZTxIJzttHilXgfKJAdW2496KsUQKzf5j2tOHtaHXKKn9hb9WZiBGpEg==}
 
   '@astrojs/compiler@2.10.3':
     resolution: {integrity: sha512-bL/O7YBxsFt55YHU021oL+xz+B/9HvGNId3F9xURN16aeqDK9juHGktdkCSXz+U4nqFACq6ZFvWomOzhV+zfPw==}
@@ -667,9 +664,6 @@ packages:
   '@jridgewell/set-array@1.2.1':
     resolution: {integrity: sha512-R8gLRTZeyp03ymzP/6Lil/28tGeGEzhx1q2k703KGWRAI1VdvPIXdG70VJc2pAMw3NA6JKL5hhFu1sJX0Mnn/A==}
     engines: {node: '>=6.0.0'}
-
-  '@jridgewell/sourcemap-codec@1.4.15':
-    resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==}
 
   '@jridgewell/sourcemap-codec@1.5.0':
     resolution: {integrity: sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==}
@@ -1384,8 +1378,8 @@ packages:
       eslint-import-resolver-webpack:
         optional: true
 
-  eslint-plugin-astro@1.2.3:
-    resolution: {integrity: sha512-asHT0VUs68oppVnTHfp/WgLqs0yCx9kG9AC/PKLmp+87imeh3nGHMdFm0qP46vHxTM0NLDEhvmjFdAVAqw+QPQ==}
+  eslint-plugin-astro@1.2.4:
+    resolution: {integrity: sha512-45uXKW6lxmYEa8Gkh5lCfwAnOyQD90AaMS2Bu9ans88f+pFkliqjGeexiKv73oiTcY3I0vlzTUk5GlqvYlkjyA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: '>=8.57.0'
@@ -2988,8 +2982,6 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@astrojs/compiler@2.10.2': {}
-
   '@astrojs/compiler@2.10.3': {}
 
   '@astrojs/compiler@2.9.1': {}
@@ -3476,8 +3468,6 @@ snapshots:
 
   '@jridgewell/set-array@1.2.1': {}
 
-  '@jridgewell/sourcemap-codec@1.4.15': {}
-
   '@jridgewell/sourcemap-codec@1.5.0': {}
 
   '@jridgewell/trace-mapping@0.3.25':
@@ -3843,11 +3833,11 @@ snapshots:
 
   astro-eslint-parser@1.0.2(typescript@5.3.3):
     dependencies:
-      '@astrojs/compiler': 2.10.2
+      '@astrojs/compiler': 2.10.3
       '@typescript-eslint/scope-manager': 7.18.0
-      '@typescript-eslint/types': 7.16.0
+      '@typescript-eslint/types': 7.18.0
       '@typescript-eslint/typescript-estree': 7.16.0(typescript@5.3.3)
-      astrojs-compiler-sync: 1.0.0(@astrojs/compiler@2.10.2)
+      astrojs-compiler-sync: 1.0.0(@astrojs/compiler@2.10.3)
       debug: 4.3.6
       entities: 4.5.0
       eslint-scope: 8.0.2
@@ -3943,9 +3933,9 @@ snapshots:
       - terser
       - typescript
 
-  astrojs-compiler-sync@1.0.0(@astrojs/compiler@2.10.2):
+  astrojs-compiler-sync@1.0.0(@astrojs/compiler@2.10.3):
     dependencies:
-      '@astrojs/compiler': 2.10.2
+      '@astrojs/compiler': 2.10.3
       synckit: 0.9.0
 
   autoprefixer@10.4.20(postcss@8.4.45):
@@ -4343,11 +4333,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-astro@1.2.3(eslint@9.10.0(jiti@1.21.0))(typescript@5.3.3):
+  eslint-plugin-astro@1.2.4(eslint@9.10.0(jiti@1.21.0))(typescript@5.3.3):
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@9.10.0(jiti@1.21.0))
-      '@jridgewell/sourcemap-codec': 1.4.15
-      '@typescript-eslint/types': 7.16.0
+      '@jridgewell/sourcemap-codec': 1.5.0
+      '@typescript-eslint/types': 8.5.0
       astro-eslint-parser: 1.0.2(typescript@5.3.3)
       eslint: 9.10.0(jiti@1.21.0)
       eslint-compat-utils: 0.5.0(eslint@9.10.0(jiti@1.21.0))
