@@ -10,16 +10,16 @@ importers:
     dependencies:
       '@astrojs/deno':
         specifier: 5.0.1
-        version: 5.0.1(astro@4.15.6(rollup@4.21.0)(typescript@5.3.3))
+        version: 5.0.1(astro@4.15.7(rollup@4.21.0)(typescript@5.3.3))
       '@astrojs/tailwind':
-        specifier: 5.1.0
-        version: 5.1.0(astro@4.15.6(rollup@4.21.0)(typescript@5.3.3))(tailwindcss@3.4.12)
+        specifier: 5.1.1
+        version: 5.1.1(astro@4.15.7(rollup@4.21.0)(typescript@5.3.3))(tailwindcss@3.4.12)
       '@igorkowalczyk/is-browser':
         specifier: 5.0.4
         version: 5.0.4(tailwindcss@3.4.12)
       astro:
-        specifier: 4.15.6
-        version: 4.15.6(rollup@4.21.0)(typescript@5.3.3)
+        specifier: 4.15.7
+        version: 4.15.7(rollup@4.21.0)(typescript@5.3.3)
       badgen:
         specifier: 3.2.3
         version: 3.2.3
@@ -108,10 +108,10 @@ packages:
     resolution: {integrity: sha512-Z9IYjuXSArkAUx3N6xj6+Bnvx8OdUSHA8YoOgyepp3+zJmtVYJIl/I18GozdJVW1p5u/CNpl3Km7/gwTJK85cw==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0}
 
-  '@astrojs/tailwind@5.1.0':
-    resolution: {integrity: sha512-BJoCDKuWhU9FT2qYg+fr6Nfb3qP4ShtyjXGHKA/4mHN94z7BGcmauQK23iy+YH5qWvTnhqkd6mQPQ1yTZTe9Ig==}
+  '@astrojs/tailwind@5.1.1':
+    resolution: {integrity: sha512-LwurA10uIKcGRxQP2R81RvAnBT0WPKzBntXZBF4hrAefDgM5Uumn0nsGr6tdIjSARgYz4X+Cq/Vh78t3bql3yw==}
     peerDependencies:
-      astro: ^3.0.0 || ^4.0.0
+      astro: ^3.0.0 || ^4.0.0 || ^5.0.0-beta.0
       tailwindcss: ^3.0.24
 
   '@astrojs/telemetry@3.1.0':
@@ -1024,8 +1024,8 @@ packages:
     resolution: {integrity: sha512-8hJaCuqxObShWl2wEsnASqh/DbQ2O+S66m0Q3ctJlzBPEQ4pfGwwama3FCjZO3GDLQsjvn1T0v93Vxyu/+5fGw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  astro@4.15.6:
-    resolution: {integrity: sha512-SWcUNwm8CiVRaIbh4w5byh62BNihpsovlCd4ElvC7cL/53D24HcI7AaGFsPrromCamQklwQmIan/QS7x/3lLuQ==}
+  astro@4.15.7:
+    resolution: {integrity: sha512-RGZjGpLcR3jcnXA1+g56i73O77krmqs7VjpoBOfk9UVP8Js5T2YSeUBAyComOUb6vj31wEw1vgRgOEN0MzYc8w==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -2639,10 +2639,6 @@ packages:
     resolution: {integrity: sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==}
     engines: {node: '>=8'}
 
-  source-map-js@1.2.0:
-    resolution: {integrity: sha512-itJW8lvSA0TXEphiRoawsCksnlf8SyvmFzIhltqAHluXd88pkCd+cXJVHTDwdCr0IzwptSm035IHQktUu1QUMg==}
-    engines: {node: '>=0.10.0'}
-
   source-map-js@1.2.1:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
     engines: {node: '>=0.10.0'}
@@ -3021,9 +3017,9 @@ snapshots:
 
   '@astrojs/compiler@2.9.1': {}
 
-  '@astrojs/deno@5.0.1(astro@4.15.6(rollup@4.21.0)(typescript@5.3.3))':
+  '@astrojs/deno@5.0.1(astro@4.15.7(rollup@4.21.0)(typescript@5.3.3))':
     dependencies:
-      astro: 4.15.6(rollup@4.21.0)(typescript@5.3.3)
+      astro: 4.15.7(rollup@4.21.0)(typescript@5.3.3)
       esbuild: 0.19.8
 
   '@astrojs/internal-helpers@0.4.1': {}
@@ -3055,9 +3051,9 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/tailwind@5.1.0(astro@4.15.6(rollup@4.21.0)(typescript@5.3.3))(tailwindcss@3.4.12)':
+  '@astrojs/tailwind@5.1.1(astro@4.15.7(rollup@4.21.0)(typescript@5.3.3))(tailwindcss@3.4.12)':
     dependencies:
-      astro: 4.15.6(rollup@4.21.0)(typescript@5.3.3)
+      astro: 4.15.7(rollup@4.21.0)(typescript@5.3.3)
       autoprefixer: 10.4.20(postcss@8.4.47)
       postcss: 8.4.47
       postcss-load-config: 4.0.2(postcss@8.4.47)
@@ -3906,7 +3902,7 @@ snapshots:
       - supports-color
       - typescript
 
-  astro@4.15.6(rollup@4.21.0)(typescript@5.3.3):
+  astro@4.15.7(rollup@4.21.0)(typescript@5.3.3):
     dependencies:
       '@astrojs/compiler': 2.10.3
       '@astrojs/internal-helpers': 0.4.1
@@ -5039,7 +5035,7 @@ snapshots:
     dependencies:
       '@babel/parser': 7.25.4
       '@babel/types': 7.25.6
-      source-map-js: 1.2.0
+      source-map-js: 1.2.1
 
   markdown-table@3.0.3: {}
 
@@ -5902,8 +5898,6 @@ snapshots:
   sisteransi@1.0.5: {}
 
   slash@3.0.0: {}
-
-  source-map-js@1.2.0: {}
 
   source-map-js@1.2.1: {}
 
