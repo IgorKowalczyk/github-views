@@ -10,16 +10,16 @@ importers:
     dependencies:
       '@astrojs/deno':
         specifier: 5.0.1
-        version: 5.0.1(astro@4.15.7(rollup@4.21.0)(typescript@5.3.3))
+        version: 5.0.1(astro@4.15.8(rollup@4.21.0)(typescript@5.3.3))
       '@astrojs/tailwind':
         specifier: 5.1.1
-        version: 5.1.1(astro@4.15.7(rollup@4.21.0)(typescript@5.3.3))(tailwindcss@3.4.12)
+        version: 5.1.1(astro@4.15.8(rollup@4.21.0)(typescript@5.3.3))(tailwindcss@3.4.12)
       '@igorkowalczyk/is-browser':
         specifier: 5.0.4
         version: 5.0.4(tailwindcss@3.4.12)
       astro:
-        specifier: 4.15.7
-        version: 4.15.7(rollup@4.21.0)(typescript@5.3.3)
+        specifier: 4.15.8
+        version: 4.15.8(rollup@4.21.0)(typescript@5.3.3)
       badgen:
         specifier: 3.2.3
         version: 3.2.3
@@ -1024,8 +1024,8 @@ packages:
     resolution: {integrity: sha512-8hJaCuqxObShWl2wEsnASqh/DbQ2O+S66m0Q3ctJlzBPEQ4pfGwwama3FCjZO3GDLQsjvn1T0v93Vxyu/+5fGw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  astro@4.15.7:
-    resolution: {integrity: sha512-RGZjGpLcR3jcnXA1+g56i73O77krmqs7VjpoBOfk9UVP8Js5T2YSeUBAyComOUb6vj31wEw1vgRgOEN0MzYc8w==}
+  astro@4.15.8:
+    resolution: {integrity: sha512-pdXjtRF6O1xChiPAUF32R7oVRTW7AK1/Oy/JqPNhLfbelO0l6C7cLdSEuSLektwOEnMhOVXqccetjBs7HPaoxA==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -2320,9 +2320,6 @@ packages:
   path-parse@1.0.7:
     resolution: {integrity: sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==}
 
-  path-to-regexp@6.2.2:
-    resolution: {integrity: sha512-GQX3SSMokngb36+whdpRXE+3f9V8UzyAorlYvOGx87ufGHehNTn5lCxrKtLyZ4Yl/wEKnNnr98ZzOwwDZV5ogw==}
-
   path-type@4.0.0:
     resolution: {integrity: sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==}
     engines: {node: '>=8'}
@@ -3017,9 +3014,9 @@ snapshots:
 
   '@astrojs/compiler@2.9.1': {}
 
-  '@astrojs/deno@5.0.1(astro@4.15.7(rollup@4.21.0)(typescript@5.3.3))':
+  '@astrojs/deno@5.0.1(astro@4.15.8(rollup@4.21.0)(typescript@5.3.3))':
     dependencies:
-      astro: 4.15.7(rollup@4.21.0)(typescript@5.3.3)
+      astro: 4.15.8(rollup@4.21.0)(typescript@5.3.3)
       esbuild: 0.19.8
 
   '@astrojs/internal-helpers@0.4.1': {}
@@ -3051,9 +3048,9 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/tailwind@5.1.1(astro@4.15.7(rollup@4.21.0)(typescript@5.3.3))(tailwindcss@3.4.12)':
+  '@astrojs/tailwind@5.1.1(astro@4.15.8(rollup@4.21.0)(typescript@5.3.3))(tailwindcss@3.4.12)':
     dependencies:
-      astro: 4.15.7(rollup@4.21.0)(typescript@5.3.3)
+      astro: 4.15.8(rollup@4.21.0)(typescript@5.3.3)
       autoprefixer: 10.4.20(postcss@8.4.47)
       postcss: 8.4.47
       postcss-load-config: 4.0.2(postcss@8.4.47)
@@ -3902,7 +3899,7 @@ snapshots:
       - supports-color
       - typescript
 
-  astro@4.15.7(rollup@4.21.0)(typescript@5.3.3):
+  astro@4.15.8(rollup@4.21.0)(typescript@5.3.3):
     dependencies:
       '@astrojs/compiler': 2.10.3
       '@astrojs/internal-helpers': 0.4.1
@@ -3950,7 +3947,6 @@ snapshots:
       ora: 8.1.0
       p-limit: 6.1.0
       p-queue: 8.0.1
-      path-to-regexp: 6.2.2
       preferred-pm: 4.0.0
       prompts: 2.4.2
       rehype: 13.0.1
@@ -5548,8 +5544,6 @@ snapshots:
   path-key@4.0.0: {}
 
   path-parse@1.0.7: {}
-
-  path-to-regexp@6.2.2: {}
 
   path-type@4.0.0: {}
 
