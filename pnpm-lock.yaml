@@ -10,16 +10,16 @@ importers:
     dependencies:
       '@astrojs/deno':
         specifier: 5.0.1
-        version: 5.0.1(astro@4.15.10(rollup@4.21.0)(typescript@5.3.3))
+        version: 5.0.1(astro@4.15.11(rollup@4.21.0)(typescript@5.3.3))
       '@astrojs/tailwind':
         specifier: 5.1.1
-        version: 5.1.1(astro@4.15.10(rollup@4.21.0)(typescript@5.3.3))(tailwindcss@3.4.13)
+        version: 5.1.1(astro@4.15.11(rollup@4.21.0)(typescript@5.3.3))(tailwindcss@3.4.13)
       '@igorkowalczyk/is-browser':
         specifier: 5.0.4
         version: 5.0.4(tailwindcss@3.4.13)
       astro:
-        specifier: 4.15.10
-        version: 4.15.10(rollup@4.21.0)(typescript@5.3.3)
+        specifier: 4.15.11
+        version: 4.15.11(rollup@4.21.0)(typescript@5.3.3)
       badgen:
         specifier: 3.2.3
         version: 3.2.3
@@ -1035,8 +1035,8 @@ packages:
     resolution: {integrity: sha512-8hJaCuqxObShWl2wEsnASqh/DbQ2O+S66m0Q3ctJlzBPEQ4pfGwwama3FCjZO3GDLQsjvn1T0v93Vxyu/+5fGw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  astro@4.15.10:
-    resolution: {integrity: sha512-2NA9VWkIAxruq7GyR6ojpEqPLVlN2pyXqUDxiuXSEaaF1ajoQzLkXUIfhJgYmmVSIeTnd4ps9T4nTOEjWaOKrw==}
+  astro@4.15.11:
+    resolution: {integrity: sha512-uA9fenaRR+j6ksPFsmhM88ttz94a66SET1TZxAJLxctxWkDlgz58BxZYUc1gNlt0azhgzOgh4hP3q9M4YzAmBA==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -1692,9 +1692,6 @@ packages:
 
   hast-util-raw@9.0.1:
     resolution: {integrity: sha512-5m1gmba658Q+lO5uqL5YNGQWeh1MYWZbZmWrM5lncdcuiXuo5E2HT/CIOp0rLF8ksfSwiCVJ3twlgVRyTGThGA==}
-
-  hast-util-to-html@9.0.2:
-    resolution: {integrity: sha512-RP5wNpj5nm1Z8cloDv4Sl4RS8jH5HYa0v93YB6Wb4poEzgMo/dAAL0KcT4974dCjcNG5pkLqTImeFHHCwwfY3g==}
 
   hast-util-to-html@9.0.3:
     resolution: {integrity: sha512-M17uBDzMJ9RPCqLMO92gNNUDuBSq10a25SDBI08iCCxmorf4Yy6sYHK57n9WAbRAAaU+DuR4W6GN9K4DFZesYg==}
@@ -3006,9 +3003,9 @@ snapshots:
 
   '@astrojs/compiler@2.9.1': {}
 
-  '@astrojs/deno@5.0.1(astro@4.15.10(rollup@4.21.0)(typescript@5.3.3))':
+  '@astrojs/deno@5.0.1(astro@4.15.11(rollup@4.21.0)(typescript@5.3.3))':
     dependencies:
-      astro: 4.15.10(rollup@4.21.0)(typescript@5.3.3)
+      astro: 4.15.11(rollup@4.21.0)(typescript@5.3.3)
       esbuild: 0.19.8
 
   '@astrojs/internal-helpers@0.4.1': {}
@@ -3040,9 +3037,9 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/tailwind@5.1.1(astro@4.15.10(rollup@4.21.0)(typescript@5.3.3))(tailwindcss@3.4.13)':
+  '@astrojs/tailwind@5.1.1(astro@4.15.11(rollup@4.21.0)(typescript@5.3.3))(tailwindcss@3.4.13)':
     dependencies:
-      astro: 4.15.10(rollup@4.21.0)(typescript@5.3.3)
+      astro: 4.15.11(rollup@4.21.0)(typescript@5.3.3)
       autoprefixer: 10.4.20(postcss@8.4.47)
       postcss: 8.4.47
       postcss-load-config: 4.0.2(postcss@8.4.47)
@@ -3896,7 +3893,7 @@ snapshots:
       - supports-color
       - typescript
 
-  astro@4.15.10(rollup@4.21.0)(typescript@5.3.3):
+  astro@4.15.11(rollup@4.21.0)(typescript@5.3.3):
     dependencies:
       '@astrojs/compiler': 2.10.3
       '@astrojs/internal-helpers': 0.4.1
@@ -4751,20 +4748,6 @@ snapshots:
       unist-util-visit: 5.0.0
       vfile: 6.0.3
       web-namespaces: 2.0.1
-      zwitch: 2.0.4
-
-  hast-util-to-html@9.0.2:
-    dependencies:
-      '@types/hast': 3.0.4
-      '@types/unist': 3.0.2
-      ccount: 2.0.1
-      comma-separated-tokens: 2.0.3
-      hast-util-whitespace: 3.0.0
-      html-void-elements: 3.0.0
-      mdast-util-to-hast: 13.0.2
-      property-information: 6.4.0
-      space-separated-tokens: 2.0.2
-      stringify-entities: 4.0.3
       zwitch: 2.0.4
 
   hast-util-to-html@9.0.3:
@@ -5674,7 +5657,7 @@ snapshots:
   rehype-stringify@10.0.0:
     dependencies:
       '@types/hast': 3.0.4
-      hast-util-to-html: 9.0.2
+      hast-util-to-html: 9.0.3
       unified: 11.0.5
 
   rehype@13.0.2:
