@@ -13,10 +13,10 @@ importers:
         version: 5.0.1(astro@4.16.16(rollup@4.21.0)(typescript@5.3.3))
       '@astrojs/tailwind':
         specifier: 5.1.2
-        version: 5.1.2(astro@4.16.16(rollup@4.21.0)(typescript@5.3.3))(tailwindcss@3.4.15)
+        version: 5.1.2(astro@4.16.16(rollup@4.21.0)(typescript@5.3.3))(tailwindcss@3.4.16)
       '@igorkowalczyk/is-browser':
         specifier: 5.0.4
-        version: 5.0.4(tailwindcss@3.4.15)
+        version: 5.0.4(tailwindcss@3.4.16)
       astro:
         specifier: 4.16.16
         version: 4.16.16(rollup@4.21.0)(typescript@5.3.3)
@@ -30,11 +30,11 @@ importers:
         specifier: 1.4.4
         version: 1.4.4
       tailwindcss:
-        specifier: 3.4.15
-        version: 3.4.15
+        specifier: 3.4.16
+        version: 3.4.16
       tailwindcss-text-fill:
         specifier: 0.2.0
-        version: 0.2.0(tailwindcss@3.4.15)
+        version: 0.2.0(tailwindcss@3.4.16)
     devDependencies:
       '@igorkowalczyk/eslint-config':
         specifier: 2.2.0
@@ -44,7 +44,7 @@ importers:
         version: 2.2.0(prettier@3.4.2)
       '@tailwindcss/forms':
         specifier: 0.5.9
-        version: 0.5.9(tailwindcss@3.4.15)
+        version: 0.5.9(tailwindcss@3.4.16)
       '@typescript-eslint/eslint-plugin':
         specifier: 8.17.0
         version: 8.17.0(@typescript-eslint/parser@8.17.0(eslint@9.16.0(jiti@1.21.6))(typescript@5.3.3))(eslint@9.16.0(jiti@1.21.6))(typescript@5.3.3)
@@ -1951,12 +1951,12 @@ packages:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
     engines: {node: '>= 0.8.0'}
 
-  lilconfig@2.1.0:
-    resolution: {integrity: sha512-utWOt/GHzuUxnLKxB6dk81RoOeoNeHgbrXiuGk4yyF5qlRz+iIVWu56E2fqGHFrXz0QNUhLB/8nKqvRH66JKGQ==}
-    engines: {node: '>=10'}
-
   lilconfig@3.0.0:
     resolution: {integrity: sha512-K2U4W2Ff5ibV7j7ydLr+zLAkIg5JJ4lPn1Ltsdt+Tz/IjQ8buJ55pZAxoP34lqIiwtF9iAvtLv3JGv7CAyAg+g==}
+    engines: {node: '>=14'}
+
+  lilconfig@3.1.3:
+    resolution: {integrity: sha512-/vlFKAoH5Cgt3Ie+JLhRbwOsCQePABiU3tJ1egGvyQ+33R/vcwM2Zl2QR/LzjsBeItPt3oSVXapn+m4nQDvpzw==}
     engines: {node: '>=14'}
 
   lines-and-columns@1.2.4:
@@ -2754,8 +2754,8 @@ packages:
     peerDependencies:
       tailwindcss: '>=2.0.0'
 
-  tailwindcss@3.4.15:
-    resolution: {integrity: sha512-r4MeXnfBmSOuKUWmXe6h2CcyfzJCEk4F0pptO5jlnYSIViUkVmsawj80N5h2lO3gwcmSb4n3PuN+e+GC1Guylw==}
+  tailwindcss@3.4.16:
+    resolution: {integrity: sha512-TI4Cyx7gDiZ6r44ewaJmt0o6BrMCT5aK5e0rmJ/G9Xq3w7CX/5VXl/zIPEJZFUK5VEqwByyhqNPycPlvcK4ZNw==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -3064,13 +3064,13 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/tailwind@5.1.2(astro@4.16.16(rollup@4.21.0)(typescript@5.3.3))(tailwindcss@3.4.15)':
+  '@astrojs/tailwind@5.1.2(astro@4.16.16(rollup@4.21.0)(typescript@5.3.3))(tailwindcss@3.4.16)':
     dependencies:
       astro: 4.16.16(rollup@4.21.0)(typescript@5.3.3)
       autoprefixer: 10.4.20(postcss@8.4.49)
       postcss: 8.4.49
       postcss-load-config: 4.0.2(postcss@8.4.49)
-      tailwindcss: 3.4.15
+      tailwindcss: 3.4.16
     transitivePeerDependencies:
       - ts-node
 
@@ -3416,9 +3416,9 @@ snapshots:
       - prettier
       - supports-color
 
-  '@igorkowalczyk/is-browser@5.0.4(tailwindcss@3.4.15)':
+  '@igorkowalczyk/is-browser@5.0.4(tailwindcss@3.4.16)':
     dependencies:
-      tailwindcss: 3.4.15
+      tailwindcss: 3.4.16
 
   '@igorkowalczyk/prettier-config@2.2.0(prettier@3.4.2)':
     dependencies:
@@ -3636,10 +3636,10 @@ snapshots:
 
   '@shikijs/vscode-textmate@9.3.0': {}
 
-  '@tailwindcss/forms@0.5.9(tailwindcss@3.4.15)':
+  '@tailwindcss/forms@0.5.9(tailwindcss@3.4.16)':
     dependencies:
       mini-svg-data-uri: 1.4.4
-      tailwindcss: 3.4.15
+      tailwindcss: 3.4.16
 
   '@types/babel__core@7.20.5':
     dependencies:
@@ -5004,9 +5004,9 @@ snapshots:
       prelude-ls: 1.2.1
       type-check: 0.4.0
 
-  lilconfig@2.1.0: {}
-
   lilconfig@3.0.0: {}
+
+  lilconfig@3.1.3: {}
 
   lines-and-columns@1.2.4: {}
 
@@ -6025,12 +6025,12 @@ snapshots:
       '@pkgr/core': 0.1.1
       tslib: 2.6.2
 
-  tailwindcss-text-fill@0.2.0(tailwindcss@3.4.15):
+  tailwindcss-text-fill@0.2.0(tailwindcss@3.4.16):
     dependencies:
       flatten-tailwindcss-theme: 1.0.0
-      tailwindcss: 3.4.15
+      tailwindcss: 3.4.16
 
-  tailwindcss@3.4.15:
+  tailwindcss@3.4.16:
     dependencies:
       '@alloc/quick-lru': 5.2.0
       arg: 5.0.2
@@ -6041,7 +6041,7 @@ snapshots:
       glob-parent: 6.0.2
       is-glob: 4.0.3
       jiti: 1.21.6
-      lilconfig: 2.1.0
+      lilconfig: 3.1.3
       micromatch: 4.0.8
       normalize-path: 3.0.0
       object-hash: 3.0.0
