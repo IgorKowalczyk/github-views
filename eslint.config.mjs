@@ -9,4 +9,9 @@ export default [
  ...eslintConfig.tailwindcss,
  ...eslintConfig.astro,
  ...eslintPluginAstro.configs["flat/recommended"],
+ {
+  rules: {
+   "prettier/prettier": "off",
+  },
+ },
 ];

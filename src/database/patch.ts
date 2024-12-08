@@ -5,6 +5,6 @@ declare global {
 }
 
 /* eslint-disable func-names */
-export default BigInt.prototype.toJSON = function() {
+export default BigInt.prototype.toJSON = function () {
  return this.toString();
 };
