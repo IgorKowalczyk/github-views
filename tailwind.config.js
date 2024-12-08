@@ -26,8 +26,7 @@ module.exports = {
     }),
    });
   }),
-  /* eslint-disable global-require */
+
   require("@igorkowalczyk/is-browser"),
-  /* eslint-enable global-require */
  ],
 };

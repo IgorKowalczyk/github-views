@@ -4,7 +4,7 @@ declare global {
  }
 }
 
-/* eslint-disable func-names,space-before-function-paren */
-export default BigInt.prototype.toJSON = function () {
+/* eslint-disable func-names */
+export default BigInt.prototype.toJSON = function() {
  return this.toString();
 };

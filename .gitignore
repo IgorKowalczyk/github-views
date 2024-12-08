@@ -105,3 +105,6 @@ dist
 
 # Vercel output directory
 .vercel
+
+# Astro build output
+.astro
