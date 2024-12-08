@@ -1,4 +1,4 @@
-import "./patch.ts";
+import "./patch";
 
 export async function IncreaseViews(username: string): Promise<number> {
  if (username === "example") return 0;

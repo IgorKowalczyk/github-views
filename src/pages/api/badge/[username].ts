@@ -1,7 +1,7 @@
 import { badgen } from "badgen";
 import type { StyleOption } from "badgen";
-import { FormatNumber } from "../../../utils/FormatNumber.ts";
-import { IncreaseViews, GetViews } from "../../../database/index.ts";
+import { IncreaseViews, GetViews } from "@/database/index";
+import { FormatNumber } from "@/utils/FormatNumber";
 
 interface QueryParams {
  label?: string;
@@ -24,9 +24,9 @@ export const GET = async function GET({ params, request }: { params: { username:
 
   const badge = badgen({
    label: label || "Views",
-   labelColor: labelColor,
+   labelColor,
    status: FormatNumber(views, isValidFormat ? format! : "short"),
-   color: color,
+   color,
    style: style || "flat",
   });
 

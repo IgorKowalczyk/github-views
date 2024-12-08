@@ -1,10 +1,12 @@
-import eslintConfig from "@igorkowalczyk/eslint-config/flat";
+import eslintConfig from "@igorkowalczyk/eslint-config";
 import eslintPluginAstro from "eslint-plugin-astro";
 
 export default [
- {
-  ignores: ["dist/"],
- },
- ...eslintConfig,
+ // prettier
+ ...eslintConfig.base,
+ ...eslintConfig.node,
+ ...eslintConfig.typescript,
+ ...eslintConfig.tailwindcss,
+ ...eslintConfig.astro,
  ...eslintPluginAstro.configs["flat/recommended"],
 ];

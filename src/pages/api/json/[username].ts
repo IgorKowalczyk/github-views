@@ -1,4 +1,4 @@
-import { GetViews } from "../../../database/index.ts";
+import { GetViews } from "@/database/index";
 
 export const GET = async function GET({ params }: { params: { username: string } }): Promise<Response> {
  try {
