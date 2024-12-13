@@ -1,33 +1,24 @@
+import { z } from "astro/zod";
 import { badgen } from "badgen";
-import type { StyleOption } from "badgen";
-import { IncreaseViews, GetViews } from "@/database/index";
-import { FormatNumber } from "@/utils/FormatNumber";
-
-interface QueryParams {
- label?: string;
- labelColor?: string;
- color?: string;
- style?: StyleOption;
- format?: "short" | "long";
- display?: string;
-}
+import { increaseViews, getViews } from "@/database/index";
+import { badgeCreatorSchema, formatNumber, paramsSchema } from "@/utils/utils";
 
 export const GET = async function GET({ params, request }: { params: { username: string }; request: Request }): Promise<Response> {
  try {
   const query = new URL(request.url).searchParams;
-  const { label, labelColor, color, style, format, display }: QueryParams = Object.fromEntries(query);
-  const { username } = params;
-  const views: number = display ? await GetViews(username) : await IncreaseViews(username);
+  const queryEntries = Object.fromEntries(query.entries());
 
-  // Validate the format to ensure it's "short" or "long"
-  const isValidFormat = format === "short" || format === "long";
+  const data = badgeCreatorSchema.parse(queryEntries);
+  const { username } = paramsSchema.parse(params);
+
+  const views: number = data.display ? await getViews(username) : await increaseViews(username);
 
   const badge = badgen({
-   label: label || "Views",
-   labelColor,
-   status: FormatNumber(views, isValidFormat ? format! : "short"),
-   color,
-   style: style || "flat",
+   label: data.label || "Views",
+   labelColor: data.labelColor,
+   status: formatNumber(views, data.format || "short"),
+   color: data.color,
+   style: data.style || "flat",
   });
 
   return new Response(badge, {
@@ -40,13 +31,13 @@ export const GET = async function GET({ params, request }: { params: { username:
    },
    status: 200,
   });
- } catch (error: unknown) {
-  const errorResponse: { error: string } = { error: error instanceof Error ? error.message : "Unknown error" };
+ } catch (error) {
+  console.error(error);
   const svg = badgen({
-   label: "error",
-   labelColor: "#000",
-   status: errorResponse.error,
-   color: "#e05d44",
+   label: "Error",
+   labelColor: "ef4444",
+   status: error instanceof z.ZodError ? error.errors[0].message : "Internal server error",
+   color: "000",
    style: "flat",
   });
 

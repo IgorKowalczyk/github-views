@@ -4,7 +4,6 @@ export interface Props {
 }
 
 const { title } = Astro.props;
-import { Image } from "astro:assets";
 import "@/styles/main.css";
 ---
 
@@ -20,13 +19,15 @@ import "@/styles/main.css";
   <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
   <link rel="manifest" href="/favicons/site.webmanifest" />
   <link rel="shortcut icon" href="/favicons/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <meta name="msapplication-TileColor" content="#091430" />
   <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
   <meta name="theme-color" content="#091430" />
   <meta name="description" content="Create your own badges for your GitHub profile." />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Profile Views" />
-  <meta property="og:title" content="Profile Views - Create your own badges" />
+  <meta property="og:title" content={title} />
   <meta property="og:description" content="Create your own badges for your GitHub profile." />
   <meta property="og:url" content="https://github-views.deno.dev" />
   <meta property="og:image" content="https://github-views.deno.dev/og-image.png" />
@@ -37,20 +38,10 @@ import "@/styles/main.css";
    {title}
   </title>
  </head>
- <body>
-  <div class="flex min-h-screen items-center justify-center bg-background bg-repeat-round bg-grid-[rgba(255,255,255,0.05)]">
-   <div class="absolute left-0 top-0 z-10 size-full bg-[radial-gradient(circle,rgba(2,0,36,0)0,rgb(16,17,16,100%))]"></div>
-   <div class="z-10 m-6 min-w-0 max-w-2xl overflow-hidden rounded-[10px] border border-neutral-800 bg-background-secondary font-inter text-white shadow-main md:m-12">
-    <div class="flex-none border-b border-neutral-800"><div class="flex h-8 items-center space-x-1.5 px-3"><div class="size-2.5 rounded-full bg-neutral-700"></div><div class="size-2.5 rounded-full bg-neutral-700"></div><div class="size-2.5 rounded-full bg-neutral-700"></div></div></div>
-    <div class="px-6 py-3 md:px-12 md:py-6">
-     <a href="https://github.com/igorkowalczyk/github-views" target="_blank" class="mx-auto flex w-fit" rel="noopener noreferrer">
-      <div class="mb-4 w-24 cursor-pointer rounded-2xl border border-neutral-800 p-3 duration-200 hover:border-neutral-600 hover:bg-neutral-800">
-       <Image src="/logo.png" alt="Profile Views" class="noreplace mx-auto size-[70px]" width={70} height={70} loading={"eager"} />
-      </div>
-     </a>
-     <slot />
-    </div>
-   </div>
-  </div>
+ <body class="min-h-screen w-full scroll-smooth bg-background font-geist antialiased">
+  <main class="mx-auto max-w-5xl">
+   <slot />
+   <div class="amazing-rays"></div>
+  </main>
  </body>
 </html>

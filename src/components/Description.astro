@@ -1,12 +1,11 @@
 ---
-export interface Props {
- text: string;
- id?: string;
-}
+import type { HTMLTag, Polymorphic } from "astro/types";
 
-const { text, id } = Astro.props;
+type Props<As extends HTMLTag = "p"> = Polymorphic<{ as: As }>;
+
+const { ...rest } = Astro.props;
 ---
 
-<h2 id={id} class="mt-2 text-center font-inter text-lg font-medium opacity-80 md:text-xl">
- {text}
-</h2>
+<p class="mt-2 text-lg text-neutral-400" {...rest}>
+ <slot />
+</p>

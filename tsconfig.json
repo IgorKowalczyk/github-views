@@ -4,8 +4,11 @@
   "verbatimModuleSyntax": true,
   "baseUrl": ".",
   "paths": {
-   "@/*": ["src/*"]
+   "@/*": ["src/*"],
+   "public/*": ["public/*"]
   },
-  "target": "esnext"
+  "target": "esnext",
+  "jsx": "react-jsx",
+  "jsxImportSource": "preact"
  }
 }
