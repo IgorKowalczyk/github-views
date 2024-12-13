@@ -97,10 +97,10 @@ export default function BadgePreview({ defaultUrl }: { defaultUrl: string | unde
       <h3 class="mb-1 font-medium text-neutral-400">Endpoint</h3>
       <div class="relative flex flex-row gap-2 overflow-hidden rounded-lg bg-neutral-800 p-4">
        <pre class="overflow-hidden whitespace-nowrap font-mono text-sm text-white">
-        {defaultUrl}/api/json/{debouncedInput || "example"}
+        {defaultUrl}api/json/{debouncedInput || "example"}
        </pre>
        <div class="absolute right-0 top-0 flex h-full items-center bg-gradient-to-r from-transparent via-neutral-800 to-neutral-800 p-2 pl-8">
-        <Button ref={buttonRef} variant="secondary" onClick={() => handleConfetti(`${defaultUrl}/api/json/${debouncedInput || "example"}`)} disabled={!input} className="px-2">
+        <Button ref={buttonRef} variant="secondary" onClick={() => handleConfetti(`${defaultUrl}api/json/${debouncedInput || "example"}`)} disabled={!input} className="px-2">
          <CopyIcon />
         </Button>
        </div>
@@ -131,14 +131,14 @@ export default function BadgePreview({ defaultUrl }: { defaultUrl: string | unde
           <span style="color:#DBEDFF;text-decoration:underline">Profile views</span>
           <span style="color:#E1E4E8">](</span>
           <span style="color:#E1E4E8;text-decoration:underline">
-           {defaultUrl}/api/badge/{debouncedInput || "example"}?style={style}
+           {defaultUrl}api/badge/{debouncedInput || "example"}?style={style}
           </span>
           <span style="color:#E1E4E8">)</span>
          </span>
         </code>
        </pre>
        <div class="absolute right-0 top-0 flex h-full items-center bg-gradient-to-r from-transparent via-neutral-800 to-neutral-800 p-2 pl-8">
-        <Button ref={buttonRef} variant="secondary" onClick={() => handleConfetti(`![Profile views](${defaultUrl}/api/badge/${debouncedInput || "example"}?style=${style})`)} disabled={!input} className="px-2">
+        <Button ref={buttonRef} variant="secondary" onClick={() => handleConfetti(`![Profile views](${defaultUrl}api/badge/${debouncedInput || "example"}?style=${style})`)} disabled={!input} className="px-2">
          <CopyIcon />
         </Button>
        </div>
@@ -146,14 +146,14 @@ export default function BadgePreview({ defaultUrl }: { defaultUrl: string | unde
 
       <h3 class="mt-6 font-medium text-neutral-400">Preview</h3>
       <div class="my-1 rounded-lg bg-neutral-800 p-4">
-       <img src={`${defaultUrl}/api/badge/${debouncedInput || "example"}?style=${style}&display=true`} alt="Profile views" class="h-6" />
+       <img src={`${defaultUrl}api/badge/${debouncedInput || "example"}?style=${style}&display=true`} alt="Profile views" class="h-6" />
       </div>
      </>
     )}
 
     <p class="my-4 text-sm font-medium text-neutral-400">
      Looking for more styles?{" "}
-     <a href="https://github.com/IgorKowalczyk/github-views?tab=readme-ov-file#%EF%B8%8F-available-styles" target="_blank" class="underline">
+     <a href="/docs" target="_blank" class="underline">
       Check out the documentation
      </a>
      .

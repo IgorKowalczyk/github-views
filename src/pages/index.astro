@@ -1,5 +1,4 @@
 ---
-import astroConfig from "astro.config";
 import BadgePreview from "@/components/BadgePreview";
 import { Button } from "@/components/Button";
 import Description from "@/components/Description.astro";
@@ -13,10 +12,10 @@ import Layout from "@/layouts/Layout.astro";
    <Header id="main">@igorkowalczyk/profile-views</Header>
    <Description>Create your own badge that will count views anywhere you want!</Description>
    <div class="mt-4 flex items-center justify-center gap-4">
-    <a href={"https://github.com/IgorKowalczyk/github-views?tab=readme-ov-file#%EF%B8%8F-available-styles"}>
+    <a href="/docs">
      <Button variant="primary">Documentation</Button>
     </a>
-    <a href="https://github.com/igorkowalczyk/views" target="_blank">
+    <a href="/github" target="_blank">
      <Button variant="secondary">Github</Button>
     </a>
    </div>
@@ -27,6 +26,6 @@ import Layout from "@/layouts/Layout.astro";
  </section>
 
  <section class="border-x border-b border-neutral-800 px-6" id="preview">
-  <BadgePreview client:visible defaultUrl={astroConfig.site} />
+  <BadgePreview client:visible defaultUrl={Astro.site?.toString()} />
  </section>
 </Layout>
