@@ -1,16 +1,18 @@
 ---
-import Button from "@/components/Button.astro";
+import { Button } from "@/components/Button";
 import Description from "@/components/Description.astro";
 import Header from "@/components/Header.astro";
 import Layout from "@/layouts/Layout.astro";
 ---
 
 <Layout title="Profile views - create your own badges">
- <main>
-  <Header text="404 - Page not found" id="404" />
-  <Description text="This page does not exist." />
+ <section class="flex h-screen flex-col items-center justify-center">
+  <Header>404 - Page not found</Header>
+  <Description>This page does not exist! </Description>
   <div class="mt-2 flex items-center justify-center">
-   <Button href="/" body="Go back home" />
+   <a href="/">
+    <Button variant="primary">Go back to home</Button>
+   </a>
   </div>
- </main>
+ </section>
 </Layout>

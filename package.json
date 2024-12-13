@@ -1,12 +1,12 @@
 {
   "name": "@igorkowalczyk/views",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "👀 Count the views of your github profile with your own custom badge",
   "private": true,
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "deno run --allow-net --allow-read --allow-env ./dist/server/entry.mjs",
+    "preview": "deno run --allow-net --allow-read --allow-env --unstable-kv ./dist/server/entry.mjs",
     "format": "prettier . --write --ignore-unknown --cache --plugin=prettier-plugin-astro",
     "format:check": "prettier . --check --cache",
     "lint": "eslint .",
@@ -31,19 +31,24 @@
   "bugs": {
     "url": "https://github.com/IgorKowalczyk/github-views/issues"
   },
-  "homepage": "https://github-views.deno.dev/",
+  "homepage": "https://views.igorkowalczyk.dev/",
   "dependencies": {
+    "@astrojs/preact": "4.0.0",
     "@astrojs/tailwind": "5.1.3",
     "@deno/astro-adapter": "0.2.0",
-    "@igorkowalczyk/is-browser": "5.0.4",
     "@types/canvas-confetti": "1.6.4",
     "astro": "5.0.5",
+    "astro-compressor": "1.0.0",
+    "autoprefixer": "10.4.20",
     "badgen": "3.2.3",
     "canvas-confetti": "1.9.3",
-    "mini-svg-data-uri": "1.4.4",
+    "class-variance-authority": "0.7.1",
+    "clsx": "2.1.1",
+    "postcss": "8.4.49",
+    "preact": "10.25.2",
     "sharp": "0.33.5",
-    "tailwindcss": "3.4.16",
-    "tailwindcss-text-fill": "0.2.0"
+    "tailwind-merge": "2.5.5",
+    "tailwindcss": "3.4.16"
   },
   "devDependencies": {
     "@igorkowalczyk/eslint-config": "3.0.0-beta.16",
@@ -51,10 +56,8 @@
     "@tailwindcss/forms": "0.5.9",
     "@typescript-eslint/eslint-plugin": "8.18.0",
     "@typescript-eslint/parser": "8.18.0",
-    "autoprefixer": "10.4.20",
     "eslint": "9.16.0",
     "eslint-plugin-astro": "1.3.1",
-    "postcss": "8.4.49",
     "prettier": "3.4.2",
     "prettier-plugin-astro": "0.14.1",
     "prettier-plugin-tailwindcss": "0.6.9"
