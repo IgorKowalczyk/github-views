@@ -31,7 +31,7 @@
   "bugs": {
     "url": "https://github.com/IgorKowalczyk/github-views/issues"
   },
-  "homepage": "https://github-views.deno.dev/",
+  "homepage": "https://views.igorkowalczyk.dev/",
   "dependencies": {
     "@astrojs/preact": "4.0.0",
     "@astrojs/tailwind": "5.1.3",
