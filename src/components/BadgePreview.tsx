@@ -2,8 +2,8 @@ import { type CreateTypes } from "canvas-confetti";
 import canvasConfetti from "canvas-confetti";
 import type { TargetedEvent } from "preact/compat";
 import { useRef, useState } from "preact/hooks";
-import { Button } from "./Button";
-import { Input } from "./Input";
+import { Button } from "@/components/Button";
+import { Input } from "@/components/Input";
 import { useDebounce } from "@/utils/hooks";
 
 export const CopyIcon = () => (
