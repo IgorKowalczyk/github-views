@@ -67,6 +67,19 @@
 > [!WARNING]
 > HEX colors should be used without `#` symbol prefix.
 
+
+## 📊 Number format
+
+You can display the number of views in a more readable format. You can choose between `short` and `long` format.
+
+| Format | Example | Usage |
+| ----- | ---- | ---- |
+| `short` | ![](https://views.igorkowalczyk.dev/api/badge/igorkowalczyk?style=flat&display=true&format=short) | `format=short` |
+| `long` | ![](https://views.igorkowalczyk.dev/api/badge/igorkowalczyk?style=flat&display=true&format=long) | `format=long` |
+
+> [!NOTE]
+> To apply the style, add to the URL `?format=YOUR-FORMAT`, if you use other parameters you can use `&format=YOUR-FORMAT`
+
 ## 📝 Custom text
 
 You can overwrite default `Views` text with your own label.
