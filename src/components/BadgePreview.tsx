@@ -80,7 +80,7 @@ export default function BadgePreview({ defaultUrl }: { defaultUrl: string | unde
    <div class="sticky flex w-full flex-col border-b border-neutral-800 bg-background py-6 pr-6 md:col-span-2 md:border-b-0 md:border-r">
     <div class="mb-2 ">
      <h3 class="mb-1 font-medium text-neutral-400">Username:</h3>
-     <Input id="input" placeholder="JohnDoe" type="text" value={input} onInput={handleInput} />
+     <Input id="input" placeholder="@username" type="text" value={input} onInput={handleInput} />
     </div>
     <div class="mt-1 flex flex-col items-center gap-2">
      {availableStyles.map((styleOption) => (
