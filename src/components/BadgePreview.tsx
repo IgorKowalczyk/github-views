@@ -31,6 +31,8 @@ const availableStyles = [
 export default function BadgePreview({ defaultUrl }: { defaultUrl: string | undefined }) {
  const [input, setInput] = useState<string>("");
  const [style, setStyle] = useState<(typeof availableStyles)[number]["name"]>("flat");
+ const [animate, setAnimate] = useState<boolean>(false);
+ const [newStyle, setNewStyle] = useState<string>(style);
  const debouncedInput = useDebounce(input, 500);
  const canvasRef = useRef<HTMLCanvasElement | null>(null);
  const confetti = useRef<CreateTypes | null>(null);
@@ -75,6 +77,14 @@ export default function BadgePreview({ defaultUrl }: { defaultUrl: string | unde
   }
  };
 
+ const handleStyleChange = (newStyle: string) => {
+  setAnimate(true);
+  setTimeout(() => {
+   setStyle(newStyle);
+   setAnimate(false);
+  }, 200);
+ };
+
  return (
   <div class="grid grid-cols-1 md:grid-cols-5">
    <div class="sticky flex w-full flex-col border-b border-neutral-800 bg-background py-6 pr-6 md:col-span-2 md:border-b-0 md:border-r">
@@ -84,7 +94,14 @@ export default function BadgePreview({ defaultUrl }: { defaultUrl: string | unde
     </div>
     <div class="mt-1 flex flex-col items-center gap-2">
      {availableStyles.map((styleOption) => (
-      <button key={styleOption.name} class={`mb-2 mr-2 w-64 flex-shrink-0 rounded-md border border-neutral-800 p-4  text-left text-white outline-none duration-200 last:mr-0  md:mr-0 md:w-full ${styleOption.name === style ? "bg-neutral-800/70" : "hover:bg-neutral-800/40"}`} onClick={() => setStyle(styleOption.name)}>
+      <button
+       key={styleOption.name}
+       class={`mb-2 mr-2 w-64 flex-shrink-0 rounded-md border border-neutral-800 p-4  text-left text-white outline-none duration-200 last:mr-0  md:mr-0 md:w-full ${styleOption.name === newStyle ? "bg-neutral-800/70" : "hover:bg-neutral-800/40"} `}
+       onClick={() => {
+        setNewStyle(styleOption.name);
+        handleStyleChange(styleOption.name);
+       }}
+      >
        <h3 class="font-medium capitalize tracking-tight">{styleOption.name}</h3>
        <p class="text-sm text-neutral-400">{styleOption.description}</p>
       </button>
@@ -92,72 +109,66 @@ export default function BadgePreview({ defaultUrl }: { defaultUrl: string | unde
     </div>
    </div>
    <div class="col-span-1 p-6 pr-0 md:col-span-3">
-    {style === "json" ? (
-     <>
-      <h3 class="mb-1 font-medium text-neutral-400">Endpoint</h3>
-      <div class="relative flex flex-row gap-2 overflow-hidden rounded-lg bg-neutral-800 p-4">
-       <pre class="overflow-hidden whitespace-nowrap font-mono text-sm text-white">
-        {defaultUrl}api/json/{debouncedInput || "example"}
-       </pre>
-       <div class="absolute right-0 top-0 flex h-full items-center bg-gradient-to-r from-transparent via-neutral-800 to-neutral-800 p-2 pl-8">
-        <Button ref={buttonRef} variant="secondary" onClick={() => handleConfetti(`${defaultUrl}api/json/${debouncedInput || "example"}`)} disabled={!input} className="px-2">
-         <CopyIcon />
-        </Button>
+    <div class={`transition-all duration-200 ${animate ? "scale-95 opacity-0" : "scale-100 opacity-100"}`}>
+     {style === "json" ? (
+      <>
+       <h3 class="mb-1 font-medium text-neutral-400">Endpoint</h3>
+       <div class="relative flex flex-row gap-2 overflow-hidden rounded-lg bg-neutral-800 p-4">
+        <pre class="overflow-hidden whitespace-nowrap font-mono text-sm text-white">
+         {defaultUrl}api/json/{debouncedInput || "example"}
+        </pre>
+        <div class="absolute right-0 top-0 flex h-full items-center bg-gradient-to-r from-transparent via-neutral-800 to-neutral-800 p-2 pl-8">
+         <Button ref={buttonRef} variant="secondary" onClick={() => handleConfetti(`${defaultUrl}api/json/${debouncedInput || "example"}`)} disabled={!input} className="px-2">
+          <CopyIcon />
+         </Button>
+        </div>
        </div>
-      </div>
-      <h3 class="mt-6 font-medium text-neutral-400">JSON</h3>
-      <div class="relative flex flex-row gap-2 overflow-hidden rounded-lg bg-neutral-800 p-4">
-       <pre class="overflow-hidden whitespace-nowrap font-mono text-sm text-white">
-        <code>
-         <span class="line">
-          <span style="color:#E1E4E8">{"{"} </span>
-          <span style="color:#79B8FF">"views"</span>
-          <span style="color:#E1E4E8">: </span>
-          <span style="color:#79B8FF">0</span>
-          <span style="color:#E1E4E8"> {"}"}</span>
-         </span>
-        </code>
-       </pre>
-      </div>
-     </>
-    ) : (
-     <>
-      <h3 class="mb-1 font-medium text-neutral-400">Markdown</h3>
-      <div class="relative flex flex-row gap-2 overflow-hidden rounded-lg bg-neutral-800 p-4">
-       <pre class="overflow-hidden whitespace-nowrap font-mono text-sm text-white">
-        <code>
-         <span>
-          <span style="color:#E1E4E8">![</span>
-          <span style="color:#DBEDFF;text-decoration:underline">Profile views</span>
-          <span style="color:#E1E4E8">](</span>
-          <span style="color:#E1E4E8;text-decoration:underline">
-           {defaultUrl}api/badge/{debouncedInput || "example"}?style={style}
+       <h3 class="mt-6 font-medium text-neutral-400">JSON</h3>
+       <div class="relative flex flex-row gap-2 overflow-hidden rounded-lg bg-neutral-800 p-4">
+        <pre class="overflow-hidden whitespace-nowrap font-mono text-sm text-white">
+         <code>
+          <span class="line">
+           <span style="color:#E1E4E8">{"{"} </span>
+           <span style="color:#79B8FF">"views"</span>
+           <span style="color:#E1E4E8">: </span>
+           <span style="color:#79B8FF">0</span>
+           <span style="color:#E1E4E8"> {"}"}</span>
           </span>
-          <span style="color:#E1E4E8">)</span>
-         </span>
-        </code>
-       </pre>
-       <div class="absolute right-0 top-0 flex h-full items-center bg-gradient-to-r from-transparent via-neutral-800 to-neutral-800 p-2 pl-8">
-        <Button ref={buttonRef} variant="secondary" onClick={() => handleConfetti(`![Profile views](${defaultUrl}api/badge/${debouncedInput || "example"}?style=${style})`)} disabled={!input} className="px-2">
-         <CopyIcon />
-        </Button>
+         </code>
+        </pre>
        </div>
-      </div>
+      </>
+     ) : (
+      <>
+       <h3 class="mb-1 font-medium text-neutral-400">Markdown</h3>
+       <div class="relative flex flex-row gap-2 overflow-hidden rounded-lg bg-neutral-800 p-4">
+        <pre class="overflow-hidden whitespace-nowrap font-mono text-sm text-white">
+         <code>
+          <span>
+           <span style="color:#E1E4E8">![</span>
+           <span style="color:#DBEDFF;text-decoration:underline">Profile views</span>
+           <span style="color:#E1E4E8">](</span>
+           <span style="color:#E1E4E8;text-decoration:underline">
+            {defaultUrl}api/badge/{debouncedInput || "example"}?style={style}
+           </span>
+           <span style="color:#E1E4E8">)</span>
+          </span>
+         </code>
+        </pre>
+        <div class="absolute right-0 top-0 flex h-full items-center bg-gradient-to-r from-transparent via-neutral-800 to-neutral-800 p-2 pl-8">
+         <Button ref={buttonRef} variant="secondary" onClick={() => handleConfetti(`![Profile views](${defaultUrl}api/badge/${debouncedInput || "example"}?style=${style})`)} disabled={!input} className="px-2">
+          <CopyIcon />
+         </Button>
+        </div>
+       </div>
 
-      <h3 class="mt-6 font-medium text-neutral-400">Preview</h3>
-      <div class="my-1 rounded-lg bg-neutral-800 p-4">
-       <img src={`${defaultUrl}api/badge/${debouncedInput || "example"}?style=${style}&display=true`} alt="Profile views" class="h-6" />
-      </div>
-     </>
-    )}
-
-    <p class="my-4 text-sm font-medium text-neutral-400">
-     Looking for more styles?{" "}
-     <a href="/docs" target="_blank" class="underline">
-      Check out the documentation
-     </a>
-     .
-    </p>
+       <h3 class="mt-6 font-medium text-neutral-400">Preview</h3>
+       <div class="my-1 rounded-lg bg-neutral-800 p-4">
+        <img src={`${defaultUrl}api/badge/${debouncedInput || "example"}?style=${style}&display=true`} alt="Profile views" class="h-6" />
+       </div>
+      </>
+     )}
+    </div>
    </div>
    <canvas ref={canvasRef} class="pointer-events-none absolute inset-0 z-10 size-full" />
   </div>
