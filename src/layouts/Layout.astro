@@ -11,32 +11,43 @@ import "@/styles/main.css";
 <html lang="en">
  <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="robots" content="follow, index" />
-  <link rel="icon" href="/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+  <meta name="googlebot" content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1" />
+
+  <link rel="shortcut icon" href="/favicon.ico" />
   <link rel="manifest" href="/favicons/site.webmanifest" />
   <link rel="shortcut icon" href="/favicons/favicon.ico" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <meta name="msapplication-TileColor" content="#091430" />
-  <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
-  <meta name="theme-color" content="#091430" />
+
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="white" />
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black" />
+
+  <title>{title}</title>
   <meta name="description" content="Create your own badges for your GitHub profile." />
+
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Profile Views" />
+  <meta property="og:site_name" content="GitHub Profile Views" />
   <meta property="og:title" content={title} />
   <meta property="og:description" content="Create your own badges for your GitHub profile." />
   <meta property="og:url" content="https://views.igorkowalczyk.dev" />
+  <meta property="og:locale" content="en_US" />
   <meta property="og:image" content="https://views.igorkowalczyk.dev/og-image.png" />
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:creator" content="@igorkowalczyk" />
-  <meta name="generator" content={Astro.generator} />
-  <title>
-   {title}
-  </title>
+  <meta property="og:image:alt" content="GitHub Profile Views" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content="Create your own badges for your GitHub profile." />
+  <meta name="twitter:image" content="https://views.igorkowalczyk.dev/og-image.png" />
+  <meta name="twitter:image:alt" content="GitHub Profile Views" />
+  <meta name="twitter:image:type" content="image/png" />
+  <meta name="twitter:image:width" content="1200" />
+  <meta name="twitter:image:height" content="630" />
  </head>
  <body class="min-h-screen w-full scroll-smooth bg-background font-geist antialiased">
   <main class="mx-auto max-w-5xl">
