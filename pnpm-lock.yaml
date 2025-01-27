@@ -13,16 +13,16 @@ importers:
         version: 4.0.3(@babel/core@7.26.0)(jiti@2.4.2)(preact@10.25.4)
       '@astrojs/tailwind':
         specifier: 5.1.5
-        version: 5.1.5(astro@5.1.9(jiti@2.4.2)(rollup@4.28.1)(typescript@5.3.3))(tailwindcss@3.4.17)
+        version: 5.1.5(astro@5.1.10(jiti@2.4.2)(rollup@4.28.1)(typescript@5.3.3))(tailwindcss@3.4.17)
       '@deno/astro-adapter':
         specifier: 0.2.0
-        version: 0.2.0(astro@5.1.9(jiti@2.4.2)(rollup@4.28.1)(typescript@5.3.3))
+        version: 0.2.0(astro@5.1.10(jiti@2.4.2)(rollup@4.28.1)(typescript@5.3.3))
       '@types/canvas-confetti':
         specifier: 1.9.0
         version: 1.9.0
       astro:
-        specifier: 5.1.9
-        version: 5.1.9(jiti@2.4.2)(rollup@4.28.1)(typescript@5.3.3)
+        specifier: 5.1.10
+        version: 5.1.10(jiti@2.4.2)(rollup@4.28.1)(typescript@5.3.3)
       astro-compressor:
         specifier: 1.0.0
         version: 1.0.0
@@ -1245,8 +1245,8 @@ packages:
     resolution: {integrity: sha512-8hJaCuqxObShWl2wEsnASqh/DbQ2O+S66m0Q3ctJlzBPEQ4pfGwwama3FCjZO3GDLQsjvn1T0v93Vxyu/+5fGw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  astro@5.1.9:
-    resolution: {integrity: sha512-QB3MH7Ul3gEvmHXEfvPkGpTZyyB/TBKQbm0kTHpo0BTEB7BvaY+wrcWiGEJBVDpVdEAKY9fM3zrJ0c7hZSXVlw==}
+  astro@5.1.10:
+    resolution: {integrity: sha512-qFu4jC7BRlhwHgk9Pa1sTQWw60zYWlriNTt6bMGMKkPxCd4Dd84fGn+NjbrJ/JeKwF7YXX0gY1saDF/RS6TMVA==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -3635,9 +3635,9 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/tailwind@5.1.5(astro@5.1.9(jiti@2.4.2)(rollup@4.28.1)(typescript@5.3.3))(tailwindcss@3.4.17)':
+  '@astrojs/tailwind@5.1.5(astro@5.1.10(jiti@2.4.2)(rollup@4.28.1)(typescript@5.3.3))(tailwindcss@3.4.17)':
     dependencies:
-      astro: 5.1.9(jiti@2.4.2)(rollup@4.28.1)(typescript@5.3.3)
+      astro: 5.1.10(jiti@2.4.2)(rollup@4.28.1)(typescript@5.3.3)
       autoprefixer: 10.4.20(postcss@8.5.1)
       postcss: 8.5.1
       postcss-load-config: 4.0.2(postcss@8.5.1)
@@ -3784,9 +3784,9 @@ snapshots:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
 
-  '@deno/astro-adapter@0.2.0(astro@5.1.9(jiti@2.4.2)(rollup@4.28.1)(typescript@5.3.3))':
+  '@deno/astro-adapter@0.2.0(astro@5.1.10(jiti@2.4.2)(rollup@4.28.1)(typescript@5.3.3))':
     dependencies:
-      astro: 5.1.9(jiti@2.4.2)(rollup@4.28.1)(typescript@5.3.3)
+      astro: 5.1.10(jiti@2.4.2)(rollup@4.28.1)(typescript@5.3.3)
       esbuild: 0.19.8
       lodash: 4.17.21
 
@@ -4822,7 +4822,7 @@ snapshots:
       - supports-color
       - typescript
 
-  astro@5.1.9(jiti@2.4.2)(rollup@4.28.1)(typescript@5.3.3):
+  astro@5.1.10(jiti@2.4.2)(rollup@4.28.1)(typescript@5.3.3):
     dependencies:
       '@astrojs/compiler': 2.10.3
       '@astrojs/internal-helpers': 0.4.2
