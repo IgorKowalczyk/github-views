@@ -44,7 +44,7 @@
     "canvas-confetti": "1.9.3",
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
-    "postcss": "8.5.2",
+    "postcss": "8.5.3",
     "preact": "10.26.2",
     "sharp": "0.33.5",
     "tailwind-merge": "2.6.0",
