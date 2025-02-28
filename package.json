@@ -33,11 +33,11 @@
   },
   "homepage": "https://views.igorkowalczyk.dev/",
   "dependencies": {
-    "@astrojs/preact": "4.0.4",
+    "@astrojs/preact": "4.0.5",
     "@astrojs/tailwind": "5.1.5",
     "@deno/astro-adapter": "0.2.0",
     "@types/canvas-confetti": "1.9.0",
-    "astro": "5.3.0",
+    "astro": "5.4.1",
     "astro-compressor": "1.0.0",
     "autoprefixer": "10.4.20",
     "badgen": "3.2.3",
