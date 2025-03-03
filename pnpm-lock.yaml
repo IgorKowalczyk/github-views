@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@astrojs/preact':
         specifier: 4.0.4
-        version: 4.0.4(@babel/core@7.26.0)(jiti@2.4.2)(preact@10.26.3)
+        version: 4.0.4(@babel/core@7.26.0)(jiti@2.4.2)(preact@10.26.4)
       '@astrojs/tailwind':
         specifier: 5.1.5
         version: 5.1.5(astro@5.3.0(jiti@2.4.2)(rollup@4.28.1)(typescript@5.3.3))(tailwindcss@3.4.17)
@@ -45,8 +45,8 @@ importers:
         specifier: 8.5.3
         version: 8.5.3
       preact:
-        specifier: 10.26.3
-        version: 10.26.3
+        specifier: 10.26.4
+        version: 10.26.4
       sharp:
         specifier: 0.33.5
         version: 0.33.5
@@ -2834,8 +2834,8 @@ packages:
     peerDependencies:
       preact: '>=10'
 
-  preact@10.26.3:
-    resolution: {integrity: sha512-OJCfNTdttkOTCbTN+gCnXn/woDqz1dIjvP+gdCoYGP2kKuX6w79FAP8qgY/r7jgAunvqHVVmEOKzKOFWzrXZdw==}
+  preact@10.26.4:
+    resolution: {integrity: sha512-KJhO7LBFTjP71d83trW+Ilnjbo+ySsaAgCfXOXUlmGzJ4ygYPWmysm77yg4emwfmoz3b22yvH5IsVFHbhUaH5w==}
 
   preferred-pm@4.1.1:
     resolution: {integrity: sha512-rU+ZAv1Ur9jAUZtGPebQVQPzdGhNzaEiQ7VL9+cjsAWPHFYOccNXPNiev1CCDSOg/2j7UujM7ojNhpkuILEVNQ==}
@@ -3654,15 +3654,15 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/preact@4.0.4(@babel/core@7.26.0)(jiti@2.4.2)(preact@10.26.3)':
+  '@astrojs/preact@4.0.4(@babel/core@7.26.0)(jiti@2.4.2)(preact@10.26.4)':
     dependencies:
       '@babel/plugin-transform-react-jsx': 7.25.9(@babel/core@7.26.0)
       '@babel/plugin-transform-react-jsx-development': 7.25.9(@babel/core@7.26.0)
-      '@preact/preset-vite': 2.10.1(@babel/core@7.26.0)(preact@10.26.3)(vite@6.0.11(jiti@2.4.2))
-      '@preact/signals': 2.0.1(preact@10.26.3)
+      '@preact/preset-vite': 2.10.1(@babel/core@7.26.0)(preact@10.26.4)(vite@6.0.11(jiti@2.4.2))
+      '@preact/signals': 2.0.1(preact@10.26.4)
       babel-plugin-transform-hook-names: 1.0.2(@babel/core@7.26.0)
-      preact: 10.26.3
-      preact-render-to-string: 6.5.13(preact@10.26.3)
+      preact: 10.26.4
+      preact-render-to-string: 6.5.13(preact@10.26.4)
       vite: 6.0.11(jiti@2.4.2)
     transitivePeerDependencies:
       - '@babel/core'
@@ -4335,12 +4335,12 @@ snapshots:
 
   '@pkgr/core@0.1.1': {}
 
-  '@preact/preset-vite@2.10.1(@babel/core@7.26.0)(preact@10.26.3)(vite@6.0.11(jiti@2.4.2))':
+  '@preact/preset-vite@2.10.1(@babel/core@7.26.0)(preact@10.26.4)(vite@6.0.11(jiti@2.4.2))':
     dependencies:
       '@babel/core': 7.26.0
       '@babel/plugin-transform-react-jsx': 7.25.9(@babel/core@7.26.0)
       '@babel/plugin-transform-react-jsx-development': 7.25.9(@babel/core@7.26.0)
-      '@prefresh/vite': 2.4.6(preact@10.26.3)(vite@6.0.11(jiti@2.4.2))
+      '@prefresh/vite': 2.4.6(preact@10.26.4)(vite@6.0.11(jiti@2.4.2))
       '@rollup/pluginutils': 4.2.1
       babel-plugin-transform-hook-names: 1.0.2(@babel/core@7.26.0)
       debug: 4.4.0
@@ -4353,27 +4353,27 @@ snapshots:
 
   '@preact/signals-core@1.8.0': {}
 
-  '@preact/signals@2.0.1(preact@10.26.3)':
+  '@preact/signals@2.0.1(preact@10.26.4)':
     dependencies:
       '@preact/signals-core': 1.8.0
-      preact: 10.26.3
+      preact: 10.26.4
 
   '@prefresh/babel-plugin@0.5.1': {}
 
-  '@prefresh/core@1.5.3(preact@10.26.3)':
+  '@prefresh/core@1.5.3(preact@10.26.4)':
     dependencies:
-      preact: 10.26.3
+      preact: 10.26.4
 
   '@prefresh/utils@1.2.0': {}
 
-  '@prefresh/vite@2.4.6(preact@10.26.3)(vite@6.0.11(jiti@2.4.2))':
+  '@prefresh/vite@2.4.6(preact@10.26.4)(vite@6.0.11(jiti@2.4.2))':
     dependencies:
       '@babel/core': 7.26.0
       '@prefresh/babel-plugin': 0.5.1
-      '@prefresh/core': 1.5.3(preact@10.26.3)
+      '@prefresh/core': 1.5.3(preact@10.26.4)
       '@prefresh/utils': 1.2.0
       '@rollup/pluginutils': 4.2.1
-      preact: 10.26.3
+      preact: 10.26.4
       vite: 6.0.11(jiti@2.4.2)
     transitivePeerDependencies:
       - supports-color
@@ -7015,11 +7015,11 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  preact-render-to-string@6.5.13(preact@10.26.3):
+  preact-render-to-string@6.5.13(preact@10.26.4):
     dependencies:
-      preact: 10.26.3
+      preact: 10.26.4
 
-  preact@10.26.3: {}
+  preact@10.26.4: {}
 
   preferred-pm@4.1.1:
     dependencies:
