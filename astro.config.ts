@@ -1,9 +1,9 @@
 // https://astro.build/config
 import preact from "@astrojs/preact";
-import tailwind from "@astrojs/tailwind";
 import deno from "@deno/astro-adapter";
 import { defineConfig } from "astro/config";
 import compress from "astro-compressor";
+import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
@@ -14,5 +14,8 @@ export default defineConfig({
   "/docs": "https://github.com/IgorKowalczyk/github-views?tab=readme-ov-file#-basic-usage",
  },
  adapter: deno(),
- integrations: [tailwind(), preact(), compress()],
+ integrations: [preact(), compress()],
+ vite: {
+  plugins: [tailwindcss()],
+ },
 });

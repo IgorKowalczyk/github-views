@@ -87,7 +87,7 @@ export default function BadgePreview({ defaultUrl }: { defaultUrl: string | unde
 
  return (
   <div class="grid grid-cols-1 md:grid-cols-5">
-   <div class="sticky flex w-full flex-col border-b border-neutral-800 bg-background py-6 pr-6 md:col-span-2 md:border-b-0 md:border-r">
+   <div class="sticky flex w-full flex-col border-b border-neutral-800 bg-background p-6 md:col-span-2 md:border-b-0 md:border-r">
     <div class="mb-2 ">
      <h3 class="mb-1 font-medium text-neutral-400">Username:</h3>
      <Input id="input" placeholder="@username" type="text" value={input} onInput={handleInput} />
@@ -96,7 +96,7 @@ export default function BadgePreview({ defaultUrl }: { defaultUrl: string | unde
      {availableStyles.map((styleOption) => (
       <button
        key={styleOption.name}
-       class={`mb-2 mr-2 w-64 flex-shrink-0 rounded-md border border-neutral-800 p-4  text-left text-white outline-none duration-200 last:mr-0  md:mr-0 md:w-full ${styleOption.name === newStyle ? "bg-neutral-800/70" : "hover:bg-neutral-800/40"} `}
+       class={`mb-2 shrink-0 cursor-pointer rounded-md border border-neutral-800 p-4  text-left text-white outline-hidden duration-200 w-full ${styleOption.name === newStyle ? "bg-neutral-800/70" : "hover:bg-neutral-800/40"} `}
        onClick={() => {
         setNewStyle(styleOption.name);
         handleStyleChange(styleOption.name);
@@ -108,16 +108,16 @@ export default function BadgePreview({ defaultUrl }: { defaultUrl: string | unde
      ))}
     </div>
    </div>
-   <div class="col-span-1 p-6 pr-0 md:col-span-3">
+   <div class="col-span-1 p-6 md:col-span-3">
     <div class={`transition-all duration-200 ${animate ? "scale-95 opacity-0" : "scale-100 opacity-100"}`}>
      {style === "json" ? (
       <>
        <h3 class="mb-1 font-medium text-neutral-400">Endpoint</h3>
        <div class="relative flex flex-row gap-2 overflow-hidden rounded-lg bg-neutral-800 p-4">
-        <pre class="overflow-hidden whitespace-nowrap font-mono text-sm text-white">
+        <pre class="overflow-hidden whitespace-nowrap selection:bg-neutral-900 font-mono text-sm text-white">
          {defaultUrl}api/json/{debouncedInput || "example"}
         </pre>
-        <div class="absolute right-0 top-0 flex h-full items-center bg-gradient-to-r from-transparent via-neutral-800 to-neutral-800 p-2 pl-8">
+        <div class="absolute right-0 top-0 flex h-full items-center bg-linear-to-r from-transparent via-neutral-800 to-neutral-800 p-2 pl-8">
          <Button ref={buttonRef} variant="secondary" onClick={() => handleConfetti(`${defaultUrl}api/json/${debouncedInput || "example"}`)} disabled={!input} className="px-2">
           <CopyIcon />
          </Button>
@@ -125,7 +125,7 @@ export default function BadgePreview({ defaultUrl }: { defaultUrl: string | unde
        </div>
        <h3 class="mt-6 font-medium text-neutral-400">JSON</h3>
        <div class="relative flex flex-row gap-2 overflow-hidden rounded-lg bg-neutral-800 p-4">
-        <pre class="overflow-hidden whitespace-nowrap font-mono text-sm text-white">
+        <pre class="overflow-hidden whitespace-nowrap selection:bg-neutral-900 font-mono text-sm text-white">
          <code>
           <span class="line">
            <span style="color:#E1E4E8">{"{"} </span>
@@ -142,7 +142,7 @@ export default function BadgePreview({ defaultUrl }: { defaultUrl: string | unde
       <>
        <h3 class="mb-1 font-medium text-neutral-400">Markdown</h3>
        <div class="relative flex flex-row gap-2 overflow-hidden rounded-lg bg-neutral-800 p-4">
-        <pre class="overflow-hidden whitespace-nowrap font-mono text-sm text-white">
+        <pre class="overflow-hidden whitespace-nowrap selection:bg-neutral-900 font-mono text-sm text-white">
          <code>
           <span>
            <span style="color:#E1E4E8">![</span>
@@ -155,7 +155,7 @@ export default function BadgePreview({ defaultUrl }: { defaultUrl: string | unde
           </span>
          </code>
         </pre>
-        <div class="absolute right-0 top-0 flex h-full items-center bg-gradient-to-r from-transparent via-neutral-800 to-neutral-800 p-2 pl-8">
+        <div class="absolute right-0 top-0 flex h-full items-center bg-linear-to-r from-transparent via-neutral-800 to-neutral-800 p-2 pl-8">
          <Button ref={buttonRef} variant="secondary" onClick={() => handleConfetti(`![Profile views](${defaultUrl}api/badge/${debouncedInput || "example"}?style=${style})`)} disabled={!input} className="px-2">
           <CopyIcon />
          </Button>

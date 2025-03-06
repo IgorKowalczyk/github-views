@@ -2,7 +2,7 @@ import { type VariantProps, cva } from "class-variance-authority";
 import { forwardRef, type ButtonHTMLAttributes } from "preact/compat";
 import { cn } from "@/utils/utils";
 
-const buttonVariants = cva("rounded-md px-4 py-2 font-medium duration-200 disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none", {
+const buttonVariants = cva("rounded-md px-4 py-2 font-medium duration-200 disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none cursor-pointer", {
  variants: {
   variant: {
    primary: "bg-blue-500 text-white hover:bg-blue-600",

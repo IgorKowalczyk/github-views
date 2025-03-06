@@ -1,10 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap");
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap") layer(base);
+@import "tailwindcss";
+
+@theme {
+ --font-geist: Geist Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+ --color-background: #101110;
+ --animate-rays: rotate-hue 20s ease-out infinite;
+
+ @keyframes rotate-hue {
+  0% {
+   filter: hue-rotate(540deg) saturate(7.3);
+  }
+  to {
+   filter: hue-rotate(180deg) saturate(7.3);
+  }
+ }
+}
 
 * {
- @apply box-border outline-2 outline-offset-4 outline-[#4d67ff] dark:outline-[#1491ff];
  scrollbar-color: #161617 transparent;
  scrollbar-width: thin;
 }
@@ -12,10 +24,6 @@
 html,
 body {
  @apply scroll-smooth;
-}
-
-::selection {
- @apply bg-neutral-800 !text-white;
 }
 
 ::-webkit-scrollbar {

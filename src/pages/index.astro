@@ -20,12 +20,12 @@ import Layout from "@/layouts/Layout.astro";
     </a>
    </div>
   </div>
-  <div class="flex items-center justify-center lg:col-span-1">
+  <div class="lg:flex lg:items-center lg:justify-center lg:col-span-1 hidden">
    <img src="/logo.png" class="aspect-square size-52" alt="Profile views" loading="eager" />
   </div>
  </section>
 
- <section class="border-x border-b border-neutral-800 px-6" id="preview">
+ <section class="border-x border-b border-neutral-800" id="preview">
   <BadgePreview client:visible defaultUrl={Astro.site?.toString()} />
  </section>
 </Layout>
