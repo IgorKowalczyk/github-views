@@ -12,8 +12,8 @@ importers:
         specifier: 4.0.5
         version: 4.0.5(@babel/core@7.26.0)(jiti@2.4.2)(preact@10.26.4)
       '@astrojs/tailwind':
-        specifier: 5.1.5
-        version: 5.1.5(astro@5.4.2(jiti@2.4.2)(rollup@4.34.9)(typescript@5.3.3))(tailwindcss@3.4.17)
+        specifier: 6.0.0
+        version: 6.0.0(astro@5.4.2(jiti@2.4.2)(rollup@4.34.9)(typescript@5.3.3))(tailwindcss@3.4.17)
       '@deno/astro-adapter':
         specifier: 0.2.0
         version: 0.2.0(astro@5.4.2(jiti@2.4.2)(rollup@4.34.9)(typescript@5.3.3))
@@ -115,8 +115,8 @@ packages:
     resolution: {integrity: sha512-GilTHKGCW6HMq7y3BUv9Ac7GMe/MO9gi9GW62GzKtth0SwukCu/qp2wLiGpEujhY+VVhaG9v7kv/5vFzvf4NYw==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0}
 
-  '@astrojs/tailwind@5.1.5':
-    resolution: {integrity: sha512-1diguZEau7FZ9vIjzE4BwavGdhD3+JkdS8zmibl1ene+EHgIU5hI0NMgRYG3yea+Niaf7cyMwjeWeLvzq/maxg==}
+  '@astrojs/tailwind@6.0.0':
+    resolution: {integrity: sha512-GbEK2/h0nvY8i6g1GZT5ddHAgj71lQIf34/j7+jPLhUti3xDxKcWElApDe2jWvqAaKl2oKEh045ITSm8mU9BVQ==}
     peerDependencies:
       astro: ^3.0.0 || ^4.0.0 || ^5.0.0
       tailwindcss: ^3.0.24
@@ -4033,7 +4033,7 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/tailwind@5.1.5(astro@5.4.2(jiti@2.4.2)(rollup@4.34.9)(typescript@5.3.3))(tailwindcss@3.4.17)':
+  '@astrojs/tailwind@6.0.0(astro@5.4.2(jiti@2.4.2)(rollup@4.34.9)(typescript@5.3.3))(tailwindcss@3.4.17)':
     dependencies:
       astro: 5.4.2(jiti@2.4.2)(rollup@4.34.9)(typescript@5.3.3)
       autoprefixer: 10.4.20(postcss@8.5.3)

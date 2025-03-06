@@ -34,7 +34,7 @@
   "homepage": "https://views.igorkowalczyk.dev/",
   "dependencies": {
     "@astrojs/preact": "4.0.5",
-    "@astrojs/tailwind": "5.1.5",
+    "@astrojs/tailwind": "6.0.0",
     "@deno/astro-adapter": "0.2.0",
     "@types/canvas-confetti": "1.9.0",
     "astro": "5.4.2",
