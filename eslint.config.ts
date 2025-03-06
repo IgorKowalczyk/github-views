@@ -6,12 +6,5 @@ export default [
  ...eslintConfig.base,
  ...eslintConfig.node,
  ...eslintConfig.typescript,
- ...eslintConfig.tailwindcss,
- ...eslintConfig.astro,
  ...eslintPluginAstro.configs["flat/recommended"],
- {
-  rules: {
-   "prettier/prettier": "off",
-  },
- },
 ];
