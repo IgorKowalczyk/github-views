@@ -47,7 +47,7 @@
     "preact": "10.26.4",
     "sharp": "0.33.5",
     "tailwind-merge": "3.0.2",
-    "tailwindcss": "4.0.11"
+    "tailwindcss": "4.0.12"
   },
   "devDependencies": {
     "@igorkowalczyk/eslint-config": "3.0.7",
