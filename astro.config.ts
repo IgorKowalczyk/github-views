@@ -1,9 +1,9 @@
 // https://astro.build/config
 import preact from "@astrojs/preact";
 import deno from "@deno/astro-adapter";
+import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
 import compress from "astro-compressor";
-import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
