@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "deno run --allow-net --allow-read --allow-env --unstable-kv ./dist/server/entry.mjs",
+    "preview": "deno run --allow-net --allow-read --allow-env --unstable-bare-node-builtins --unstable-kv ./dist/server/entry.mjs",
     "format": "prettier . --write --ignore-unknown --cache --plugin=prettier-plugin-astro",
     "format:check": "prettier . --check --cache",
     "lint": "eslint .",
