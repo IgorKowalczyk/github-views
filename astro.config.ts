@@ -14,7 +14,7 @@ export default defineConfig({
   "/docs": "https://github.com/IgorKowalczyk/github-views?tab=readme-ov-file#-basic-usage",
  },
  adapter: deno(),
- integrations: [preact(), compress()],
+ integrations: [preact({ compat: true }), compress()],
  vite: {
   plugins: [tailwindcss()],
  },
