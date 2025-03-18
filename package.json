@@ -62,7 +62,7 @@
     "react": "npm:@preact/compat@latest",
     "react-dom": "npm:@preact/compat@latest"
   },
-  "packageManager": "pnpm@10.6.3",
+  "packageManager": "pnpm@10.6.4",
   "pnpm": {
     "onlyBuiltDependencies": [
       "esbuild",
