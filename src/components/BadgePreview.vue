@@ -142,6 +142,7 @@ const handleStyleChange = (newStyle: string) => {
 .fade-scale-enter-from,
 .fade-scale-leave-to {
  opacity: 0;
+
  transform: scale(0);
 }
 </style>
