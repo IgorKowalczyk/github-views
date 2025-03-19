@@ -16,34 +16,11 @@
  }
 }
 
-* {
- scrollbar-color: #161617 transparent;
- scrollbar-width: thin;
-}
-
 html,
 body {
  @apply scroll-smooth;
-}
-
-::-webkit-scrollbar {
- @apply w-[10px];
-}
-
-::-webkit-scrollbar-track {
- @apply rounded-xl bg-neutral-800;
-}
-
-::-webkit-scrollbar-thumb {
- @apply rounded-xl bg-neutral-700;
-}
-
-::-webkit-scrollbar-thumb:hover {
- @apply bg-neutral-600;
-}
-
-::-webkit-scrollbar-thumb:active {
- @apply bg-neutral-500;
+ scrollbar-width: thin;
+ scrollbar-color: #161617 transparent;
 }
 
 .color-rays {
