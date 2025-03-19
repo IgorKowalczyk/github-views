@@ -14,23 +14,23 @@ jobs:
    id-token: write
    contents: read
   steps:
-   - name: 🧱 Checkout repository
+   - name: ð§± Checkout repository
      uses: actions/checkout@v4
-   - name: 🔩 Setup PNPM
+   - name: ð© Setup PNPM
      uses: pnpm/action-setup@v3
      with:
       version: next-9
       standalone: true
-   - name: 🔩 Setup Node ${{ matrix.node }}
+   - name: ð© Setup Node ${{ matrix.node }}
      uses: actions/setup-node@v4
      with:
       node-version: ${{ matrix.node }}
       cache: "pnpm"
-   - name: 🚀 Install dependencies
+   - name: ð Install dependencies
      run: pnpm install
-   - name: 🚀 Build project
+   - name: ð Build project
      run: pnpm run build
-   - name: 🚀 Upload to Deno Deploy
+   - name: ð Upload to Deno Deploy
      uses: denoland/deployctl@v1
      with:
       project: ${{ vars.DENO_DEPLOY_PROJECT }}
