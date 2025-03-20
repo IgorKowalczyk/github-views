@@ -14,7 +14,7 @@ export default defineConfig({
  },
  output: "server",
  adapter: deno(),
- integrations: [vue({ appEntrypoint: "/src/pages/" }), compress()],
+ integrations: [vue(), compress()],
  vite: {
   plugins: [tailwindcss()],
  },
