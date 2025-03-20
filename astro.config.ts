@@ -3,7 +3,7 @@ import vue from "@astrojs/vue";
 import deno from "@deno/astro-adapter";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
-// import compress from "astro-compressor";
+import compress from "astro-compressor";
 
 // https://astro.build/config
 export default defineConfig({
@@ -14,7 +14,7 @@ export default defineConfig({
  },
  output: "server",
  adapter: deno(),
- integrations: [vue({ devtools: true })],
+ integrations: [vue({ devtools: true }), compress()],
  vite: {
   plugins: [tailwindcss()],
  },
