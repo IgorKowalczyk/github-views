@@ -26,6 +26,6 @@ import Layout from "@/layouts/Layout.astro";
  </section>
 
  <section class="border-x border-b border-neutral-800" id="preview">
-  <BadgePreview client:visible defaultUrl={Astro.site?.toString() || ""} />
+  <BadgePreview client:load defaultUrl={Astro.site?.toString() || ""} />
  </section>
 </Layout>
