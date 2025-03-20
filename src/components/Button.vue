@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { type VariantProps, cva } from "class-variance-authority";
 import { cn } from "@/utils/utils";
-import { defineProps, defineEmits, withDefaults } from "vue";
 
 const buttonVariants = cva("rounded-md px-4 py-2 font-medium duration-200 disabled:cursor-not-allowed disabled:opacity-50 motion-reduce:transition-none cursor-pointer", {
  variants: {
