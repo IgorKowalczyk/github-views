@@ -1,0 +1,8 @@
+{
+ "deploy": {
+  "project": "profile-views",
+  "exclude": ["**/node_modules"],
+  "include": [],
+  "entrypoint": "dist/server/entry.mjs"
+ }
+}

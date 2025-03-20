@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap") layer(base);
 @import "tailwindcss";
+@import "tailwindcss/preflight.css" layer(base);
 
 @theme {
  --font-geist: Geist Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -16,34 +17,11 @@
  }
 }
 
-* {
- scrollbar-color: #161617 transparent;
- scrollbar-width: thin;
-}
-
 html,
 body {
  @apply scroll-smooth;
-}
-
-::-webkit-scrollbar {
- @apply w-[10px];
-}
-
-::-webkit-scrollbar-track {
- @apply rounded-xl bg-neutral-800;
-}
-
-::-webkit-scrollbar-thumb {
- @apply rounded-xl bg-neutral-700;
-}
-
-::-webkit-scrollbar-thumb:hover {
- @apply bg-neutral-600;
-}
-
-::-webkit-scrollbar-thumb:active {
- @apply bg-neutral-500;
+ scrollbar-width: thin;
+ scrollbar-color: #161617 transparent;
 }
 
 .color-rays {
