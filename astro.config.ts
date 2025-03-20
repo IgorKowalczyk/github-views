@@ -14,7 +14,7 @@ export default defineConfig({
  },
  output: "server",
  adapter: deno(),
- integrations: [vue({ devtools: true }), compress()],
+ integrations: [vue(), compress()],
  vite: {
   plugins: [tailwindcss()],
  },
