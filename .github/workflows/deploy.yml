@@ -1,38 +1,44 @@
 name: Deploy
-
-on: [push, pull_request]
+on:
+  push:
+    branches: main
+  pull_request:
+    branches: main
 
 jobs:
- deploy:
-  name: Deploy
-  runs-on: ubuntu-latest
-  strategy:
-   fail-fast: false
-   matrix:
-    node: ["lts/*"]
-  permissions:
-   id-token: write
-   contents: read
-  steps:
-   - name: ð§± Checkout repository
-     uses: actions/checkout@v4
-   - name: ð© Setup PNPM
-     uses: pnpm/action-setup@v3
-     with:
-      version: next-9
-      standalone: true
-   - name: ð© Setup Node ${{ matrix.node }}
-     uses: actions/setup-node@v4
-     with:
-      node-version: ${{ matrix.node }}
-      cache: "pnpm"
-   - name: ð Install dependencies
-     run: pnpm install
-   - name: ð Build project
-     run: pnpm run build
-   - name: ð Upload to Deno Deploy
-     uses: denoland/deployctl@v1
-     with:
-      project: ${{ vars.DENO_DEPLOY_PROJECT }}
-      entrypoint: "server/entry.mjs"
-      root: "dist"
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+
+    permissions:
+      id-token: write # Needed for auth with Deno Deploy
+      contents: read # Needed to clone the repository
+
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v4
+
+      - name: Install Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+
+      - name: Install step
+        run: "npm install"
+
+      - name: Build step
+        run: "npm run build"
+
+      - name: Upload to Deno Deploy
+        uses: denoland/deployctl@v1
+        with:
+          project: "profile-views"
+          entrypoint: "server/entry.mjs"
+          root: "dist"
+          
+          
