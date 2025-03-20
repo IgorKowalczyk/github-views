@@ -35,10 +35,10 @@
   "dependencies": {
     "@astrojs/vue": "5.0.7",
     "@deno/astro-adapter": "0.3.0",
-    "@tailwindcss/vite": "4.0.11",
+    "@tailwindcss/vite": "4.0.14",
     "@types/canvas-confetti": "1.9.0",
     "@vueuse/core": "13.0.0",
-    "astro": "5.5.2",
+    "astro": "5.5.3",
     "astro-compressor": "1.0.0",
     "badgen": "3.2.3",
     "canvas-confetti": "1.9.3",
