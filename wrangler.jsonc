@@ -1,5 +1,15 @@
 {
+ "name": "views",
  "compatibility_date": "2025-03-21",
+ "main": "./dist/_worker.js/index.js",
+ "observability": {
+  "enabled": true,
+ },
+ "assets": {
+  "directory": "./dist",
+  "binding": "ASSETS",
+ },
+ "upload_source_maps": true,
  "kv_namespaces": [
   {
    "binding": "views",
