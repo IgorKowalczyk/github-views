@@ -1,17 +1,18 @@
+import type { APIRoute } from "astro";
 import { z } from "astro/zod";
 import { badgen } from "badgen";
 import { increaseViews, getViews } from "@/database/index";
 import { badgeCreatorSchema, formatNumber, paramsSchema } from "@/utils/utils";
 
-export const GET = async function GET({ params, request }: { params: { username: string }; request: Request }): Promise<Response> {
+export const GET: APIRoute = async (context) => {
  try {
-  const query = new URL(request.url).searchParams;
+  const query = context.url.searchParams;
   const queryEntries = Object.fromEntries(query.entries());
-
   const data = badgeCreatorSchema.parse(queryEntries);
-  const { username } = paramsSchema.parse(params);
 
-  const views: number = data.display ? await getViews(username) : await increaseViews(username);
+  const { username } = paramsSchema.parse(context.params);
+
+  const views: number = data.display ? await getViews(username, context.locals.runtime.env) : await increaseViews(username, context.locals.runtime.env);
 
   const badge = badgen({
    label: data.label || "Views",

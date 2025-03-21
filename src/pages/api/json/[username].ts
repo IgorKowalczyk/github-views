@@ -1,11 +1,12 @@
+import type { APIRoute } from "astro";
 import { getViews } from "@/database/index";
 import { paramsSchema } from "@/utils/utils";
 
-export const GET = async function GET({ params }: { params: { username: string } }): Promise<Response> {
+export const GET: APIRoute = async (context) => {
  try {
-  const { username } = paramsSchema.parse(params);
+  const { username } = paramsSchema.parse(context.params);
 
-  const views = await getViews(username);
+  const views = await getViews(username, context.locals.runtime.env);
   const responseBody = { views: Number(views) };
 
   return new Response(JSON.stringify(responseBody), {
