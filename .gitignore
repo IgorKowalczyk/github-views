@@ -108,3 +108,7 @@ dist
 
 # Astro build output
 .astro
+
+# Cloudflare wrangler
+worker-configuration.d.ts
+.wrangler

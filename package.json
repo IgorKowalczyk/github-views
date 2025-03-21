@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "deno run --allow-net --allow-read --allow-env --unstable-bare-node-builtins --unstable-kv ./dist/server/entry.mjs",
+    "preview": "pnpm build && wrangler dev",
+    "check": "pnpm build && tsc && wrangler deploy --dry-run",
+    "deploy": "astro build && wrangler deploy",
+    "types": "wrangler types",
     "format": "prettier . --write --ignore-unknown --cache --plugin=prettier-plugin-astro",
     "format:check": "prettier . --check --cache",
     "lint": "eslint .",
@@ -21,8 +24,6 @@
     "github",
     "profile",
     "astro",
-    "deno",
-    "deno-kv",
     "views-counter",
     "counter"
   ],
@@ -33,10 +34,9 @@
   },
   "homepage": "https://views.igorkowalczyk.dev/",
   "dependencies": {
+    "@astrojs/cloudflare": "12.3.0",
     "@astrojs/vue": "5.0.7",
-    "@deno/astro-adapter": "0.3.0",
     "@tailwindcss/vite": "4.0.14",
-    "@types/canvas-confetti": "1.9.0",
     "@vueuse/core": "13.0.0",
     "astro": "5.5.3",
     "astro-compressor": "1.0.0",
@@ -44,7 +44,6 @@
     "canvas-confetti": "1.9.3",
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
-    "eslint-plugin-vue": "10.0.0",
     "lucide-vue-next": "0.483.0",
     "tailwind-merge": "3.0.2",
     "tailwindcss": "4.0.14",
@@ -54,17 +53,23 @@
     "@igorkowalczyk/eslint-config": "3.0.7",
     "@igorkowalczyk/prettier-config": "3.0.7",
     "@tailwindcss/forms": "0.5.10",
+    "@types/canvas-confetti": "1.9.0",
+    "@types/node": "22.13.11",
     "eslint": "9.22.0",
+    "eslint-plugin-astro": "^1.3.1",
+    "eslint-plugin-vue": "10.0.0",
     "prettier": "3.5.3",
     "prettier-plugin-astro": "0.14.1",
     "prettier-plugin-tailwindcss": "0.6.11",
-    "typescript": "5.8.2"
+    "typescript": "5.8.2",
+    "wrangler": "4.3.0"
   },
   "packageManager": "pnpm@10.6.4",
   "pnpm": {
     "onlyBuiltDependencies": [
       "esbuild",
-      "sharp"
+      "sharp",
+      "workerd"
     ]
   }
 }
