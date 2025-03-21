@@ -1,4 +1,7 @@
 // https://astro.build/config
+import { writeFile } from "fs/promises";
+import { EOL } from "os";
+import { fileURLToPath } from "url";
 import cloudflare from "@astrojs/cloudflare";
 import vue from "@astrojs/vue";
 import tailwindcss from "@tailwindcss/vite";
@@ -14,7 +17,19 @@ export default defineConfig({
   "/docs": "https://github.com/IgorKowalczyk/github-views?tab=readme-ov-file#-basic-usage",
  },
 
- integrations: [vue(), compress()],
+ integrations: [
+  vue(),
+  compress(),
+  {
+   hooks: {
+    "astro:build:done": async ({ dir }) => {
+     const outFile = fileURLToPath(new URL(".assetsignore", dir));
+     await writeFile(outFile, ["_worker.js", "_routes.json", "_headers", "_redirects"].join(EOL) + EOL);
+    },
+   },
+   name: "Create .assetsignore",
+  },
+ ],
 
  vite: {
   plugins: [tailwindcss()],
