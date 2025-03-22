@@ -2,6 +2,14 @@
  "name": "views",
  "compatibility_date": "2025-03-21",
  "main": "./dist/_worker.js/index.js",
+ "workers_dev": false,
+ "preview_urls": true,
+ "routes": [
+  {
+   "pattern": "views.igorkowalczyk.dev",
+   "custom_domain": true,
+  },
+ ],
  "observability": {
   "enabled": true,
  },
