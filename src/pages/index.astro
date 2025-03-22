@@ -12,12 +12,8 @@ import Layout from "@/layouts/Layout.astro";
    <Header id="main">@igorkowalczyk/profile-views</Header>
    <Description>Create your own badge that will count views anywhere you want!</Description>
    <div class="mt-4 flex items-center justify-center gap-4">
-    <a href="/docs">
-     <Button variant="primary">Documentation</Button>
-    </a>
-    <a href="/github" target="_blank">
-     <Button variant="secondary">Github</Button>
-    </a>
+    <Button variant="primary" href="/docs" as="a">Documentation</Button>
+    <Button variant="secondary" href="/github" as="a">Github</Button>
    </div>
   </div>
   <div class="lg:flex lg:items-center lg:justify-center lg:col-span-1 hidden">

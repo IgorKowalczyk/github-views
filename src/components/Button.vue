@@ -16,17 +16,21 @@ const buttonVariants = cva("rounded-md px-4 py-2 font-medium duration-200 disabl
 
 interface ButtonProps {
  variant?: VariantProps<typeof buttonVariants>["variant"];
+ as?: string;
+ href?: string;
 }
 
 const props = withDefaults(defineProps<ButtonProps>(), {
  variant: "primary",
+ as: "button",
+ href: "",
 });
 
 const emits = defineEmits(["click"]);
 </script>
 
 <template>
- <button @click="$emit('click')" v-bind="$attrs" :class="cn(buttonVariants({ variant: props.variant }), $attrs.class ?? '')">
+ <component :is="props.as" @click="$emit('click')" v-bind="$attrs" :href="props.href" :class="cn(buttonVariants({ variant: props.variant }), $attrs.class ?? '')">
   <slot />
- </button>
+ </component>
 </template>

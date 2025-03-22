@@ -81,7 +81,7 @@ const handleStyleChange = (newStyle: string) => {
     <Input id="input" placeholder="@username" type="text" v-model="state.input" />
    </div>
    <div class="mt-1 flex flex-col items-center gap-2">
-    <button v-for="styleOption in availableStyles" :key="styleOption.name" :class="['mb-2 w-full shrink-0 cursor-pointer rounded-md border border-neutral-800 p-4 text-left text-white outline-hidden duration-200', styleOption.name === state.style ? 'bg-neutral-800/70' : 'hover:bg-neutral-800/40']" @click="handleStyleChange(styleOption.name)">
+    <button v-for="styleOption in availableStyles" :key="styleOption.name" :class="['mb-2 w-full shrink-0 cursor-pointer rounded-md border border-neutral-800 focus:bg-neutral-800 p-4 text-left text-white outline-hidden duration-200', styleOption.name === state.style ? 'bg-neutral-800/70' : 'hover:bg-neutral-800/40']" @click="handleStyleChange(styleOption.name)">
      <h3 class="font-medium capitalize tracking-tight">{{ styleOption.name }}</h3>
      <p class="text-sm text-neutral-400">{{ styleOption.description }}</p>
     </button>
