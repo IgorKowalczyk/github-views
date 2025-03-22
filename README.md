@@ -8,8 +8,8 @@
   <a aria-label="Version" href="https://github.com/igorkowalczyk/github-views/releases">
     <img src="https://img.shields.io/github/v/release/igorkowalczyk/github-views?color=blue&logo=github&label=Version">
   </a>
-  <a aria-label="Powered by" href="https://deno.com/deploy">
-    <img src="https://img.shields.io/static/v1?label=Powered%20by&message=Deno&color=blue&logo=deno">
+  <a aria-label="Powered by" href="https://workers.cloudflare.com/">
+    <img src="https://img.shields.io/static/v1?label=Powered%20by&message=Cloudflare+Workers&color=blue&logo=cloudflareworkers">
   </a>
   <a aria-label="Powered by" href="https://astro.build">
     <img src="https://img.shields.io/static/v1?label=Powered%20by&message=Astro&color=blue&logo=astro&logoColor=fff">
@@ -114,30 +114,29 @@ https://views.igorkowalczyk.dev/api/json/YOUR-USERNAME
 
 ---
 
-## 🔩 Self Hosting
+## 🔩 Local Development
 
 1. Clone [this repository](https://github.com/igorkowalczyk/github-views) `git clone https://github.com/IgorKowalczyk/github-views.git`
 2. Run `pnpm i` to install all dependencies,
-3. Run `npm run build` to build the project or `npm run dev` to run the project in development mode.
-4. Run `pnpm run preview` to preview the project.
+3. Edit the `wrangler.jsonc` file with your values
+4. Run `pnpm types` to generate types for the project
+5. Run `pnpm dev` to start the development server or `pnpm preview` to preview the production build
 
-## 🖥️ Hosting with Deno Deploy
 
-1. Fork this repository on GitHub
-1. Go to https://deno.com/deploy and create an account
-2. Click "New Project" and select your account and forked repository
-3. Click "Add build step" and wait for the project to build
-2. Go to [repository settings](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings) -> [Secrets and variables -> Actions -> Variables](https://docs.github.com/en/actions/learn-github-actions/variables) and add `DENO_DEPLOY_PROJECT` variable with your [Deno Deploy](https://deno.com/deploy) project name.
-4. Wait for the project to build and go to the project URL
+## 🖥️ Hosting with Cloudflare Workers
 
-> [!IMPORTANT]
-> This project requires access to [Deno KV](https://deno.com/kv) which is currently in beta.
+1. Clone [this repository](https://github.com/igorkowalczyk/github-views) `git clone https://github.com/IgorKowalczyk/github-views.git`
+2. Run `pnpm i` to install all dependencies,
+2. Go to [Cloudflare Workers](https://workers.cloudflare.com/) and create a new project (you can import the project from GitHub)
+3. Go to Cloudflare > Storage & Databases -> KV -> Create, and create a new KV namespace
+3. Link the KV namespace to the project in the `wrangler.jsonc` file
+4. Edit the `wrangler.jsonc` file with your values
+4. Run `pnpm types` to generate types for the project
+5. Run `pnpm dev` to start the development server or `pnpm preview` to preview the production build
+5. If you want to deploy the project, run `pnpm check` to check the project and `pnpm deploy` to deploy the project to Cloudflare Workers
 
-## 🖥️ Hosting with Vercel
-
-> [!WARNING]
-> Versions `>= v3` does not support Vercel hosting. If you want to host this project on Vercel, use versions 
-`<= v2`. To do this, go to [v2 branch](https://github.com/IgorKowalczyk/github-views/tree/v2.2.1) and follow the instructions corresponding to the version.
+> [!NOTE]
+> Refer to the [Cloudflare Workers documentation](https://developers.cloudflare.com/workers) and [Wrangler documentation](https://developers.cloudflare.com/workers/tooling/wrangler) for more information.
 
 ## ⁉️ Issues
 
