@@ -39,8 +39,8 @@ importers:
         specifier: 2.1.1
         version: 2.1.1
       lucide-vue-next:
-        specifier: 0.483.0
-        version: 0.483.0(vue@3.5.13(typescript@5.8.2))
+        specifier: 0.485.0
+        version: 0.485.0(vue@3.5.13(typescript@5.8.2))
       tailwind-merge:
         specifier: 3.0.2
         version: 3.0.2
@@ -2764,8 +2764,8 @@ packages:
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
 
-  lucide-vue-next@0.483.0:
-    resolution: {integrity: sha512-oMX1hfH7hOAdwaJdddYTSN0Z+WomndF3KXryCP/I6iu+4jZL6a4YyYi1J23EzP3/wOWCaj9mDuVhxgK+xqX8vQ==}
+  lucide-vue-next@0.485.0:
+    resolution: {integrity: sha512-m5nPVfADgzzkfnhtHpYJJTvzIi8HYKofX+getKpZq8RGF34o9sh+DbkhP/WsMFpW33dwmjGOfWB/T58IgwSmuQ==}
     peerDependencies:
       vue: '>=3.0.1'
 
@@ -7246,7 +7246,7 @@ snapshots:
     dependencies:
       yallist: 3.1.1
 
-  lucide-vue-next@0.483.0(vue@3.5.13(typescript@5.8.2)):
+  lucide-vue-next@0.485.0(vue@3.5.13(typescript@5.8.2)):
     dependencies:
       vue: 3.5.13(typescript@5.8.2)
 
