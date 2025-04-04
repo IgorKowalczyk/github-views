@@ -38,7 +38,7 @@
     "@astrojs/vue": "5.0.9",
     "@tailwindcss/vite": "4.0.17",
     "@vueuse/core": "13.0.0",
-    "astro": "5.5.6",
+    "astro": "5.6.1",
     "astro-compressor": "1.0.0",
     "badgen": "3.2.3",
     "canvas-confetti": "1.9.3",
