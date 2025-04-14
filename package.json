@@ -64,7 +64,7 @@
     "typescript": "5.8.3",
     "wrangler": "4.10.0"
   },
-  "packageManager": "pnpm@10.8.0",
+  "packageManager": "pnpm@10.8.1",
   "pnpm": {
     "onlyBuiltDependencies": [
       "esbuild",
