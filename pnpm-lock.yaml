@@ -10,10 +10,10 @@ importers:
     dependencies:
       '@astrojs/cloudflare':
         specifier: 12.5.0
-        version: 12.5.0(@types/node@22.14.1)(astro@5.7.3(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.38.0)(typescript@5.8.3)(yaml@2.7.0))(jiti@2.4.2)(lightningcss@1.29.2)(yaml@2.7.0)
+        version: 12.5.0(@types/node@22.14.1)(astro@5.7.4(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.38.0)(typescript@5.8.3)(yaml@2.7.0))(jiti@2.4.2)(lightningcss@1.29.2)(yaml@2.7.0)
       '@astrojs/vue':
         specifier: 5.0.10
-        version: 5.0.10(@types/node@22.14.1)(astro@5.7.3(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.38.0)(typescript@5.8.3)(yaml@2.7.0))(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.38.0)(vue@3.5.13(typescript@5.8.3))(yaml@2.7.0)
+        version: 5.0.10(@types/node@22.14.1)(astro@5.7.4(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.38.0)(typescript@5.8.3)(yaml@2.7.0))(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.38.0)(vue@3.5.13(typescript@5.8.3))(yaml@2.7.0)
       '@tailwindcss/vite':
         specifier: 4.1.4
         version: 4.1.4(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(yaml@2.7.0))
@@ -21,8 +21,8 @@ importers:
         specifier: 13.1.0
         version: 13.1.0(vue@3.5.13(typescript@5.8.3))
       astro:
-        specifier: 5.7.3
-        version: 5.7.3(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.38.0)(typescript@5.8.3)(yaml@2.7.0)
+        specifier: 5.7.4
+        version: 5.7.4(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.38.0)(typescript@5.8.3)(yaml@2.7.0)
       astro-compressor:
         specifier: 1.0.0
         version: 1.0.0
@@ -1535,8 +1535,8 @@ packages:
     resolution: {integrity: sha512-JepyLROIad6f44uyqMF6HKE2QbunNzp3mYKRcPoDGt0QkxXmH222FAFC64WTyQu2Kg8NNEXHTN/sWuUId9sSxw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  astro@5.7.3:
-    resolution: {integrity: sha512-2b/OOS/A6GO4QP94x6oRzwTfXabFqE2rlUbbi42o6wZm9+zzcOc6VRFAq4lTOEI/iCrEVl3wTdBAC5X3h3Es+Q==}
+  astro@5.7.4:
+    resolution: {integrity: sha512-h+pndGOyoYbsBd0YvP7bL3gotUSlyltp8OLpcYg062w0n5c96wJ9xt/RmwwXzGbdcUjWFtw0c5z4zCA92NDmlA==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -4292,12 +4292,12 @@ snapshots:
 
   '@antfu/utils@0.7.10': {}
 
-  '@astrojs/cloudflare@12.5.0(@types/node@22.14.1)(astro@5.7.3(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.38.0)(typescript@5.8.3)(yaml@2.7.0))(jiti@2.4.2)(lightningcss@1.29.2)(yaml@2.7.0)':
+  '@astrojs/cloudflare@12.5.0(@types/node@22.14.1)(astro@5.7.4(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.38.0)(typescript@5.8.3)(yaml@2.7.0))(jiti@2.4.2)(lightningcss@1.29.2)(yaml@2.7.0)':
     dependencies:
       '@astrojs/internal-helpers': 0.6.1
       '@astrojs/underscore-redirects': 0.6.0
       '@cloudflare/workers-types': 4.20250327.0
-      astro: 5.7.3(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.38.0)(typescript@5.8.3)(yaml@2.7.0)
+      astro: 5.7.4(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.38.0)(typescript@5.8.3)(yaml@2.7.0)
       esbuild: 0.25.2
       estree-walker: 3.0.3
       magic-string: 0.30.17
@@ -4368,12 +4368,12 @@ snapshots:
 
   '@astrojs/underscore-redirects@0.6.0': {}
 
-  '@astrojs/vue@5.0.10(@types/node@22.14.1)(astro@5.7.3(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.38.0)(typescript@5.8.3)(yaml@2.7.0))(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.38.0)(vue@3.5.13(typescript@5.8.3))(yaml@2.7.0)':
+  '@astrojs/vue@5.0.10(@types/node@22.14.1)(astro@5.7.4(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.38.0)(typescript@5.8.3)(yaml@2.7.0))(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.38.0)(vue@3.5.13(typescript@5.8.3))(yaml@2.7.0)':
     dependencies:
       '@vitejs/plugin-vue': 5.2.1(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.8.3))
       '@vitejs/plugin-vue-jsx': 4.1.2(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.8.3))
       '@vue/compiler-sfc': 3.5.13
-      astro: 5.7.3(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.38.0)(typescript@5.8.3)(yaml@2.7.0)
+      astro: 5.7.4(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.38.0)(typescript@5.8.3)(yaml@2.7.0)
       vite: 6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(yaml@2.7.0)
       vite-plugin-vue-devtools: 7.7.2(rollup@4.38.0)(vite@6.2.6(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.8.3))
       vue: 3.5.13(typescript@5.8.3)
@@ -5787,7 +5787,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  astro@5.7.3(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.38.0)(typescript@5.8.3)(yaml@2.7.0):
+  astro@5.7.4(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.38.0)(typescript@5.8.3)(yaml@2.7.0):
     dependencies:
       '@astrojs/compiler': 2.11.0
       '@astrojs/internal-helpers': 0.6.1
