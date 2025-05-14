@@ -37,7 +37,7 @@
     "@astrojs/cloudflare": "12.5.1",
     "@astrojs/vue": "5.0.11",
     "@tailwindcss/vite": "4.1.6",
-    "@vueuse/core": "13.1.0",
+    "@vueuse/core": "13.2.0",
     "astro": "5.7.5",
     "astro-compressor": "1.0.0",
     "badgen": "3.2.3",
