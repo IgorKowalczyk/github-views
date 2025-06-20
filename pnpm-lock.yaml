@@ -88,8 +88,8 @@ importers:
         specifier: 5.8.3
         version: 5.8.3
       wrangler:
-        specifier: 4.20.3
-        version: 4.20.3(@cloudflare/workers-types@4.20250427.0)
+        specifier: 4.20.4
+        version: 4.20.4(@cloudflare/workers-types@4.20250427.0)
 
 packages:
 
@@ -2896,8 +2896,8 @@ packages:
     resolution: {integrity: sha512-r9deDe9p5FJUPZAk3A59wGH7Ii9YrjjWw0jmw/liSbHl2CHiyXj6FcDXDu2K3TjVAXqiJdaw3xxwlZZr9E6nHg==}
     hasBin: true
 
-  miniflare@4.20250617.1:
-    resolution: {integrity: sha512-NjwKVzPGCAUgkCOJxHBwgV2Obu3g4/wAJE0JaA9whcYip4VAJwQ1fU9TMtoKLY91jD9ANR221+CqLyqxennjqg==}
+  miniflare@4.20250617.2:
+    resolution: {integrity: sha512-lx/0RcyX0+/cVDZgoyvh6buuWZoo2aXVZve544hpF1G0Soms3ldleJLeLC7NE2zdFoXRysD0Nz0aaaMxUEO56A==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -3900,8 +3900,8 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
 
-  wrangler@4.20.3:
-    resolution: {integrity: sha512-ugvmi43CFPbjeQFfhU7EqE1V0ek6ZFv80jzwHcPk/7jPFmOA4ahT5uUU1ga5ZP6vz6lUuG2bLnyl1T5qJah0cg==}
+  wrangler@4.20.4:
+    resolution: {integrity: sha512-isjMboea3G7/i2kkyTJvpvtRudgYfXZwxDWuMnfcm+v1N2fS31roEG973f3Z0udDCkcaoV3hjRCFvq3vlCk/NA==}
     engines: {node: '>=18.0.0'}
     hasBin: true
     peerDependencies:
@@ -4005,7 +4005,7 @@ snapshots:
       astro: 5.7.5(@types/node@22.15.32)(jiti@2.4.2)(lightningcss@1.30.1)(rollup@4.40.0)(typescript@5.8.3)(yaml@2.7.0)
       tinyglobby: 0.2.13
       vite: 6.3.3(@types/node@22.15.32)(jiti@2.4.2)(lightningcss@1.30.1)(yaml@2.7.0)
-      wrangler: 4.20.3(@cloudflare/workers-types@4.20250427.0)
+      wrangler: 4.20.4(@cloudflare/workers-types@4.20250427.0)
     transitivePeerDependencies:
       - '@types/node'
       - bufferutil
@@ -5407,10 +5407,6 @@ snapshots:
     dependencies:
       '@zod/core': 0.9.0
 
-  acorn-jsx@5.3.2(acorn@8.14.1):
-    dependencies:
-      acorn: 8.14.1
-
   acorn-jsx@5.3.2(acorn@8.15.0):
     dependencies:
       acorn: 8.15.0
@@ -6366,8 +6362,8 @@ snapshots:
 
   espree@10.3.0:
     dependencies:
-      acorn: 8.14.1
-      acorn-jsx: 5.3.2(acorn@8.14.1)
+      acorn: 8.15.0
+      acorn-jsx: 5.3.2(acorn@8.15.0)
       eslint-visitor-keys: 4.2.0
 
   espree@10.4.0:
@@ -7332,7 +7328,7 @@ snapshots:
 
   mini-svg-data-uri@1.4.4: {}
 
-  miniflare@4.20250617.1:
+  miniflare@4.20250617.2:
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       acorn: 8.14.0
@@ -8437,13 +8433,13 @@ snapshots:
       '@cloudflare/workerd-linux-arm64': 1.20250617.0
       '@cloudflare/workerd-windows-64': 1.20250617.0
 
-  wrangler@4.20.3(@cloudflare/workers-types@4.20250427.0):
+  wrangler@4.20.4(@cloudflare/workers-types@4.20250427.0):
     dependencies:
       '@cloudflare/kv-asset-handler': 0.4.0
       '@cloudflare/unenv-preset': 2.3.3(unenv@2.0.0-rc.17)(workerd@1.20250617.0)
       blake3-wasm: 2.1.5
       esbuild: 0.25.4
-      miniflare: 4.20250617.1
+      miniflare: 4.20250617.2
       path-to-regexp: 6.3.0
       unenv: 2.0.0-rc.17
       workerd: 1.20250617.0
