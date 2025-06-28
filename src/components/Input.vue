@@ -21,6 +21,10 @@ const modelValue = useVModel(props, "modelValue", emits, {
 
 <template>
  <div class="relative">
-  <input v-model="modelValue" v-bind="$attrs" :class="cn('w-full rounded-lg border border-neutral-800 bg-transparent p-2 text-white outline-none transition duration-200 focus:border-neutral-700', $attrs.class ?? '')" />
+  <input
+   v-model="modelValue"
+   v-bind="$attrs"
+   :class="cn('w-full rounded-lg border border-neutral-800 bg-transparent p-2 text-white outline-none transition duration-200 focus:border-neutral-700', $attrs.class ?? '')"
+  />
  </div>
 </template>

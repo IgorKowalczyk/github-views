@@ -81,7 +81,15 @@ const handleStyleChange = (newStyle: string) => {
     <Input id="input" placeholder="@username" type="text" v-model="state.input" />
    </div>
    <div class="mt-1 flex flex-col items-center gap-2">
-    <button v-for="styleOption in availableStyles" :key="styleOption.name" :class="['mb-2 w-full shrink-0 cursor-pointer rounded-md border border-neutral-800 focus:bg-neutral-800 p-4 text-left text-white outline-hidden duration-200', styleOption.name === state.style ? 'bg-neutral-800/70' : 'hover:bg-neutral-800/40']" @click="handleStyleChange(styleOption.name)">
+    <button
+     v-for="styleOption in availableStyles"
+     :key="styleOption.name"
+     :class="[
+      'mb-2 w-full shrink-0 cursor-pointer rounded-md border border-neutral-800 focus:bg-neutral-800 p-4 text-left text-white outline-hidden duration-200',
+      styleOption.name === state.style ? 'bg-neutral-800/70' : 'hover:bg-neutral-800/40',
+     ]"
+     @click="handleStyleChange(styleOption.name)"
+    >
      <h3 class="font-medium capitalize tracking-tight">{{ styleOption.name }}</h3>
      <p class="text-sm text-neutral-400">{{ styleOption.description }}</p>
     </button>
@@ -92,9 +100,17 @@ const handleStyleChange = (newStyle: string) => {
     <div v-if="state.style == 'flat' || state.style == 'classic'" :key="state.style">
      <h3 class="mb-1 font-medium text-neutral-400">Markdown</h3>
      <div class="relative flex flex-row gap-2 overflow-hidden rounded-lg bg-neutral-800 p-4">
-      <pre class="overflow-hidden whitespace-nowrap selection:bg-neutral-900 font-mono text-sm text-white"><code>![Profile views]({{ props.defaultUrl }}api/badge/{{ debouncedInput || 'example' }}?style={{ state.style }})</code></pre>
+      <pre
+       class="overflow-hidden whitespace-nowrap selection:bg-neutral-900 font-mono text-sm text-white"
+      ><code>![Profile views]({{ props.defaultUrl }}api/badge/{{ debouncedInput || 'example' }}?style={{ state.style }})</code></pre>
       <div class="absolute right-0 top-0 flex h-full items-center bg-linear-to-r from-transparent via-neutral-800 to-neutral-800 p-2 pl-8">
-       <Button ref="buttonRef" variant="secondary" @click="handleCopy(`![Profile views](${props.defaultUrl}api/badge/${debouncedInput || 'example'}?style=${state.style})`)" :disabled="!debouncedInput" class="relative py-4">
+       <Button
+        ref="buttonRef"
+        variant="secondary"
+        @click="handleCopy(`![Profile views](${props.defaultUrl}api/badge/${debouncedInput || 'example'}?style=${state.style})`)"
+        :disabled="!debouncedInput"
+        class="relative py-4"
+       >
         <Transition name="fade-scale">
          <Clipboard v-if="!state.isCopied" class="size-4 mx-auto mt-2 inset-0 absolute" />
          <ClipboardCheck v-else class="size-4 mx-auto mt-2 inset-0 absolute" />
@@ -112,7 +128,13 @@ const handleStyleChange = (newStyle: string) => {
      <div class="relative flex flex-row gap-2 overflow-hidden rounded-lg bg-neutral-800 p-4">
       <pre class="overflow-hidden whitespace-nowrap selection:bg-neutral-900 font-mono text-sm text-white">{{ props.defaultUrl }}api/json/{{ debouncedInput || "example" }}</pre>
       <div class="absolute right-0 top-0 flex h-full items-center bg-linear-to-r from-transparent via-neutral-800 to-neutral-800 p-2 pl-8">
-       <Button ref="buttonRef" variant="secondary" @click="handleCopy(`${props.defaultUrl}api/json/${debouncedInput || 'example'}`)" :disabled="!debouncedInput" class="relative py-4">
+       <Button
+        ref="buttonRef"
+        variant="secondary"
+        @click="handleCopy(`${props.defaultUrl}api/json/${debouncedInput || 'example'}`)"
+        :disabled="!debouncedInput"
+        class="relative py-4"
+       >
         <Transition name="fade-scale">
          <Clipboard v-if="!state.isCopied" class="size-4 mx-auto mt-2 inset-0 absolute" />
          <ClipboardCheck v-else class="size-4 mx-auto mt-2 inset-0 absolute" />
@@ -122,7 +144,9 @@ const handleStyleChange = (newStyle: string) => {
      </div>
      <h3 class="mt-6 font-medium text-neutral-400">JSON</h3>
      <div class="relative flex flex-row gap-2 overflow-hidden rounded-lg bg-neutral-800 p-4">
-      <pre class="overflow-hidden whitespace-nowrap selection:bg-neutral-900 font-mono text-sm text-white"><code><span class="line"><span style="color:#E1E4E8">{</span><span style="color:#79B8FF">"views"</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">0</span><span style="color:#E1E4E8">}</span> </span></code></pre>
+      <pre
+       class="overflow-hidden whitespace-nowrap selection:bg-neutral-900 font-mono text-sm text-white"
+      ><code><span class="line"><span style="color:#E1E4E8">{</span><span style="color:#79B8FF">"views"</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">0</span><span style="color:#E1E4E8">}</span> </span></code></pre>
      </div>
     </div>
    </div>
