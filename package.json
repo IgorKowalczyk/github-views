@@ -47,7 +47,7 @@
     "lucide-vue-next": "0.525.0",
     "tailwind-merge": "3.3.1",
     "tailwindcss": "4.1.11",
-    "vue": "3.5.17"
+    "vue": "3.5.18"
   },
   "devDependencies": {
     "@igorkowalczyk/eslint-config": "3.1.0",
