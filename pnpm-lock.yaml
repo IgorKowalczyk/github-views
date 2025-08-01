@@ -24,8 +24,8 @@ importers:
         specifier: 5.10.1
         version: 5.10.1(@types/node@24.1.0)(jiti@2.4.2)(lightningcss@1.30.1)(rollup@4.44.1)(typescript@5.9.2)(yaml@2.7.0)
       astro-compressor:
-        specifier: 1.0.0
-        version: 1.0.0
+        specifier: 1.1.1
+        version: 1.1.1
       badgen:
         specifier: 3.2.3
         version: 3.2.3
@@ -1555,8 +1555,9 @@ packages:
   ast-types-flow@0.0.8:
     resolution: {integrity: sha512-OH/2E5Fg20h2aPrbe+QL8JZQFko0YZaF+j4mnQ7BGhfavO7OpSLa8a0y9sBwomHdSbkhTS8TQNayBfnW5DwbvQ==}
 
-  astro-compressor@1.0.0:
-    resolution: {integrity: sha512-MNGRmjIsb73BIJivbU/HnTbPu5CEFvXp1NCev0bpsuK/cp4cCPX6C1omUPXzw2oQbtKv0phTTTtEk+h20SrF1Q==}
+  astro-compressor@1.1.1:
+    resolution: {integrity: sha512-yvwVmaTb6SMCd6MTufz0pYBsYXPTZu66QjNgAPrDqLqrHfKAsIIQ/4JTci76eS+rX6rdbuDeBb0SVlgrRCCtuw==}
+    engines: {node: '>=22.15.0 <23.0.0 || >=23.8.0'}
 
   astro-eslint-parser@1.2.2:
     resolution: {integrity: sha512-JepyLROIad6f44uyqMF6HKE2QbunNzp3mYKRcPoDGt0QkxXmH222FAFC64WTyQu2Kg8NNEXHTN/sWuUId9sSxw==}
@@ -5502,7 +5503,7 @@ snapshots:
 
   ast-types-flow@0.0.8: {}
 
-  astro-compressor@1.0.0: {}
+  astro-compressor@1.1.1: {}
 
   astro-eslint-parser@1.2.2:
     dependencies:
