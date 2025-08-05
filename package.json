@@ -62,7 +62,7 @@
     "prettier-plugin-astro": "0.14.1",
     "prettier-plugin-tailwindcss": "0.6.14",
     "typescript": "5.9.2",
-    "wrangler": "4.26.0"
+    "wrangler": "4.28.0"
   },
   "packageManager": "pnpm@10.14.0",
   "pnpm": {
