@@ -45,7 +45,7 @@
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
     "lucide-vue-next": "0.546.0",
-    "tailwind-merge": "3.3.1",
+    "tailwind-merge": "3.4.0",
     "tailwindcss": "4.1.15",
     "vue": "3.5.22"
   },
