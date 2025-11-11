@@ -1,17 +1,17 @@
 {
- "name": "GitHub Profile Views",
- "short_name": "GitHub Profile Views",
- "description": "A simple way to track your GitHub profile views",
- "start_url": "/?source=pwa",
- "scope": "/",
- "display": "minimal-ui",
- "background_color": "#101011",
- "theme_color": "#151515",
- "icons": [
-  {
-   "src": "/favicon.ico",
-   "sizes": "48x48",
-   "type": "image/x-icon"
-  }
- ]
+  "name": "GitHub Profile Views",
+  "short_name": "GitHub Profile Views",
+  "description": "A simple way to track your GitHub profile views",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "minimal-ui",
+  "background_color": "#101011",
+  "theme_color": "#151515",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
 }

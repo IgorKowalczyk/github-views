@@ -10,36 +10,36 @@ import compress from "astro-compressor";
 
 // https://astro.build/config
 export default defineConfig({
- site: "https://views.igorkowalczyk.dev",
+  site: "https://views.igorkowalczyk.dev",
 
- redirects: {
-  "/github": "https://github.com/igorkowalczyk/views",
-  "/docs": "https://github.com/IgorKowalczyk/github-views?tab=readme-ov-file#-basic-usage",
- },
+  redirects: {
+    "/github": "https://github.com/igorkowalczyk/views",
+    "/docs": "https://github.com/IgorKowalczyk/github-views?tab=readme-ov-file#-basic-usage",
+  },
 
- integrations: [
-  vue(),
-  compress(),
-  {
-   hooks: {
-    "astro:build:done": async ({ dir }) => {
-     const outFile = fileURLToPath(new URL(".assetsignore", dir));
-     await writeFile(outFile, ["_worker.js", "_routes.json", "_headers", "_redirects"].join(EOL) + EOL);
+  integrations: [
+    vue(),
+    compress(),
+    {
+      hooks: {
+        "astro:build:done": async ({ dir }) => {
+          const outFile = fileURLToPath(new URL(".assetsignore", dir));
+          await writeFile(outFile, ["_worker.js", "_routes.json", "_headers", "_redirects"].join(EOL) + EOL);
+        },
+      },
+      name: "Create .assetsignore",
     },
-   },
-   name: "Create .assetsignore",
-  },
- ],
+  ],
 
- vite: {
-  plugins: [tailwindcss()],
- },
-
- output: "server",
- adapter: cloudflare({
-  platformProxy: {
-   enabled: true,
-   configPath: "./wrangler.jsonc",
+  vite: {
+    plugins: [tailwindcss()],
   },
- }),
+
+  output: "server",
+  adapter: cloudflare({
+    platformProxy: {
+      enabled: true,
+      configPath: "./wrangler.jsonc",
+    },
+  }),
 });

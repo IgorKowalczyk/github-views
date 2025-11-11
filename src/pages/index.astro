@@ -7,21 +7,21 @@ import Layout from "@/layouts/Layout.astro";
 ---
 
 <Layout title="Profile views - create your own badges">
- <section class="relative grid w-full grid-cols-1 gap-x-4 overflow-hidden border-x border-b border-neutral-800 p-6 lg:grid-cols-2 lg:p-12">
-  <div class="flex flex-col items-start justify-center lg:col-span-1">
-   <Header id="main">@igorkowalczyk/profile-views</Header>
-   <Description>Create your own badge that will count views anywhere you want!</Description>
-   <div class="mt-4 flex items-center justify-center gap-4">
-    <Button variant="primary" href="/docs" as="a">Documentation</Button>
-    <Button variant="secondary" href="/github" as="a">Github</Button>
-   </div>
-  </div>
-  <div class="lg:flex lg:items-center lg:justify-end lg:col-span-1 hidden">
-   <img src="/logo.png" class="aspect-square size-52" alt="Profile views" loading="eager" />
-  </div>
- </section>
+  <section class="relative grid w-full grid-cols-1 gap-x-4 overflow-hidden border-x border-b border-neutral-800 p-6 lg:grid-cols-2 lg:p-12">
+    <div class="flex flex-col items-start justify-center lg:col-span-1">
+      <Header id="main">@igorkowalczyk/profile-views</Header>
+      <Description>Create your own badge that will count views anywhere you want!</Description>
+      <div class="mt-4 flex items-center justify-center gap-4">
+        <Button variant="primary" href="/docs" as="a">Documentation</Button>
+        <Button variant="secondary" href="/github" as="a">Github</Button>
+      </div>
+    </div>
+    <div class="lg:flex lg:items-center lg:justify-end lg:col-span-1 hidden">
+      <img src="/logo.png" class="aspect-square size-52" alt="Profile views" loading="eager" />
+    </div>
+  </section>
 
- <section class="border-x border-b border-neutral-800" id="preview">
-  <BadgePreview client:load defaultUrl={Astro.site?.toString() || ""} />
- </section>
+  <section class="border-x border-b border-neutral-800" id="preview">
+    <BadgePreview client:load defaultUrl={Astro.site?.toString() || ""} />
+  </section>
 </Layout>

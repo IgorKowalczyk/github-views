@@ -1,14 +1,14 @@
 {
- "extends": "astro/tsconfigs/strict",
- "include": [".astro/types.d.ts", "**/*"],
- "compilerOptions": {
-  "verbatimModuleSyntax": true,
-  "baseUrl": ".",
-  "paths": {
-   "@/*": ["src/*"],
-   "public/*": ["public/*"]
-  },
-  "jsx": "preserve",
-  "jsxImportSource": "preact"
- }
+  "extends": "astro/tsconfigs/strict",
+  "include": [".astro/types.d.ts", "**/*"],
+  "compilerOptions": {
+    "verbatimModuleSyntax": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "public/*": ["public/*"]
+    },
+    "jsx": "preserve",
+    "jsxImportSource": "preact"
+  }
 }

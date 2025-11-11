@@ -1,39 +1,39 @@
 {
- "$schema": "https://unpkg.com/wrangler@latest/config-schema.json",
- "compatibility_date": "2025-03-21",
- "main": "./dist/_worker.js/index.js",
- "observability": {
-  "enabled": true,
- },
- "assets": {
-  "directory": "./dist",
-  "binding": "ASSETS",
- },
- "upload_source_maps": false,
-
- // Name of your Cloudflare Worker, you can change it to whatever you want
- "name": "views",
-
- // Go to Cloudflare > Storage & Databases -> KV -> Create
- // Then copy the ID and paste it here in the "id" field, don't change the "binding" field value
- "kv_namespaces": [
-  {
-   "binding": "views",
-   "id": "fd70ac47953b45b09a8f57cf975c6733",
+  "$schema": "https://unpkg.com/wrangler@latest/config-schema.json",
+  "compatibility_date": "2025-03-21",
+  "main": "./dist/_worker.js/index.js",
+  "observability": {
+    "enabled": true,
   },
- ],
-
- // Custom domain, you can use your own domain connected to Cloudflare
- "routes": [
-  {
-   "pattern": "views.igorkowalczyk.dev",
-   "custom_domain": true,
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
   },
- ],
+  "upload_source_maps": false,
 
- // If you want to have a deployment domain like "..workers.dev" you can set the "workers_dev" field to true
- "workers_dev": false,
+  // Name of your Cloudflare Worker, you can change it to whatever you want
+  "name": "views",
 
- // If you want to have a preview URL like "..workers.dev" you can set the "preview_urls" field to true
- "preview_urls": true,
+  // Go to Cloudflare > Storage & Databases -> KV -> Create
+  // Then copy the ID and paste it here in the "id" field, don't change the "binding" field value
+  "kv_namespaces": [
+    {
+      "binding": "views",
+      "id": "fd70ac47953b45b09a8f57cf975c6733",
+    },
+  ],
+
+  // Custom domain, you can use your own domain connected to Cloudflare
+  "routes": [
+    {
+      "pattern": "views.igorkowalczyk.dev",
+      "custom_domain": true,
+    },
+  ],
+
+  // If you want to have a deployment domain like "..workers.dev" you can set the "workers_dev" field to true
+  "workers_dev": false,
+
+  // If you want to have a preview URL like "..workers.dev" you can set the "preview_urls" field to true
+  "preview_urls": true,
 }

@@ -1,6 +1,6 @@
 ---
 export interface Props {
- title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -9,49 +9,49 @@ import "@/styles/main.css";
 
 <!doctype html>
 <html lang="en">
- <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="robots" content="follow, index" />
-  <meta name="googlebot" content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="follow, index" />
+    <meta name="googlebot" content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1" />
 
-  <link rel="shortcut icon" href="/favicon.ico" />
-  <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="manifest" href="/site.webmanifest" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <meta name="theme-color" media="(prefers-color-scheme: light)" content="white" />
-  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="white" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black" />
 
-  <title>{title}</title>
-  <meta name="description" content="A simple way to track your GitHub profile views" />
+    <title>{title}</title>
+    <meta name="description" content="A simple way to track your GitHub profile views" />
 
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="GitHub Profile Views" />
-  <meta property="og:title" content={title} />
-  <meta property="og:description" content="A simple way to track your GitHub profile views" />
-  <meta property="og:url" content="https://views.igorkowalczyk.dev" />
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:image" content="https://views.igorkowalczyk.dev/og-image.png" />
-  <meta property="og:image:alt" content="GitHub Profile Views" />
-  <meta property="og:image:type" content="image/png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="GitHub Profile Views" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content="A simple way to track your GitHub profile views" />
+    <meta property="og:url" content="https://views.igorkowalczyk.dev" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://views.igorkowalczyk.dev/og-image.png" />
+    <meta property="og:image:alt" content="GitHub Profile Views" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content={title} />
-  <meta name="twitter:description" content="A simple way to track your GitHub profile views" />
-  <meta name="twitter:image" content="https://views.igorkowalczyk.dev/og-image.png" />
-  <meta name="twitter:image:alt" content="GitHub Profile Views" />
-  <meta name="twitter:image:type" content="image/png" />
-  <meta name="twitter:image:width" content="1200" />
-  <meta name="twitter:image:height" content="630" />
- </head>
- <body class="min-h-screen w-full scroll-smooth bg-background font-geist antialiased selection:bg-neutral-800 selection:text-white!">
-  <main class="mx-auto max-w-5xl">
-   <slot />
-   <div class="color-rays"></div>
-  </main>
- </body>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content="A simple way to track your GitHub profile views" />
+    <meta name="twitter:image" content="https://views.igorkowalczyk.dev/og-image.png" />
+    <meta name="twitter:image:alt" content="GitHub Profile Views" />
+    <meta name="twitter:image:type" content="image/png" />
+    <meta name="twitter:image:width" content="1200" />
+    <meta name="twitter:image:height" content="630" />
+  </head>
+  <body class="min-h-screen w-full scroll-smooth bg-background font-geist antialiased selection:bg-neutral-800 selection:text-white!">
+    <main class="mx-auto max-w-5xl">
+      <slot />
+      <div class="color-rays"></div>
+    </main>
+  </body>
 </html>
