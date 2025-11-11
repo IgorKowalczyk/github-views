@@ -50,7 +50,7 @@
     "vue": "3.5.22"
   },
   "devDependencies": {
-    "@igorkowalczyk/eslint-config": "3.1.0",
+    "@igorkowalczyk/eslint-config": "3.2.1",
     "@igorkowalczyk/prettier-config": "3.1.0",
     "@tailwindcss/forms": "0.5.10",
     "@types/canvas-confetti": "1.9.0",
