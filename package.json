@@ -40,7 +40,7 @@
     "@vueuse/core": "14.0.0",
     "astro": "5.15.5",
     "astro-compressor": "1.2.0",
-    "badgen": "3.2.3",
+    "badgen": "3.3.2",
     "canvas-confetti": "1.9.4",
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
