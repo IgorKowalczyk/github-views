@@ -7,7 +7,7 @@
   },
   "assets": {
     "directory": "./dist",
-    "binding": "ASSETS"
+    "binding": "ASSETS",
   },
   "upload_source_maps": false,
 
@@ -19,7 +19,7 @@
   "kv_namespaces": [
     {
       "binding": "views",
-      "id": "fd70ac47953b45b09a8f57cf975c6733"
+      "id": "fd70ac47953b45b09a8f57cf975c6733",
     },
   ],
 
@@ -27,13 +27,13 @@
   "routes": [
     {
       "pattern": "views.igorkowalczyk.dev",
-      "custom_domain": true
-    }
+      "custom_domain": true,
+    },
   ],
 
   // If you want to have a deployment domain like "..workers.dev" you can set the "workers_dev" field to true
   "workers_dev": false,
 
   // If you want to have a preview URL like "..workers.dev" you can set the "preview_urls" field to true
-  "preview_urls": true
+  "preview_urls": true,
 }
