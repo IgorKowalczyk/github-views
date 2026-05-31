@@ -4,7 +4,7 @@ import { useDebounceFn, useElementBounding, useClipboard, useTimeoutFn } from "@
 import Button from "@/components/Button.vue";
 import Input from "@/components/Input.vue";
 import canvasConfetti from "canvas-confetti";
-import { Clipboard, ClipboardCheck } from "lucide-vue-next";
+import { Clipboard, ClipboardCheck } from "@lucide/vue";
 
 const props = defineProps({
   defaultUrl: {
