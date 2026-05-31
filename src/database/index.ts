@@ -1,6 +1,7 @@
 import "./patch";
+import { env } from "cloudflare:workers";
 
-export async function increaseViews(username: string, env: Cloudflare.Env): Promise<number> {
+export async function increaseViews(username: string): Promise<number> {
   if (username === "example") return 0;
 
   // No views for thebabayaga or thebabayagakiller, don't spam the api bro
@@ -16,7 +17,7 @@ export async function increaseViews(username: string, env: Cloudflare.Env): Prom
   return newViews;
 }
 
-export async function getViews(username: string, env: Cloudflare.Env): Promise<number> {
+export async function getViews(username: string): Promise<number> {
   if (username === "example") return 0;
 
   const kv = env.views;

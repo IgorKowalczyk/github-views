@@ -12,7 +12,7 @@ export const GET: APIRoute = async (context) => {
 
     const { username } = paramsSchema.parse(context.params);
 
-    const views: number = data.display ? await getViews(username, context.locals.runtime.env) : await increaseViews(username, context.locals.runtime.env);
+    const views: number = data.display ? await getViews(username) : await increaseViews(username);
 
     const badge = badgen({
       label: data.label || "Views",
@@ -37,7 +37,7 @@ export const GET: APIRoute = async (context) => {
     const svg = badgen({
       label: "Error",
       labelColor: "ef4444",
-      status: error instanceof z.ZodError ? error.errors[0].message : "Internal server error",
+      status: error instanceof z.ZodError ? error.issues[0].message : "Internal server error",
       color: "000",
       style: "flat",
     });

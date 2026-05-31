@@ -6,7 +6,7 @@ export const GET: APIRoute = async (context) => {
   try {
     const { username } = paramsSchema.parse(context.params);
 
-    const views = await getViews(username, context.locals.runtime.env);
+    const views = await getViews(username);
     const responseBody = { views: Number(views) };
 
     return new Response(JSON.stringify(responseBody), {
