@@ -83,7 +83,7 @@ importers:
         version: 0.14.1
       prettier-plugin-tailwindcss:
         specifier: ^0.8.0
-        version: 0.8.0(prettier-plugin-astro@0.14.1)(prettier@3.8.3)
+        version: 0.8.1(prettier-plugin-astro@0.14.1)(prettier@3.8.3)
       typescript:
         specifier: ^6.0.3
         version: 6.0.3
@@ -3300,8 +3300,8 @@ packages:
     resolution: {integrity: sha512-RiBETaaP9veVstE4vUwSIcdATj6dKmXljouXc/DDNwBSPTp8FRkLGDSGFClKsAFeeg+13SB0Z1JZvbD76bigJw==}
     engines: {node: ^14.15.0 || >=16.0.0}
 
-  prettier-plugin-tailwindcss@0.8.0:
-    resolution: {integrity: sha512-V8ITGH87yuBDF6JpEZTOVlUz/saAwqb8f3HRgUj8Lh+tGCcrmorhsLpYqzygwFwK0PE2Ib6Mv3M7T/uE2tZV1g==}
+  prettier-plugin-tailwindcss@0.8.1:
+    resolution: {integrity: sha512-iaFMYqDsE4ffdDkn5qup0j5f2aCEBFZrdrZnvu9QKTlWx/iGPeQ4HHu7b7fCPMxeo9nwQBiOAh2nSypdFYWJkw==}
     engines: {node: '>=20.19'}
     peerDependencies:
       '@ianvs/prettier-plugin-sort-imports': '*'
@@ -3520,6 +3520,11 @@ packages:
 
   semver@7.8.1:
     resolution: {integrity: sha512-rkVq3IXh+4FDGch+KwzX3aV9W3kO54GyEgpvBzSyctDA6Xtd7RJQV1xmXbeQp5v7+VzLOfVqiutSE6GICgPFvg==}
+    engines: {node: '>=10'}
+    hasBin: true
+
+  semver@7.8.5:
+    resolution: {integrity: sha512-Y7/KDsb8LjooZpwaqGyulO6DQlksgCncchHGk+sZIY4SBvUocMBEFH5Ur1fI4dV+Jvl0w6cjvucaIi40puRioA==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -7752,7 +7757,7 @@ snapshots:
       prettier: 3.8.3
       sass-formatter: 0.7.9
 
-  prettier-plugin-tailwindcss@0.8.0(prettier-plugin-astro@0.14.1)(prettier@3.8.3):
+  prettier-plugin-tailwindcss@0.8.1(prettier-plugin-astro@0.14.1)(prettier@3.8.3):
     dependencies:
       prettier: 3.8.3
     optionalDependencies:
@@ -7998,6 +8003,8 @@ snapshots:
   semver@6.3.1: {}
 
   semver@7.8.1: {}
+
+  semver@7.8.5: {}
 
   set-function-length@1.2.2:
     dependencies:
@@ -8523,7 +8530,7 @@ snapshots:
       eslint-visitor-keys: 5.0.1
       espree: 11.2.0
       esquery: 1.7.0
-      semver: 7.8.1
+      semver: 7.8.5
     transitivePeerDependencies:
       - supports-color
 
