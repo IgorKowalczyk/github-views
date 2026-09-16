@@ -40,7 +40,7 @@
     "@tailwindcss/vite": "4.3.0",
     "@vueuse/core": "14.3.0",
     "astro": "6.4.2",
-    "astro-compressor": "1.3.0",
+    "astro-compressor": "2.0.1",
     "badgen": "3.3.2",
     "canvas-confetti": "1.9.4",
     "class-variance-authority": "0.7.1",
